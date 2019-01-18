@@ -1,0 +1,14 @@
+@import "../../assets/scss/_reset";
+@import "../../assets/scss/_define";
+html, body {
+    @extend %pr;
+    @extend %w100;
+}
+body {
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+::-webkit-input-placeholder{ color: #999}    /* 使用webkit内核的浏览器 */
+:-moz-placeholder{ color: #999}                  /* Firefox版本4-18 */
+::-moz-placeholder{ color: #999}                  /* Firefox版本19+ */
+:-ms-input-placeholder{ color: #999}           /* IE浏览器 */

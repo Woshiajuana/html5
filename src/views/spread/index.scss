@@ -1,0 +1,121 @@
+@import "../../assets/scss/_define";
+@import "../../assets/scss/common";
+
+
+body {
+    overflow-x: hidden;
+    background-color: #1E1E32;
+}
+
+.head{
+    height: j(300);
+    background: url("../../assets/images/css/img_gzh_bg_banner2x.jpg") no-repeat;
+    background-size: 100%;
+}
+
+.main{
+    @extend %w100;
+    @extend %df;
+    @extend %fdc;
+    @extend %aic;
+}
+
+.prompt{
+    font-size: j(14);
+    line-height: j(20);
+    color: #FFD076;
+}
+
+.con{
+    @extend %df;
+    @extend %fdc;
+    @extend %aic;
+    margin-top: j(12);
+    li{
+        @extend %df;
+        @extend %fdc;
+        @extend %aic;
+        width: j(328);
+        height: j(100);
+        background: url("../../assets/images/css/img_gzh_tab_bg2x.png") no-repeat;
+        background-size: 100%;
+        margin-bottom: j(20);
+    }
+    .label{
+        @extend %df;
+        @extend %aic;
+    }
+}
+
+.label{
+    @extend %df;
+    @extend %aic;
+    height: j(24);
+    margin-top: j(8);
+    i{
+        @extend %db;
+        width: j(24);
+        height: j(24);
+        margin-right: j(4);
+        background-size: contain !important;
+    }
+    .icon-1{
+        background: url("../../assets/images/css/icon_gzh_12x.png") no-repeat;
+    }
+    .icon-2{
+        background: url("../../assets/images/css/icon_gzh_22x.png") no-repeat;
+    }
+    .icon-3{
+        background: url("../../assets/images/css/icon_gzh_32x.png") no-repeat;
+    }
+    .icon-4{
+        background: url("../../assets/images/css/icon_gzh_42x.png") no-repeat;
+    }
+    .icon-5{
+        background: url("../../assets/images/css/icon_gzh_52x.png") no-repeat;
+    }
+    .icon-6{
+        background: url("../../assets/images/css/icon_gzh_62x.png") no-repeat;
+    }
+    span{
+        @extend %fwb;
+        font-size: j(16);
+        color: #fff;
+    }
+}
+
+.value{
+    @extend %df1;
+    @extend %df;
+    @extend %aic;
+    @extend %jcc;
+    p{
+        @extend %tac;
+        font-size: j(14);
+        color: #fff;
+    }
+}
+
+.foot{
+    @extend %df;
+    @extend %aic;
+    @extend %jcc;
+    @extend %fdc;
+    height: j(232);
+    background-size: 100%;
+    background: url("../../assets/images/css/img_gzh_bg_bottom2x.png") no-repeat;
+    img{
+        @extend %db;
+        width: j(120);
+        height: j(120);
+        margin-bottom: j(16);
+    }
+    p{
+        font-size: j(14);
+        color: #A7CCFF;
+        line-height: j(20);
+    }
+    span{
+        color: #FFD076;
+    }
+}
