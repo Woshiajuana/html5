@@ -153,68 +153,75 @@ body {
 
 .cards{
     @extend %pa;
-    //width: q(100);
     width: q(885);
     height: q(1063);
-    //transform: rotateY(45deg);
+    transform: scale3d(0, 0, 0);
     &:nth-child(1) {
-        animation: flutter-1 3s infinite;
+        animation: flutter-1 4s infinite;
     }
     &:nth-child(2) {
-        animation: flutter-2 3s infinite;
+        animation: flutter-2 4s infinite 1s;
     }
     &:nth-child(3) {
-        animation: flutter-3 3s infinite;
+        animation: flutter-3 4s infinite 2s;
     }
     &:nth-child(4) {
-
+        animation: flutter-4 4s infinite 3s;
     }
     &:nth-child(5) {
-
+        animation: flutter-1 4s infinite 4s;
     }
     &:nth-child(6) {
-
+        animation: flutter-2 4s infinite 5s;
     }
     &:nth-child(7) {
-
+        animation: flutter-3 4s infinite 6s;
     }
     &:nth-child(8) {
-
+        animation: flutter-4 4s infinite 7s;
     }
     &:nth-child(9) {
-
+        animation: flutter-1 4s infinite 8s;
     }
     &:nth-child(10) {
-
+        animation: flutter-2 4s infinite 9s;
     }
     &:nth-child(11) {
-
+        animation: flutter-3 4s infinite 10s;
     }
     &:nth-child(12) {
-
+        animation: flutter-4 4s infinite 11s;
     }
 }
 @keyframes flutter-1 {
     from {
-        transform: scale3d(0, 0, 0) rotateY(30deg) rotateZ(30deg) translate3d(0, 0, -500px);
+        transform: scale3d(0, 0, 0) rotateY(30deg) rotateZ(130deg) translate3d(0, 0, -500px);
     }
     to {
-        transform: scale3d(1, 1, 1) rotateY(30deg) rotateZ(30deg)  translate3d(0, 0, 2000px);
+        transform: scale3d(1, 1, 1) rotateY(30deg) rotateZ(30deg)  translate3d(0, 0, 1000px);
     }
 }
 @keyframes flutter-2 {
     from {
-        transform: scale3d(0, 0, 0) rotateY(-30deg) rotateZ(-30deg) translate3d(0, -200px, -500px);
+        transform: scale3d(0, 0, 0) rotateY(-30deg) rotateZ(-130deg) translate3d(0, -200px, -500px);
     }
     to {
-        transform: scale3d(1, 1, 1) rotateY(-30deg) rotateZ(-30deg)  translate3d(0, 200px, 2000px);
+        transform: scale3d(1, 1, 1) rotateY(-30deg) rotateZ(-30deg)  translate3d(0, 200px, 1000px);
     }
 }
 @keyframes flutter-3 {
     from {
-        transform: scale3d(0, 0, 0) rotateY(60deg) rotateZ(60deg) translate3d(0, 0, -500px);
+        transform: scale3d(0, 0, 0) rotateY(15deg) rotateZ(160deg) translate3d(0, 0, -500px);
     }
     to {
-        transform: scale3d(1, 1, 1) rotateY(30deg) rotateZ(30deg)  translate3d(0, 0, 2000px);
+        transform: scale3d(1, 1, 1) rotateY(15deg) rotateZ(60deg)  translate3d(0, 0, 1500px);
+    }
+}
+@keyframes flutter-4 {
+    from {
+        transform: scale3d(0, 0, 0) rotateY(-15deg) rotateZ(-160deg) translate3d(0, -200px, -500px);
+    }
+    to {
+        transform: scale3d(1, 1, 1) rotateY(-15deg) rotateZ(-60deg)  translate3d(0, 200px, 1500px);
     }
 }
