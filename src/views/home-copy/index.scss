@@ -193,6 +193,134 @@ body {
         animation: flutter-4 4s infinite 11s;
     }
 }
+
+
+.d{
+    &:nth-child(1) {
+        animation: flutter-1 24s infinite;
+    }
+    &:nth-child(2) {
+        animation: flutter-2 12s infinite 2s;
+    }
+    &:nth-child(3) {
+        animation: flutter-3 12s infinite 4s;
+    }
+    &:nth-child(4) {
+        animation: flutter-4 12s infinite 6s;
+    }
+    &:nth-child(5) {
+        animation: flutter-1 12s infinite 8s;
+    }
+    &:nth-child(6) {
+        animation: flutter-2 12s infinite 10s;
+    }
+    &:nth-child(7) {
+        animation: flutter-3 12s infinite 12s;
+    }
+    &:nth-child(8) {
+        animation: flutter-4 12s infinite 14s;
+    }
+    &:nth-child(9) {
+        animation: flutter-1 12s infinite 16s;
+    }
+    &:nth-child(10) {
+        animation: flutter-2 12s infinite 18s;
+    }
+    &:nth-child(11) {
+        animation: flutter-3 12s infinite 20s;
+    }
+    &:nth-child(12) {
+        animation: flutter-4 12s infinite 22s;
+    }
+}
+@keyframes flutter-1 {
+    from {
+        opacity: 0;
+        transform: scaleX(1) rotateY(-11deg) rotate(13deg) skewX(0deg) skewY(-29deg) rotateX(1deg) translate3d(288px,-837px,-3000px);
+    }
+    5%{
+        opacity: 1;
+    }
+    20%{
+        opacity: 1;
+        transform: scaleX(1) rotateY(-12deg) rotate(17deg) skewX(0deg) skewY(0deg)  translate3d(-5px,68px,-93px);
+    }
+    25%{
+        opacity: 0;
+        transform: scaleX(1) rotateY(-12deg) rotate(17deg) skewX(0deg) skewY(0deg)  translate3d(-5px,68px,-93px);
+    }
+    to {
+        opacity: 0;
+        transform: scaleX(1) rotateY(-12deg) rotate(17deg) skewX(0deg) skewY(0deg)  translate3d(-5px,68px,-93px);
+    }
+}
+
+@keyframes flutter-2 {
+    from {
+        opacity: 0;
+        transform: scaleX(1) rotateY(0deg) rotate(-12deg) skewX(0deg) skewY(0deg) rotateX(-1deg) translate3d(-355px,-717px,-1500px);
+    }
+    5%{
+        opacity: 1;
+    }
+    20%{
+        opacity: 1;
+        transform: scaleX(1) rotateY(18deg) rotate(-30deg) skewX(0deg) skewY(0deg) translate3d(18px,61px,-93px);
+    }
+    25%{
+        opacity: 0;
+        transform: scaleX(1) rotateY(18deg) rotate(-30deg) skewX(0deg) skewY(0deg) translate3d(18px,61px,-93px);
+    }
+    to {
+        opacity: 0;
+        transform: scaleX(1) rotateY(18deg) rotate(-30deg) skewX(0deg) skewY(0deg) translate3d(18px,61px,-93px);
+    }
+}
+@keyframes flutter-3 {
+    from {
+        opacity: 0;
+        transform: scaleX(1) rotateY(-11deg) rotate(13deg) skewX(0deg) skewY(-29deg) rotateX(1deg) translate3d(288px,-837px,-4500px);
+    }
+    5%{
+        opacity: 1;
+    }
+    20%{
+        opacity: 1;
+        transform: scaleX(1) rotateY(-12deg) rotate(17deg) skewX(0deg) skewY(0deg)  translate3d(-5px,68px,-93px);
+    }
+    25%{
+        opacity: 0;
+        transform: scaleX(1) rotateY(-12deg) rotate(17deg) skewX(0deg) skewY(0deg)  translate3d(-5px,68px,-93px);
+    }
+    to {
+        opacity: 0;
+        transform: scaleX(1) rotateY(-12deg) rotate(17deg) skewX(0deg) skewY(0deg)  translate3d(-5px,68px,-93px);
+    }
+}
+@keyframes flutter-4 {
+    from {
+        opacity: 0;
+        transform: scaleX(1) rotateY(0deg) rotate(-12deg) skewX(0deg) skewY(0deg) rotateX(-1deg) translate3d(-355px,-717px,-3500px);
+    }
+    5%{
+        opacity: 1;
+    }
+    20%{
+        opacity: 1;
+        transform: scaleX(1) rotateY(31deg) rotate(-11deg) skewX(0deg) skewY(0deg) translate3d(64px,64px,-86px);
+    }
+    25%{
+        opacity: 0;
+        transform: scaleX(1) rotateY(31deg) rotate(-11deg) skewX(0deg) skewY(0deg) translate3d(64px,64px,-86px);
+    }
+    to {
+        opacity: 0;
+        transform: scaleX(1) rotateY(31deg) rotate(-11deg) skewX(0deg) skewY(0deg) translate3d(64px,64px,-86px);
+    }
+}
+
+
+
 @keyframes flutter-1 {
     from {
         transform: scale3d(0, 0, 0) rotateY(30deg) rotateZ(130deg) translate3d(0, 0, -500px);
