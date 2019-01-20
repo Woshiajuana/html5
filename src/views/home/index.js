@@ -24,12 +24,16 @@ const Animation = {
             this.index = 0;
         if (this.libraryIndex >= this.libraryNumber)
             this.libraryIndex = 0;
-        this.$el.eq(this.index).addClass(this.library[this.libraryIndex]);
-        ((index, libraryIndex) => {
-            setTimeout(() => {
-                this.$el.eq(index).removeClass(this.library[libraryIndex]);
-            }, 6000);
-        })(this.index, this.libraryIndex);
+        this.$el.eq(this.index).removeClass(this.library.join(' '));
+        setTimeout(() => {
+            this.$el.eq(this.index).addClass(this.library[this.libraryIndex]);
+        }, 200);
+        // this.$el.eq(this.index).addClass(this.library[this.libraryIndex]);
+        // ((index, libraryIndex) => {
+        //     setTimeout(() => {
+        //         this.$el.eq(index).removeClass(this.library[libraryIndex]);
+        //     }, 6000);
+        // })(this.index, this.libraryIndex);
         setTimeout(this.run.bind(this), 2000);
     },
 };

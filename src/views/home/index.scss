@@ -158,16 +158,16 @@ body {
     height: auto;
     box-shadow: 30px 30px 80px 20px rgba(0,0,0,.2);
     &.flutter1{
-        animation: flutter1 6s infinite;
+        animation: flutter1 6s;
     }
     &.flutter2{
-        animation: flutter2 6s infinite;
+        animation: flutter2 6s;
     }
     &.flutter3{
-        animation: flutter3 6s infinite;
+        animation: flutter3 6s;
     }
     &.flutter4{
-        animation: flutter4 6s infinite;
+        animation: flutter4 6s;
     }
 }
 
