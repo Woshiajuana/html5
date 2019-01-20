@@ -44,7 +44,7 @@ const Controller = {
         this.swiper = new Swiper('#swiper', {
             direction: 'vertical'
         });
-        this.getElById('next-button').addEventListener('click', this.handleNextSlide.bind(this))
+        this.getElById('next-button').addEventListener('click', this.handleNextSlide.bind(this));
         Animation.start();
     },
     handleNextSlide () {
