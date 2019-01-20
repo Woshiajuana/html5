@@ -154,8 +154,9 @@ body {
 .cards{
     @extend %pa;
     width: q(885);
-    height: q(1063);
+    height: auto;
     transform: scale3d(0, 0, 0);
+    box-shadow: 30px 30px 80px 20px rgba(0,0,0,.2);
     &:nth-child(1) {
         animation: flutter-1 4s infinite;
     }
