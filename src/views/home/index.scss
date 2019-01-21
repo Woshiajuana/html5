@@ -46,24 +46,31 @@ body {
         color: #4db2dd;
         &:nth-child(1) {
             animation-delay: 0s;
+            -webkit-animation-delay: 0s;
         }
         &:nth-child(2) {
             animation-delay: 0.6s;
+            -webkit-animation-delay: 0.6s;
         }
         &:nth-child(3) {
             animation-delay: 1.2s;
+            -webkit-animation-delay: 1.2s;
         }
         &:nth-child(4) {
             animation-delay: 2.2s;
+            -webkit-animation-delay: 2.2s;
         }
         &:nth-child(5) {
             animation-delay: 3s;
+            -webkit-animation-delay: 3s;
         }
         &:nth-child(6) {
             animation-delay: 3.5s;
+            -webkit-animation-delay: 3.5s;
         }
         &:nth-child(7) {
             animation-delay: 4s;
+            -webkit-animation-delay: 4s;
         }
     }
 }
@@ -76,6 +83,7 @@ body {
         width: q(93);
         height: q(53);
         animation: upOrDown 2s infinite;
+        -webkit-animation: upOrDown 2s infinite;
     }
     @extend %pa;
     @extend %cp;
@@ -99,16 +107,16 @@ body {
 }
 @-webkit-keyframes upOrDown {
     0% {
-        -webkit-transform: translate3d(0, 0, 0);
         transform: translate3d(0, 0, 0);
+        -webkit-transform: translate3d(0, 0, 0);
     }
     50% {
         transform: translate3d(0, q(50), 0);
         -webkit-transform: translate3d(0, q(50), 0);
     }
     100% {
-        -webkit-transform: translate3d(0, 0, 0);
         transform: translate3d(0, 0, 0);
+        -webkit-transform: translate3d(0, 0, 0);
     }
 }
 
@@ -148,7 +156,9 @@ body {
     top: q(600);
     bottom: q(600);
     transform: perspective(500px);
+    -webkit-transform: perspective(500px);
     transform-style:preserve-3d;
+    -webkit-transform-style:preserve-3d;
 }
 
 .cards{
@@ -157,17 +167,22 @@ body {
     width: q(600);
     height: auto;
     box-shadow: 30px 30px 80px 20px rgba(0,0,0,.2);
+    -webkit-box-shadow: 30px 30px 80px 20px rgba(0,0,0,.2);
     &.flutter1{
         animation: flutter1 6s;
+        -webkit-animation: flutter1 6s;
     }
     &.flutter2{
         animation: flutter2 6s;
+        -webkit-animation: flutter2 6s;
     }
     &.flutter3{
         animation: flutter3 6s;
+        -webkit-animation: flutter3 6s;
     }
     &.flutter4{
         animation: flutter4 6s;
+        -webkit-animation: flutter4 6s;
     }
 }
 
@@ -189,6 +204,29 @@ body {
         transform: scaleX(1) rotateY(-12deg) rotate(17deg) skewX(0deg) skewY(0deg)  translate3d(-5px,68px,-93px);
     }
 }
+@-webkit-keyframes flutter1 {
+    from {
+        opacity: 0;
+        -webkit-transform: scaleX(1) rotateY(-11deg) rotate(13deg) skewX(0deg) skewY(-29deg) rotateX(1deg) translate3d(288px,-837px,-3000px);
+        transform: scaleX(1) rotateY(-11deg) rotate(13deg) skewX(0deg) skewY(-29deg) rotateX(1deg) translate3d(288px,-837px,-3000px);
+    }
+    33%{
+        opacity: 1;
+        -webkit-transform: scaleX(1) rotateY(-11deg) rotate(13deg) skewX(0deg) skewY(-29deg) rotateX(1deg) translate3d(288px,-837px,-3000px);
+        transform: scaleX(1) rotateY(-11deg) rotate(13deg) skewX(0deg) skewY(-29deg) rotateX(1deg) translate3d(288px,-837px,-3000px);
+    }
+    66%{
+        opacity: 1;
+        -webkit-transform: scaleX(1) rotateY(-12deg) rotate(17deg) skewX(0deg) skewY(0deg)  translate3d(-5px,68px,-93px);
+        transform: scaleX(1) rotateY(-12deg) rotate(17deg) skewX(0deg) skewY(0deg)  translate3d(-5px,68px,-93px);
+    }
+    to {
+        opacity: 0;
+        -webkit-transform: scaleX(1) rotateY(-12deg) rotate(17deg) skewX(0deg) skewY(0deg)  translate3d(-5px,68px,-93px);
+        transform: scaleX(1) rotateY(-12deg) rotate(17deg) skewX(0deg) skewY(0deg)  translate3d(-5px,68px,-93px);
+    }
+}
+
 @keyframes flutter2 {
     from {
         opacity: 0;
@@ -207,6 +245,29 @@ body {
         transform: scaleX(1) rotateY(18deg) rotate(-30deg) skewX(0deg) skewY(0deg) translate3d(18px,61px,-93px);
     }
 }
+@-webkit-keyframes flutter2 {
+    from {
+        opacity: 0;
+        -webkit-transform: scaleX(1) rotateY(0deg) rotate(-12deg) skewX(0deg) skewY(0deg) rotateX(-1deg) translate3d(-355px,-717px,-1500px);
+        transform: scaleX(1) rotateY(0deg) rotate(-12deg) skewX(0deg) skewY(0deg) rotateX(-1deg) translate3d(-355px,-717px,-1500px);
+    }
+    33%{
+        opacity: 1;
+        -webkit-transform: scaleX(1) rotateY(0deg) rotate(-12deg) skewX(0deg) skewY(0deg) rotateX(-1deg) translate3d(-355px,-717px,-1500px);
+        transform: scaleX(1) rotateY(0deg) rotate(-12deg) skewX(0deg) skewY(0deg) rotateX(-1deg) translate3d(-355px,-717px,-1500px);
+    }
+    66%{
+        opacity: 1;
+        -webkit-transform: scaleX(1) rotateY(18deg) rotate(-30deg) skewX(0deg) skewY(0deg) translate3d(18px,61px,-93px);
+        transform: scaleX(1) rotateY(18deg) rotate(-30deg) skewX(0deg) skewY(0deg) translate3d(18px,61px,-93px);
+    }
+    to {
+        opacity: 0;
+        -webkit-transform: scaleX(1) rotateY(18deg) rotate(-30deg) skewX(0deg) skewY(0deg) translate3d(18px,61px,-93px);
+        transform: scaleX(1) rotateY(18deg) rotate(-30deg) skewX(0deg) skewY(0deg) translate3d(18px,61px,-93px);
+    }
+}
+
 @keyframes flutter3 {
     from {
         opacity: 0;
@@ -225,6 +286,29 @@ body {
         transform: scaleX(1) rotateY(-12deg) rotate(17deg) skewX(0deg) skewY(0deg)  translate3d(-5px,68px,-93px);
     }
 }
+@-webkit-keyframes flutter3 {
+    from {
+        opacity: 0;
+        -webkit-transform: scaleX(1) rotateY(-11deg) rotate(13deg) skewX(0deg) skewY(-29deg) rotateX(1deg) translate3d(288px,-837px,-4500px);
+        transform: scaleX(1) rotateY(-11deg) rotate(13deg) skewX(0deg) skewY(-29deg) rotateX(1deg) translate3d(288px,-837px,-4500px);
+    }
+    33%{
+        opacity: 1;
+        -webkit-transform: scaleX(1) rotateY(-11deg) rotate(13deg) skewX(0deg) skewY(-29deg) rotateX(1deg) translate3d(288px,-837px,-4500px);
+        transform: scaleX(1) rotateY(-11deg) rotate(13deg) skewX(0deg) skewY(-29deg) rotateX(1deg) translate3d(288px,-837px,-4500px);
+    }
+    66%{
+        opacity: 1;
+        -webkit-transform: scaleX(1) rotateY(-12deg) rotate(17deg) skewX(0deg) skewY(0deg)  translate3d(-5px,68px,-93px);
+        transform: scaleX(1) rotateY(-12deg) rotate(17deg) skewX(0deg) skewY(0deg)  translate3d(-5px,68px,-93px);
+    }
+    to {
+        opacity: 0;
+        -webkit-transform: scaleX(1) rotateY(-12deg) rotate(17deg) skewX(0deg) skewY(0deg)  translate3d(-5px,68px,-93px);
+        transform: scaleX(1) rotateY(-12deg) rotate(17deg) skewX(0deg) skewY(0deg)  translate3d(-5px,68px,-93px);
+    }
+}
+
 @keyframes flutter4 {
     from {
         opacity: 0;
@@ -243,4 +327,25 @@ body {
         transform: scaleX(1) rotateY(31deg) rotate(-11deg) skewX(0deg) skewY(0deg) translate3d(64px,64px,-86px);
     }
 }
-
+@-webkit-keyframes flutter4 {
+    from {
+        opacity: 0;
+        -webkit-transform: scaleX(1) rotateY(0deg) rotate(-12deg) skewX(0deg) skewY(0deg) rotateX(-1deg) translate3d(-355px,-717px,-3500px);
+        transform: scaleX(1) rotateY(0deg) rotate(-12deg) skewX(0deg) skewY(0deg) rotateX(-1deg) translate3d(-355px,-717px,-3500px);
+    }
+    33%{
+        opacity: 1;
+        -webkit-transform: scaleX(1) rotateY(0deg) rotate(-12deg) skewX(0deg) skewY(0deg) rotateX(-1deg) translate3d(-355px,-717px,-3500px);
+        transform: scaleX(1) rotateY(0deg) rotate(-12deg) skewX(0deg) skewY(0deg) rotateX(-1deg) translate3d(-355px,-717px,-3500px);
+    }
+    66%{
+        opacity: 1;
+        -webkit-transform: scaleX(1) rotateY(31deg) rotate(-11deg) skewX(0deg) skewY(0deg) translate3d(64px,64px,-86px);
+        transform: scaleX(1) rotateY(31deg) rotate(-11deg) skewX(0deg) skewY(0deg) translate3d(64px,64px,-86px);
+    }
+    to {
+        opacity: 0;
+        -webkit-transform: scaleX(1) rotateY(31deg) rotate(-11deg) skewX(0deg) skewY(0deg) translate3d(64px,64px,-86px);
+        transform: scaleX(1) rotateY(31deg) rotate(-11deg) skewX(0deg) skewY(0deg) translate3d(64px,64px,-86px);
+    }
+}
