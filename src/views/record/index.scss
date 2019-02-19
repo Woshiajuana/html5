@@ -92,7 +92,8 @@ body {
     height: j(90);
     &.active{
         .nav-active-icon{
-            @extend %db;
+            @extend %bg1;
+            background-position: j(-95) j(-327);
         }
         span{
             color: #24833d;
@@ -119,11 +120,9 @@ body {
     }
 }
 .nav-active-icon{
-    @extend %dn;
-    @extend %bg1;
+    @extend %db;
     width: j(13);
     height: j(6);
-    background-position: j(-95) j(-327);
 }
 .nav-icon{
     @extend %bg1;
@@ -146,7 +145,7 @@ body {
     @extend %oh;
     top: j(400);
 }
-.section{
+.inner{
     @extend %pa;
     @extend %t0;
     @extend %l0;
@@ -154,7 +153,7 @@ body {
     @extend %b0;
     overflow-y: auto;
 }
-.jf-list{
+.inner{
     padding-top: j(10);
     dt{
         font-size: j(30);
@@ -194,7 +193,7 @@ body {
     }
 }
 
-.dd-list{
+.inner{
     .dd-list-item{
         @extend %bsb;
         padding: 0 j(20);
@@ -203,6 +202,16 @@ body {
         margin: j(20) auto;
         width: j(800);
         background-color: #fff;
+        &.after{
+            .after{
+                @extend %df;
+            }
+        }
+        &.before{
+            .before{
+                @extend %db;
+            }
+        }
     }
     .top{
         @extend %df;
@@ -213,6 +222,30 @@ body {
         span{
             color: #7d7d7d;
             font-size: j(24);
+        }
+        .label{
+            @extend %df1;
+        }
+        .after,
+        .before{
+            @extend %dn;
+            @extend %df;
+            @extend %aic;
+        }
+        .link{
+            @extend %cp;
+            @extend %tac;
+            @extend %df;
+            @extend %bsb;
+            @extend %aic;
+            @extend %jcc;
+            margin-right: j(20);
+            width: j(135);
+            height: j(42);
+            border-radius: j(42);
+            color: #268a47;
+            font-size: j(21);
+            border: 1px solid #268a47;
         }
     }
     .con{
