@@ -1,16 +1,18 @@
 
 $(() => {
     var $navItems = $('.nav-item');
+    var $navInnerItems = $('.nav-item-inner');
     var $mask = $('.mask');
-    $navItems.on('click', function () {
-        var is = $(this).hasClass('on');
+    $navInnerItems.on('click', function () {
+        var $father = $(this).parent('.nav-item');
+        var is = $father.hasClass('on');
         $navItems.removeClass('active on');
-        $(this).addClass('active');
+        $father.addClass('active');
         if (is) {
-            $(this).removeClass('on');
+            $father.removeClass('on');
             $mask.hide();
         } else {
-            $(this).addClass('on');
+            $father.addClass('on');
             $mask.show();
         }
     })

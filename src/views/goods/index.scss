@@ -23,7 +23,7 @@ body {
     @extend %jcc;
     height: j(132);
     background: url("../../assets/images/css/header-bg-2.jpg") center no-repeat;
-    background-size: contain;
+    background-size: 100%;
     h1{
         @extend %fwn;
         color: #fff;

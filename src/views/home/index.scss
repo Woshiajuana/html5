@@ -12,10 +12,9 @@ body {
     @extend %pr;
     @extend %h100;
     @extend %w100;
-    overflow-x: hidden;
+    //overflow-x: hidden;
     background-color: #f4f4f4;
 }
-
 
 .head{
     @extend %df;
@@ -23,7 +22,7 @@ body {
     padding: 0 j(40);
     height: j(307);
     background: url("../../assets/images/css/header-bg-1.jpg") center no-repeat;
-    background-size: contain;
+    background-size: 100%;
     .prompt{
         @extend %oh;
         white-space: nowrap;
@@ -60,14 +59,40 @@ body {
 }
 .level{
     @extend %bg1;
+    background-position: 0 j(-46);
     width: j(177);
     height: j(36);
+    &.level1{
+        .level-icon{
+            width: 20%;
+        }
+    }
+    &.level2{
+        .level-icon{
+            width: 40%;
+        }
+    }
+    &.level3{
+        .level-icon{
+            width: 60%;
+        }
+    }
+    &.level4{
+        .level-icon{
+            width: 80%;
+        }
+    }
+    &.level5{
+        .level-icon{
+            width: 100%;
+        }
+    }
 }
 .level-icon{
     @extend %bg1;
-    @extend %w100;
     @extend %h100;
-    background-position: 0 j(-46);
+    @extend %db;
+    width: 0;
 }
 .order-link{
     @extend %dib;
@@ -123,6 +148,7 @@ body {
     height: j(430);
     a{
         @extend %db;
+        @extend %w100;
     }
     img{
         @extend %db;
@@ -155,6 +181,7 @@ body {
         color: #d9b06b;
     }
     .exchange{
+        @extend %cp;
         @extend %pa;
         @extend %df;
         @extend %aic;

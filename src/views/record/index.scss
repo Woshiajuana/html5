@@ -22,7 +22,7 @@ body {
     padding: 0 j(40) 0 j(100);
     height: j(307);
     background: url("../../assets/images/css/header-bg-1.jpg") center no-repeat;
-    background-size: contain;
+    background-size: 100%;
     .prompt{
         @extend %oh;
         white-space: nowrap;
