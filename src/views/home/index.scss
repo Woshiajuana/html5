@@ -227,19 +227,24 @@ body {
     box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.1);
 }
 .nav-item{
-    @extend %cp;
     @extend %pr;
     @extend %df1;
-    @extend %df;
-    @extend %aic;
-    @extend %jcc;
-    height: j(90);
     &.active{
         .nav-active-icon{
-            @extend %db;
+            @extend %bg1;
+            background-position: j(-95) j(-327);
         }
         span{
             color: #24833d;
+        }
+    }
+    &.on{
+        .nav-active-icon{
+            @extend %bg1;
+            background-position: j(-108) j(-327);
+        }
+        .select{
+            @extend %db;
         }
     }
     span{
@@ -262,12 +267,16 @@ body {
         }
     }
 }
+.nav-item-inner{
+    @extend %cp;
+    @extend %df;
+    @extend %aic;
+    @extend %jcc;
+    height: j(90);
+}
 .nav-active-icon{
-    @extend %dn;
-    @extend %bg1;
     width: j(13);
     height: j(6);
-    background-position: j(-95) j(-327);
 }
 .nav-icon{
     @extend %bg1;
@@ -288,7 +297,8 @@ body {
 .select{
     @extend %pa;
     @extend %l50;
-    top: j(93);
+    @extend %dn;
+    top: j(92);
     margin-left: j(-135);
     width: j(270);
     background-color: #fff;
@@ -329,38 +339,56 @@ body {
         @extend %bg1;
         @extend %t50;
         left: j(45);
-        width: j(27);
-        height: j(24);
+        width: j(28);
+        height: j(26);
         margin-top: j(-12);
     }
     &.qcyp{
         i{
-            background-position: j(-389) 0;
+            background-position: j(-416) 0;
         }
     }
     &.sm3c{
         i{
-            background-position: j(-389) j(-65);
+            background-position: j(-416) j(-65);
         }
     }
     &.jydq{
         i{
-            background-position: j(-389) j(-135);
+            background-position: j(-416) j(-135);
         }
     }
     &.mywj{
         i{
-            background-position: j(-389) j(-193);
+            background-position: j(-416) j(-193);
         }
     }
     &.fsdp{
         i{
-            background-position: j(-389) j(-260);
+            background-position: j(-416) j(-260);
         }
     }
     &.jmps{
         i{
-            background-position: j(-389) j(-322);
+            background-position: j(-416) j(-322);
         }
     }
+}
+.mask{
+    @extend %dn;
+    @extend %pf;
+    @extend %t0;
+    @extend %l0;
+    @extend %r0;
+    @extend %b0;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, .3);
+}
+.greater-mask{
+    @extend %pr;
+    z-index: 9;
+}
+.recommend{
+    background: url("../../assets/images/css/bg.png") repeat;
+
 }
