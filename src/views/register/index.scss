@@ -29,3 +29,69 @@ body{
     background: url("../../assets/images/css/header-bg-2.jpg") center no-repeat;
     background-size: 100%;
 }
+
+.main{
+    @extend %df;
+    @extend %fdc;
+    @extend %aic;
+    @extend %oh;
+}
+.user{
+    border-radius: 50%;
+    width: j(338);
+    height: j(338);
+    img{
+        @extend %db;
+        @extend %w100;
+        @extend %h100;
+        border-radius: 50%;
+    }
+}
+.form{
+    margin-top: j(110);
+}
+.prompt{
+    font-size: j(24);
+    color: #1c8a45;
+    line-height: 1.5;
+}
+.input-box{
+    @extend %pr;
+    @extend %df;
+    @extend %aic;
+    width: j(700);
+    height: j(95);
+    background-color: #fff;
+    box-shadow: 0 1px 1px 1px rgba(0,0,0,0.1);
+    border-radius: j(16);
+    margin-top: j(24);
+    span{
+        @extend %pa;
+        @extend %t0;
+        left: j(-20);
+        font-size: j(24);
+        color: #1c8a45;
+        line-height: j(95);
+    }
+}
+.label{
+    @extend %df;
+    @extend %bsb;
+    @extend %aic;
+    padding-left: j(32);
+    width: j(180);
+    height: j(48);
+    font-size: j(31);
+    color: #383838;
+    border-right: 1px solid #dedede;
+    i{
+        @extend %dib;
+        @extend %bg1;
+        width: j(40);
+        height: j(40);
+    }
+}
+
+.value{
+    @extend %df1;
+}
