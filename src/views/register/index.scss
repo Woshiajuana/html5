@@ -1,0 +1,31 @@
+@import "../../assets/scss/_define";
+@import "../../assets/scss/common";
+
+
+%bg1{
+    background: url("../../assets/images/css/icon2.png") no-repeat;
+    background-size: j(1000);
+}
+
+html,
+body {
+    @extend %pr;
+    @extend %h100;
+    @extend %w100;
+    overflow-x: hidden;
+}
+html{
+    background: url("../../assets/images/css/bg.png") repeat;
+}
+body{
+    background: url("../../assets/images/css/footer-bg.jpg") center bottom no-repeat;
+    background-size: 100% auto;
+}
+.head{
+    @extend %df;
+    @extend %aic;
+    @extend %jcc;
+    height: j(132);
+    background: url("../../assets/images/css/header-bg-2.jpg") center no-repeat;
+    background-size: 100%;
+}
