@@ -115,7 +115,7 @@ for (let key in entry) {
     const htmlPlugin = new HtmlWebpackPlugin({
         filename: `${key}.html`,
         template: entry[key].replace('entry.js', 'index.html'),
-        minify: { removeAttributeQuotes: true },
+        minify: { removeAttributeQuotes: false },
         chunks: [key],
         inject: 'body',
     });
