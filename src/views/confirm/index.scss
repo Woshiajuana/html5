@@ -63,15 +63,48 @@ body {
     border-right: 1px solid #dedede;
 }
 .value{
-    min-width: j(10);
-    max-width: j(10);
+    @extend %pr;
     @extend %df1;
     height: j(48);
     line-height: j(48);
-    border: none;
-    padding: 0 j(24);
     font-size: j(31);
     color: #383838;
+    select,
+    input{
+        @extend %w100;
+        @extend %h100;
+        @extend %bsb;
+        font-size: j(31);
+        color: #383838;
+        line-height: j(48);
+        border: none;
+        padding: 0 j(24);
+    }
+    select{
+        appearance:none;
+        -moz-appearance:none;
+        -webkit-appearance:none;
+    }
+    &.select{
+        padding-right: j(50);
+        &:after{
+            content: '';
+            @extend %pa;
+            @extend %t50;
+            @include tfr(45deg);
+            right: j(20);
+            margin-top: j(-20);
+            border-bottom: 2px solid #ddd;
+            border-right: 2px solid #ddd;
+            width: j(20);
+            height: j(20);
+        }
+    }
+    &.num{
+        @extend %df;
+        @extend %aic;
+        padding: 0 j(24);
+    }
 }
 .send-btn{
     @extend %df;
@@ -84,15 +117,37 @@ body {
     color: #fff;
     background-color: #268a47;
     box-shadow: 0 1px 1px 1px rgba(0,0,0,0.1);
-    border-radius: j(8);
+    border-radius: j(16);
     margin-left: j(24);
+    &.disabled{
+        background-color: #dedede;
+    }
 }
+.num-btn{
+    @extend %df;
+    @extend %aic;
+    @extend %jcc;
+    @extend %bsb;
+    @extend %cp;
+    width: j(32);
+    height: j(32);
+    font-size: j(31);
+    color: #999;
+    border: 1px solid #ddd;
+    border-radius: j(6);
+}
+.num-text{
+    font-size: j(31);
+    color: #383838;
+    margin: 0 j(20);
+}
+
 .button{
     @extend %df;
     @extend %jcc;
     @extend %aic;
     @extend %cp;
-    margin: j(20) auto;
+    margin: j(100) auto;
     width: j(794);
     height: j(94);
     background-color: #268a47;
