@@ -3,7 +3,7 @@
 
 
 %bg1{
-    background: url("../../assets/images/css/icon.png") no-repeat;
+    background: url("../../assets/images/css/icon2.png") no-repeat;
     background-size: j(1000);
 }
 
@@ -15,8 +15,6 @@ body {
     overflow-x: hidden;
     background: url("../../assets/images/css/bg.png") repeat;
 }
-
-
 .head{
     @extend %df;
     @extend %aic;
@@ -30,29 +28,64 @@ body {
         font-size: j(47);
     }
 }
-.section{
+.main{
+    @extend %df;
+    @extend %fdc;
+    @extend %aic;
+    padding-top: j(30);
+    li{
+        @extend %df;
+        @extend %aic;
+        width: j(746);
+        height: j(80);
+        margin-top: j(35);
+    }
+}
+.box{
+    @extend %df;
+    @extend %bsb;
+    @extend %df1;
+    @extend %aic;
+    @extend %h100;
+    background-color: #fff;
+    box-shadow: 0 1px 1px 1px rgba(0,0,0,0.1);
+    border-radius: j(16);
+}
+.label{
+    @extend %df;
+    @extend %bsb;
+    @extend %aic;
+    padding-left: j(32);
+    width: j(180);
+    height: j(48);
+    font-size: j(31);
+    color: #383838;
+    border-right: 1px solid #dedede;
+}
+.value{
+    min-width: j(10);
+    max-width: j(10);
+    @extend %df1;
+    height: j(48);
+    line-height: j(48);
+    border: none;
+    padding: 0 j(24);
+    font-size: j(31);
+    color: #383838;
+}
+.send-btn{
     @extend %df;
     @extend %aic;
     @extend %jcc;
-    width: j(800);
-    height: j(490);
-    border-radius: j(10);
-    background-color: #fff;
-    border: 1px solid #f5e1b6;
-    margin: j(23) auto;
-    img{
-        @extend %db;
-        width: j(735);
-        height: j(440);
-    }
-}
-.name{
-    @extend %tac;
-    border-top: 1px solid #ddd;
-    color: #7d7d7d;
-    font-size: j(40);
-    height: j(70);
-    line-height: j(70);
+    @extend %cp;
+    @extend %h100;
+    width: j(250);
+    font-size: j(31);
+    color: #fff;
+    background-color: #268a47;
+    box-shadow: 0 1px 1px 1px rgba(0,0,0,0.1);
+    border-radius: j(8);
+    margin-left: j(24);
 }
 .button{
     @extend %df;
