@@ -1,7 +1,12 @@
 @import "../../assets/scss/_define";
 @import "../../assets/scss/common";
 
-
+.select2-selection__arrow{
+    display: none !important;
+}
+.select2-selection--single{
+    border: none !important;
+}
 %bg1{
     background: url("../../assets/images/css/icon2.png") no-repeat;
     background-size: j(1000);
@@ -65,8 +70,7 @@ body {
 .value{
     @extend %pr;
     @extend %df1;
-    height: j(48);
-    line-height: j(48);
+    @extend %h100;
     font-size: j(31);
     color: #383838;
     select,
@@ -76,9 +80,10 @@ body {
         @extend %bsb;
         font-size: j(31);
         color: #383838;
-        line-height: j(48);
+        line-height: j(80);
         border: none;
         padding: 0 j(24);
+        background-color: transparent;
     }
     select{
         appearance:none;
@@ -86,6 +91,8 @@ body {
         -webkit-appearance:none;
     }
     &.select{
+        @extend %df;
+        @extend %aic;
         padding-right: j(50);
         &:after{
             content: '';

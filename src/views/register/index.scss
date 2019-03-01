@@ -1,7 +1,13 @@
 @import "../../assets/scss/_define";
 @import "../../assets/scss/common";
 
-
+.select2-selection__arrow{
+    display: none !important;
+}
+.select2-selection--single{
+    border: none !important;
+    background-color: transparent !important;
+}
 %bg1{
     background: url("../../assets/images/css/icon2.png") no-repeat;
     background-size: q(1000);
@@ -134,10 +140,12 @@ body{
         -webkit-appearance:none;
     }
     &.select{
+        @extend %df;
+        @extend %aic;
+        background: url("../../assets/images/css/select-bg-icon.png") right center no-repeat;
+        background-size: auto 100%;
         select{
             padding-right: j(60);
-            background: url("../../assets/images/css/select-bg-icon.png") right center no-repeat;
-            background-size: auto 100%;
         }
     }
 }
@@ -221,6 +229,7 @@ body{
 
 .agreement{
     @extend %df;
+    @extend %cp;
     @extend %aic;
     margin-top: q(35);
     i{
