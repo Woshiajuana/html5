@@ -1,0 +1,13 @@
+@import "../../../assets/scss/define";
+@import "../../../assets/scss/reset";
+
+
+
+html,
+body {
+    @extend %pr;
+    @extend %h100;
+    @extend %w100;
+    //overflow-x: hidden;
+    background-color: #f4f4f4;
+}

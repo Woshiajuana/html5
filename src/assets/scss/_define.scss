@@ -1,3 +1,12 @@
+@function f($px, $base-font-size: 37.5px) {
+    @if (unitless($px)) {
+        @return f($px + 0px); // That may fail.
+    } @else if (unit($px) == rem) {
+        @return $px;
+    }
+    @return (($px/1125 * 750) / $base-font-size) * 0.5rem;
+}
+
 @function q($px, $base-font-size: 37.5px) {
     @if (unitless($px)) {
         @return q($px + 0px); // That may fail.
