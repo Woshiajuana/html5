@@ -13,8 +13,8 @@ html{
     background-size: 100% auto;
 }
 body{
-    background: url("../../../assets/images/css/homeland-mine-bg2.jpg") center bottom no-repeat;
-    background-size: 100% auto;
+    //background: url("../../../assets/images/css/homeland-mine-bg2.jpg") center bottom no-repeat;
+    //background-size: 100% auto;
 }
 .header{
     @extend %w100;
@@ -100,8 +100,12 @@ body{
     @extend %df;
     @extend %aic;
     @extend %jcc;
-    width: f(860);
+    @extend %bsb;
+    width: f(986);
+    height: f(571);
     padding: 0 f(50);
+    background: url("../../../assets/images/css/homeland-pop-bg.png") center no-repeat;
+    background-size: contain;
 }
 .pop-prompt{
     @extend %tac;
@@ -114,6 +118,20 @@ body{
     @extend %cp;
     @extend %r0;
     @extend %t0;
-    width: f(60);
-    height: f(60);
+    width: f(167);
+    height: f(161);
+    background: url("../../../assets/images/css/homeland-pop-close.png") center no-repeat;
+    background-size: contain;
+}
+.footer{
+    @extend %pa;
+    @extend %cp;
+    @extend %b0;
+    @extend %l0;
+    @extend %w100;
+    img{
+        @extend %w100;
+        @extend %db;
+        height: auto;
+    }
 }
