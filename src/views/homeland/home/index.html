@@ -63,6 +63,12 @@
         $(function () {
             $("select").select2();
         });
+        $('.pop-wrap').on('click', function () {
+            $(this).hide();
+        });
+        $('.pop-inner').on('click', function (e) {
+            e.stopPropagation();
+        })
     </script>
 </body>
 </html>

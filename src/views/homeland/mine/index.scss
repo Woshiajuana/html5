@@ -83,3 +83,37 @@ body{
         margin-top: f(380);
     }
 }
+
+.pop-wrap{
+    @extend %pf;
+    @extend %t0;
+    @extend %l0;
+    @extend %r0;
+    @extend %b0;
+    @extend %df;
+    @extend %aic;
+    @extend %jcc;
+    background-color: rgba(0,0,0,.3);
+}
+.pop-inner{
+    @extend %pr;
+    @extend %df;
+    @extend %aic;
+    @extend %jcc;
+    width: f(860);
+    padding: 0 f(50);
+}
+.pop-prompt{
+    @extend %tac;
+    line-height: 1.3;
+    font-size: f(62);
+    color: #268a47;
+}
+.pop-close{
+    @extend %pa;
+    @extend %cp;
+    @extend %r0;
+    @extend %t0;
+    width: f(60);
+    height: f(60);
+}
