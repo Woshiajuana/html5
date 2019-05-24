@@ -1,14 +1,85 @@
 @import "../../../../assets/scss/define";
 @import "../../../../assets/scss/reset";
-
+input::-webkit-input-placeholder {
+    color: #fff;
+}
 html,
 body {
     @extend %pr;
     @extend %w100;
     min-height: 100%;
 }
-
-body{
-    background-size: 100% auto;
+html{
+    background: url("../../../../assets/images/css/bg-0524.jpg") repeat-y center;
+}
+.head{
+    @extend %pr;
+    @extend %db;
+    @extend %w100;
+    height: auto;
+    z-index: 9;
+}
+.main{
+    @extend %df;
+    @extend %pr;
+    @extend %fdc;
+    @extend %aic;
+    @extend %jcc;
+    margin: f(-80) auto 0;
+    width: f(883);
+    height: f(1173);
+    background: url("../../../../assets/images/css/ddsh-bg-0524.jpg") center no-repeat;
+    background-size: contain;
+}
+.content{
+    @extend %df;
+    @extend %fdc;
+    @extend %aic;
+    line-height: 2;
+    h2{
+        @extend %fwn;
+        @extend %cfff;
+        font-size: f(80);
+    }
+    p{
+        @extend %cfff;
+        font-size: f(65);
+    }
+    .prompt{
+        color: #056235;
+        font-size: f(80);
+    }
+}
+.button-group{
+    @extend %df;
+    @extend %aic;
+    margin-top: f(120);
+    width: f(820);
+    .null{
+        width: f(30);
+    }
+}
+.button{
+    @extend %df;
+    @extend %cp;
+    @extend %aic;
+    @extend %jcc;
+    @extend %cfff;
+    font-size: f(43);
+    width: f(725);
+    height: f(140);
+    border-radius: f(10);
+    background-color: #067026;
 }
 
+.foot{
+    @extend %w100;
+    @extend %pr;
+    @extend %tar;
+    margin-top: f(-50);
+    img{
+        @extend %dib;
+        width: f(828);
+        height: auto;
+    }
+}
