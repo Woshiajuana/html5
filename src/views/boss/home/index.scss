@@ -73,6 +73,7 @@ html{
         font-size: f(27);
     }
     .link{
+        @extend %cp;
         color: #343434;
         font-size: f(36);
         border-bottom: 1px solid #343434;
@@ -90,8 +91,8 @@ html{
 .right{
     p{
         @extend %cfff;
-        font-size: f(50);
-        line-height: f(100);
+        font-size: f(42);
+        line-height: f(60);
     }
 }
 .button{
