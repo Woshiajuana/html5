@@ -1,130 +1,101 @@
 @import "../../assets/scss/define";
 @import "../../assets/scss/reset";
 
-html,
-body {
-    @extend %pr;
-    @extend %w100;
-    min-height: 100%;
-}
-
-body{
-    //background: #fff url("../../assets/images/css/homeland-bg4.jpg") center bottom no-repeat;
-    background-size: 100% auto;
-}
-
-.title{
-    @extend %tac;
-    @extend %fwn;
-    font-size: f(86);
-    padding-top: f(200);
-    color: #268a47;
-}
-
-.main{
-    @extend %df;
-    @extend %fdc;
-    @extend %aic;
-    margin-top: f(100);
-}
-.item{
-    @extend %cp;
-    width: f(815);
-    height: f(310);
-    margin-bottom: f(30);
-
-}
-
-.pop-wrap{
-    @extend %pf;
-    @extend %t0;
-    @extend %l0;
-    @extend %r0;
-    @extend %b0;
-    @extend %df;
-    @extend %aic;
-    @extend %jcc;
-    background-color: rgba(0,0,0,.3);
-}
-.pop-inner{
-    @extend %df;
-    @extend %aic;
-    @extend %fdc;
-    width: f(860);
-    padding: f(50) 0 f(80);
-    border-radius: f(20);
-    background-color: #fff;
-    h2{
-        @extend %tac;
-        @extend %fwn;
-        line-height: 1.3;
-        padding-bottom: f(50);
-        font-size: f(62);
-        color: #268a47;
-    }
-}
-.form{
-    @extend %df;
-    @extend %aic;
-    @extend %fdc;
-}
-.form-item{
-    @extend %df;
-    @extend %aic;
-    width: f(700);
-}
-.input-box{
-    @extend %df1;
-    @extend %bsb;
-    margin-bottom: f(20);
-    border: 1px solid #268a47;
-    height: f(120);
-    select,
-    input{
-        @extend %w100;
-        @extend %h100;
-        @extend %bsb;
-        line-height: f(120);
-        padding: 0 f(20);
-        border: none;
-        color: #383838;
-        font-size: f(42);
-        background-color: transparent;
-        appearance:none;
-        -moz-appearance:none;
-        -webkit-appearance:none;
-    }
-    &.select{
-        //background: url(../../assets/images/css/homeland-select.png) right center no-repeat;
-        background-size: auto 100%;
-        select{
-            padding-right: f(120);
-        }
-    }
-}
-.null{
-    width: f(20);
-}
-.button{
-    @extend %df;
-    @extend %cp;
-    @extend %aic;
-    @extend %jcc;
-    color: #fff;
-    height: f(120);
-    margin-top: f(30);
-    width: f(700);
-    background-color: #268a47;
-    font-size: f(48);
-}
 .select2-selection__arrow{
     display: none !important;
 }
 .select2-selection--single{
-    height: f(120) !important;
     border: none !important;
+    height: j(115) !important;
     background-color: transparent !important;
 }
 .select2-selection__rendered{
-    line-height: f(120) !important;
+    line-height: j(115) !important;
+    font-size: j(28);
+    color: #3ba86d !important;
+}
+html,
+body {
+    @extend %pr;
+    @extend %w100;
+    @extend %h100;
+}
+
+body{
+    @extend %df;
+    @extend %fdc;
+}
+.head{
+    @extend %db;
+    @extend %w100;
+    height: auto;
+}
+.filter{
+    @extend %df;
+    @extend %aic;
+    @extend %w100;
+    background-color: #ececec;
+}
+.filter-item{
+    @extend %df1;
+    @extend %pr;
+    select{
+        @extend %w100;
+        @extend %h100;
+        @extend %bsb;
+        //@extend %tac;
+        @extend %oh;
+        color: #3ba86d;
+        //text-align-last: center;
+        height: j(115);
+        line-height: j(115);
+        padding: 0 j(30);
+        border: none;
+        background-color: transparent;
+        font-size: j(28);
+        appearance:none;
+        -moz-appearance:none;
+        -webkit-appearance:none;
+        option{
+            @extend %tac;
+        }
+    }
+    &:after{
+        @extend %pa;
+        @extend %t50;
+        @include tfr(45deg);
+        content: '';
+        right: f(50);
+        margin-top: f(-30);
+        width: f(30);
+        height: f(30);
+        border-bottom: 2px solid #3ba86d;
+        border-right: 2px solid #3ba86d;
+    }
+}
+
+.container{
+    @extend %df1;
+    @extend %w100;
+    overflow-y: auto;
+}
+.item{
+    border-bottom: 1px solid #ddd;
+    padding: j(20);
+    li{
+        @extend %df;
+        @extend %aic;
+        padding: 0 j(30);
+        margin-top: j(20);
+        &:first-child{
+            margin-top: 0;
+        }
+        p{
+            @extend %df;
+            @extend %df1;
+            @extend %aic;
+            color: #333;
+            font-size: j(28);
+        }
+    }
 }
