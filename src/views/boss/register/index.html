@@ -145,25 +145,26 @@
         //页面加载完成后初始化select2控件
         $(function () {
             $("select").select2();
-        });
-        // 获取验证码 (倒计时修改number即可)
-        var $elSendBtn = $('.button-code'),
-            number = 10,
-            index = number;
-        $elSendBtn.on('click', function () {
-            if (index !== number)
-                return null;
-            countDown();
-        });
-        function countDown() {
-            index--;
-            if (index <= 0) {
+
+            // 获取验证码 (倒计时修改number即可)
+            var $elSendBtn = $('.button-code'),
+                number = 10,
                 index = number;
-                return $elSendBtn.text('获取验证码').removeClass('disabled');
+            $elSendBtn.on('click', function () {
+                if (index !== number)
+                    return null;
+                countDown();
+            });
+            function countDown() {
+                index--;
+                if (index <= 0) {
+                    index = number;
+                    return $elSendBtn.text('获取验证码').removeClass('disabled');
+                }
+                $elSendBtn.text('发送成功(' + index + 's)').addClass('disabled');
+                setTimeout(countDown, 1000);
             }
-            $elSendBtn.text('发送成功(' + index + 's)').addClass('disabled');
-            setTimeout(countDown, 1000);
-        }
+        });
     </script>
 </body>
 </html>

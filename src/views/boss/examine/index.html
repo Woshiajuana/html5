@@ -6,31 +6,155 @@
     <!--手机开发屏幕自适应-->
     <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
     <!--设置标题-->
-    <title>等待审核</title>
+    <title>门店-管理</title>
     <script src="assets/lib/flexible.js"></script>
 </head>
 <body>
-    <img src="../../../assets/images/html/zcye-bg.png" class="head"/>
-    <div class="main">
-        <div class="content">
-            <h2>您的注册信息已提交！</h2>
-            <p>因为您选择的门店为</p>
-            <p>嘉实多护车保养站</p>
-            <p class="prompt">请等待邓三淼审核</p>
+    <img src="../../../assets/images/html/head-0524.jpg" class="head"/>
+    <div class="tab">
+        <div class="tab-item active">
+            <i class="icon-1"></i>
+            <span>门店审核</span>
         </div>
-        <div class="button-group">
-            <div class="button">
-                <span>修改个人信息</span>
-            </div>
-            <div class="null"></div>
-            <div class="button">
-                <span>返回首页</span>
-            </div>
+        <div class="tab-item">
+            <i class="icon-3"></i>
+            <span>门店管理</span>
+        </div>
+        <div class="tab-item">
+            <i class="icon-2"></i>
+            <span>门店认领</span>
         </div>
     </div>
-    <div class="foot">
-        <img src="../../../assets/images/html/zcye-bg2.png"/>
+    <div class="container">
+        <ul class="content mdsh">
+            <li>
+                <div class="left">
+                    <p>
+                        <span>姓名：XXX</span>
+                        <span>电话号码：XXX</span>
+                    </p>
+                    <p>
+                        <span>姓名：XXX</span>
+                        <span>电话号码：XXX</span>
+                    </p>
+                    <p>
+                        <span>注册时间：2019-05-10</span>
+                    </p>
+                </div>
+                <div class="right">
+                    <div class="btn"><span>通过</span></div>
+                    <div class="btn btn-red"><span>不通过</span></div>
+                </div>
+            </li>
+            <li>
+                <div class="left">
+                    <p>
+                        <span>姓名：XXX</span>
+                        <span>电话号码：XXX</span>
+                    </p>
+                    <p>
+                        <span>姓名：XXX</span>
+                        <span>电话号码：XXX</span>
+                    </p>
+                    <p>
+                        <span>注册时间：2019-05-10</span>
+                    </p>
+                </div>
+                <div class="right">
+                    <div class="btn"><span>通过</span></div>
+                    <div class="btn btn-red"><span>不通过</span></div>
+                </div>
+            </li>
+            <li>
+                <div class="left">
+                    <p>
+                        <span>姓名：XXX</span>
+                        <span>电话号码：XXX</span>
+                    </p>
+                    <p>
+                        <span>姓名：XXX</span>
+                        <span>电话号码：XXX</span>
+                    </p>
+                    <p>
+                        <span>注册时间：2019-05-10</span>
+                    </p>
+                </div>
+                <div class="right">
+                    <div class="btn"><span>通过</span></div>
+                    <div class="btn btn-red"><span>不通过</span></div>
+                </div>
+            </li>
+        </ul>
+        <ul class="content mdgl hidden">
+            <li>
+                <div class="item">
+                    <p>
+                        <span>省市：门店积分门店</span>
+                    </p>
+                    <p>
+                        <span>门店积分：XXX</span>
+                    </p>
+                    <p>
+                        <span>门店星级：</span>
+                        <i class="level"></i>
+                        <i class="level"></i>
+                        <i class="level"></i>
+                    </p>
+                </div>
+                <div class="item">
+                    <p>
+                        <span>门店名称：XXX</span>
+                    </p>
+                    <p>
+                        <span>门店即将过期积分：XXX</span>
+                    </p>
+                    <p>
+                        <span>DBM姓名：李有才</span>
+                    </p>
+                </div>
+            </li>
+        </ul>
+        <ul class="content mdrl hidden">
+            <li class="prompt">*请DBM/DSR 认领自己所管辖的门店</li>
+            <li>
+                <div class="left">
+                    <p>
+                        <span>姓名：XXX</span>
+                        <span>电话号码：XXX</span>
+                    </p>
+                    <p>
+                        <span>姓名：XXX</span>
+                        <span>大区：XXX</span>
+                    </p>
+                    <p>
+                        <span>经销商：XXX</span>
+                    </p>
+                    <p>
+                        <span>门店：XXX</span>
+                    </p>
+                    <p>
+                        <span>门店地址：XXX</span>
+                    </p>
+                </div>
+                <div class="right">
+                    <div class="btn"><span>认领门店</span></div>
+                </div>
+            </li>
+        </ul>
     </div>
+    <script src="assets/lib/jquery-1.8.1.min.js"></script>
+    <script>
+        $(function () {
+            var $elTab = $('.tab-item'),
+                $elCon = $('.content'),
+                elTab = Array.prototype.slice.apply($elTab);
+            $elTab.on('click', function () {
+                var index = elTab.indexOf(this);
+                $elTab.removeClass('active').eq(index).addClass('active');
+                $elCon.addClass('hidden').eq(index).removeClass('hidden');
+            })
+        })
+    </script>
 </body>
 </html>
 

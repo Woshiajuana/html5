@@ -22,7 +22,7 @@
     } @else if (unit($px) == rem) {
         @return $px;
     }
-    @return (($px/854 * 750) / $base-font-size) * 0.5rem;
+    @return (($px/750 * 750) / $base-font-size) * 0.5rem;
 }
 
 

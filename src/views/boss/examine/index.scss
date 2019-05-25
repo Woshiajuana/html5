@@ -7,10 +7,11 @@ html,
 body {
     @extend %pr;
     @extend %w100;
-    min-height: 100%;
+    @extend %h100;
 }
-html{
-    background: url("../../../assets/images/css/bg-0524.jpg") repeat-y center;
+body{
+    @extend %df;
+    @extend %fdc;
 }
 .head{
     @extend %pr;
@@ -19,67 +20,152 @@ html{
     height: auto;
     z-index: 9;
 }
-.main{
-    @extend %df;
-    @extend %pr;
-    @extend %fdc;
-    @extend %aic;
-    @extend %jcc;
-    margin: f(-80) auto 0;
-    width: f(883);
-    height: f(1173);
-    background: url("../../../../assets/images/css/ddsh-bg-0524.jpg") center no-repeat;
-    background-size: contain;
-}
-.content{
-    @extend %df;
-    @extend %fdc;
-    @extend %aic;
-    line-height: 2;
-    h2{
-        @extend %fwn;
-        @extend %cfff;
-        font-size: f(80);
-    }
-    p{
-        @extend %cfff;
-        font-size: f(65);
-    }
-    .prompt{
-        color: #056235;
-        font-size: f(80);
-    }
-}
-.button-group{
+.tab{
     @extend %df;
     @extend %aic;
-    margin-top: f(120);
-    width: f(820);
-    .null{
-        width: f(30);
-    }
+    border-bottom: 1px solid #798993;
 }
-.button{
+.tab-item{
     @extend %df;
     @extend %cp;
+    @extend %df1;
     @extend %aic;
     @extend %jcc;
-    @extend %cfff;
-    font-size: f(43);
-    width: f(725);
-    height: f(140);
-    border-radius: f(10);
-    background-color: #067026;
+    height: j(120);
+    font-size: j(38);
+    border-right: 1px solid #ddd;
+    color: #056235;
+    background-color: #fff;
+    i{
+        margin-right: f(20);
+        background: url("../../../assets/images/css/icon-2-0524.png") no-repeat;
+        background-size: j(100) j(200);
+    }
+    &.active{
+        @extend %cfff;
+        background-color: #798993;
+        .icon-1{
+            background-position: j(-42) 0;
+        }
+        .icon-2{
+            background-position: j(-42) j(-53);
+        }
+        .icon-3{
+            background-position: j(-47) j(-123);
+        }
+    }
+    .icon-1{
+        width: j(42);
+        height: j(48);
+        background-position: 0 0;
+    }
+    .icon-2{
+        width: j(42);
+        height: j(62);
+        background-position: 0 j(-53);
+    }
+    .icon-3{
+        width: j(47);
+        height: j(42);
+        background-position: 0 j(-123);
+    }
+}
+.container{
+    @extend %pr;
+    @extend %df1;
+    @extend %oh;
+    @extend %w100;
+}
+.content{
+    @extend %pa;
+    @extend %w100;
+    @extend %h100;
+    overflow-y: auto;
+    li{
+        @extend %df;
+        @extend %aic;
+        padding: j(25) j(37);
+        border-bottom: 1px solid #ddd;
+        background-color: #fff;
+    }
+    &.mdsh{
+        li{
+            @extend %df;
+            @extend %aic;
+            padding: j(25) j(37);
+            border-bottom: 1px solid #ddd;
+            background-color: #fff;
+        }
+    }
+    &.mdgl{
+        li{
+            @extend %oh;
+        }
+    }
+    &.mdrl{
+        .prompt{
+            @extend %jcc;
+            @extend %cfff;
+            font-size: j(24);
+            height: j(40);
+            padding: 0;
+            background-color: #009143;
+        }
+    }
+}
+.left{
+    @extend %df1;
+    color: #333;
+    font-size: j(26);
+    p{
+        margin-bottom: j(15);
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+}
+.right{
+    @extend %df;
+    @extend %fdc;
+    @extend %aic;
+    @extend %jcc;
+    .btn{
+        @extend %df;
+        @extend %cp;
+        @extend %aic;
+        @extend %jcc;
+        @extend %cfff;
+        font-size: f(38);
+        width: j(140);
+        height: j(52);
+        margin: j(10) 0;
+        background-color: #017a33;
+    }
+    .btn-red{
+        background-color: #df1a1a;
+    }
 }
 
-.foot{
-    @extend %w100;
-    @extend %pr;
-    @extend %tar;
-    margin-top: f(-50);
-    img{
-        @extend %dib;
-        width: f(828);
-        height: auto;
+.item{
+    @extend %df1;
+    @extend %oh;
+    color: #333;
+    font-size: j(26);
+    p{
+        @extend %df;
+        @extend %aic;
+        @extend %oh;
+        margin-bottom: j(15);
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+    .level{
+        width: j(23);
+        height: j(25);
+        margin-right: j(5);
+        background: url("../../../assets/images/css/icon-2-0524.png") no-repeat;
+        background-size: j(100) j(200);
+        background-position: 0 j(-169);
     }
 }
