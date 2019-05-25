@@ -80,6 +80,8 @@ body{
     @extend %pa;
     @extend %w100;
     @extend %h100;
+    @extend %t0;
+    @extend %l0;
     overflow-y: auto;
     li{
         @extend %df;

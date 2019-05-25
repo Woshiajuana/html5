@@ -5,137 +5,210 @@ html,
 body {
     @extend %pr;
     @extend %w100;
-    min-height: 100%;
+    @extend %h100;
 }
 
+html{
+    background: url("../../assets/images/css/bg-0524.jpg") repeat-y center;
+}
 body{
-    //background: #fff url("../../assets/images/css/homeland-bg4.jpg") center bottom no-repeat;
-    background-size: 100% auto;
-}
-
-.title{
-    @extend %tac;
-    @extend %fwn;
-    font-size: f(86);
-    padding-top: f(200);
-    color: #268a47;
-}
-
-.main{
     @extend %df;
     @extend %fdc;
+}
+.head{
+    @extend %db;
+    @extend %w100;
+    height: auto;
+}
+.session{
+    @extend %df;
+    @extend %w100;
     @extend %aic;
-    margin-top: f(100);
-}
-.item{
-    @extend %cp;
-    width: f(815);
-    height: f(310);
-    margin-bottom: f(30);
-    &.item-1{
-        //background: url("../../assets/images/css/homeland-bg1.jpg") center no-repeat;
+    @extend %bsb;
+    @extend %jcs;
+    padding: 0 f(65);
+    &.first{
+        background: url("../../assets/images/css/user-0524.jpg") center no-repeat;
+        height: f(250);
         background-size: contain;
     }
-    &.item-2{
-        //background: url("../../assets/images/css/homeland-bg2.jpg") center no-repeat;
-        background-size: contain;
-    }
-    &.item-3{
-        //background: url("../../assets/images/css/homeland-bg3.jpg") center no-repeat;
-        background-size: contain;
+    &.second{
+        height: f(230);
+        background-color: #017f43;
     }
 }
-
-.pop-wrap{
-    @extend %pf;
-    @extend %t0;
-    @extend %l0;
-    @extend %r0;
-    @extend %b0;
+.user{
+    @extend %df;
+    @extend %aic;
+}
+.avatar{
     @extend %df;
     @extend %aic;
     @extend %jcc;
-    background-color: rgba(0,0,0,.3);
-}
-.pop-inner{
-    @extend %df;
-    @extend %aic;
-    @extend %fdc;
-    width: f(860);
-    padding: f(50) 0 f(80);
-    border-radius: f(20);
-    background-color: #fff;
-    h2{
-        @extend %tac;
-        @extend %fwn;
-        line-height: 1.3;
-        padding-bottom: f(50);
-        font-size: f(62);
-        color: #268a47;
+    border-radius: 50%;
+    background-color: #a6a6a6;
+    height: f(190);
+    width: f(190);
+    margin-right: f(30);
+    img{
+        @extend %db;
+        border-radius: 50%;
+        height: f(180);
+        width: f(180);
     }
 }
-.form{
+.info{
+    border-left: 1px solid #444;
+    color: #444;
+    padding-left: f(40);
+    .name{
+        font-size: f(55);
+    }
+    p{
+        font-size: f(36);
+    }
+}
+.other{
+    @extend %tar;
+    p{
+        color: #158344;
+        font-size: f(27);
+    }
+    .link{
+        @extend %cp;
+        color: #343434;
+        font-size: f(36);
+        border-bottom: 1px solid #343434;
+    }
+    .null{
+        min-height: f(100);
+    }
+}
+.integral{
+    @extend %df;
+    @extend %aic;
+    @extend %fwb;
+    justify-content: flex-end;
+    font-size: f(40);
+    color: #158344;
+}
+
+.button-group{
+    @extend %df;
+    @extend %aic;
+    @extend %jcs;
+    padding: f(50) f(30);
+    .null{
+        width: f(30);
+    }
+}
+.button-link{
+    @extend %df;
+    @extend %aic;
+    @extend %jcc;
+    @extend %cp;
+    @extend %cfff;
+    font-size: f(48);
+    width: f(530);
+    height: f(195);
+    border-radius: f(10);
+    background-color: #028b49;
+    box-shadow: 0 0 j(10) j(10) rgba(0,0,0,.1);
+    i{
+        background: url("../../assets/images/css/jpmj-icon-0524.png") no-repeat;
+        background-size: contain;
+        width: f(161);
+        height: f(147);
+        margin-right: f(30);
+    }
+}
+
+.tab{
+    @extend %df;
+    @extend %aic;
+}
+.tab-item{
+    @extend %df1;
+    @extend %aic;
+    @extend %jcc;
+    @extend %cfff;
+    font-size: f(40);
+    height: f(150);
+    background-color: #728490;
+    &.active{
+        background-color: #35a0dd;
+    }
+}
+
+.container{
+    @extend %df1;
+    @extend %pr;
+    @extend %w100;
+}
+.content{
+    @extend %pa;
+    @extend %t0;
+    @extend %l0;
+    @extend %w100;
+    @extend %h100;
     @extend %df;
     @extend %aic;
     @extend %fdc;
 }
-.form-item{
+.filter{
     @extend %df;
     @extend %aic;
-    width: f(700);
+    @extend %w100;
 }
-.input-box{
+.filter-item{
     @extend %df1;
-    @extend %bsb;
-    margin-bottom: f(20);
-    border: 1px solid #268a47;
-    height: f(120);
-    select,
-    input{
+    select{
         @extend %w100;
         @extend %h100;
         @extend %bsb;
-        line-height: f(120);
-        padding: 0 f(20);
+        @extend %cfff;
+        line-height: f(140);
+        padding: 0 f(25);
         border: none;
-        color: #383838;
-        font-size: f(42);
         background-color: transparent;
+        font-size: f(44);
         appearance:none;
         -moz-appearance:none;
         -webkit-appearance:none;
     }
-    &.select{
-        //background: url(../../assets/images/css/homeland-select.png) right center no-repeat;
-        background-size: auto 100%;
-        select{
-            padding-right: f(120);
+}
+
+.list{
+    @extend %df1;
+    @extend %df;
+    @extend %fdc;
+    @extend %aic;
+    @extend %w100;
+    overflow-y: auto;
+}
+
+.item{
+    width: f(1000);
+    border-radius: f(10);
+    margin-top: f(30);
+    background-color: #6a808d;
+    li{
+        @extend %df;
+        @extend %aic;
+    }
+    p{
+        @extend %df;
+        @extend %df1;
+        @extend %aic;
+        font-size: f(44);
+        color: #fff;
+        i{
+            width: j(23);
+            height: j(25);
+            margin-right: j(5);
+            background: url("../../assets/images/css/icon-2-0524.png") no-repeat;
+            background-size: j(100) j(200);
+            background-position: 0 j(-169);
         }
     }
-}
-.null{
-    width: f(20);
-}
-.button{
-    @extend %df;
-    @extend %cp;
-    @extend %aic;
-    @extend %jcc;
-    color: #fff;
-    height: f(120);
-    margin-top: f(30);
-    width: f(700);
-    background-color: #268a47;
-    font-size: f(48);
-}
-.select2-selection__arrow{
-    display: none !important;
-}
-.select2-selection--single{
-    height: f(120) !important;
-    border: none !important;
-    background-color: transparent !important;
-}
-.select2-selection__rendered{
-    line-height: f(120) !important;
 }

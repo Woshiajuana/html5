@@ -78,6 +78,8 @@ body{
 }
 .content{
     @extend %pa;
+    @extend %t0;
+    @extend %l0;
     @extend %w100;
     @extend %h100;
     overflow-y: auto;
