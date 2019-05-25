@@ -1,130 +1,85 @@
 @import "../../../assets/scss/define";
 @import "../../../assets/scss/reset";
-
+input::-webkit-input-placeholder {
+    color: #fff;
+}
 html,
 body {
     @extend %pr;
     @extend %w100;
     min-height: 100%;
 }
-
-body{
-    //background: #fff url("../../../assets/images/css/homeland-bg4.jpg") center bottom no-repeat;
-    background-size: 100% auto;
+html{
+    background: url("../../../assets/images/css/bg-0524.jpg") repeat-y center;
 }
-
-.title{
-    @extend %tac;
-    @extend %fwn;
-    font-size: f(86);
-    padding-top: f(200);
-    color: #268a47;
+.head{
+    @extend %pr;
+    @extend %db;
+    @extend %w100;
+    height: auto;
+    z-index: 9;
 }
-
 .main{
     @extend %df;
+    @extend %pr;
     @extend %fdc;
-    @extend %aic;
-    margin-top: f(100);
-}
-.item{
-    @extend %cp;
-    width: f(815);
-    height: f(310);
-    margin-bottom: f(30);
-
-}
-
-.pop-wrap{
-    @extend %pf;
-    @extend %t0;
-    @extend %l0;
-    @extend %r0;
-    @extend %b0;
-    @extend %df;
     @extend %aic;
     @extend %jcc;
-    background-color: rgba(0,0,0,.3);
+    margin: f(-80) auto 0;
+    width: f(883);
+    height: f(1173);
+    background: url("../../../../assets/images/css/ddsh-bg-0524.jpg") center no-repeat;
+    background-size: contain;
 }
-.pop-inner{
+.content{
     @extend %df;
-    @extend %aic;
     @extend %fdc;
-    width: f(860);
-    padding: f(50) 0 f(80);
-    border-radius: f(20);
-    background-color: #fff;
+    @extend %aic;
+    line-height: 2;
     h2{
-        @extend %tac;
         @extend %fwn;
-        line-height: 1.3;
-        padding-bottom: f(50);
-        font-size: f(62);
-        color: #268a47;
+        @extend %cfff;
+        font-size: f(80);
+    }
+    p{
+        @extend %cfff;
+        font-size: f(65);
+    }
+    .prompt{
+        color: #056235;
+        font-size: f(80);
     }
 }
-.form{
+.button-group{
     @extend %df;
     @extend %aic;
-    @extend %fdc;
-}
-.form-item{
-    @extend %df;
-    @extend %aic;
-    width: f(700);
-}
-.input-box{
-    @extend %df1;
-    @extend %bsb;
-    margin-bottom: f(20);
-    border: 1px solid #268a47;
-    height: f(120);
-    select,
-    input{
-        @extend %w100;
-        @extend %h100;
-        @extend %bsb;
-        line-height: f(120);
-        padding: 0 f(20);
-        border: none;
-        color: #383838;
-        font-size: f(42);
-        background-color: transparent;
-        appearance:none;
-        -moz-appearance:none;
-        -webkit-appearance:none;
+    margin-top: f(120);
+    width: f(820);
+    .null{
+        width: f(30);
     }
-    &.select{
-        //background: url(../../../assets/images/css/homeland-select.png) right center no-repeat;
-        background-size: auto 100%;
-        select{
-            padding-right: f(120);
-        }
-    }
-}
-.null{
-    width: f(20);
 }
 .button{
     @extend %df;
     @extend %cp;
     @extend %aic;
     @extend %jcc;
-    color: #fff;
-    height: f(120);
-    margin-top: f(30);
-    width: f(700);
-    background-color: #268a47;
-    font-size: f(48);
+    @extend %cfff;
+    font-size: f(43);
+    width: f(725);
+    height: f(140);
+    border-radius: f(10);
+    background-color: #067026;
 }
-.select2-selection__arrow{
-    display: none !important;
-}
-.select2-selection--single{
-    height: f(120) !important;
-    border: none !important;
-    background-color: transparent !important;
-}
-.select2-selection__rendered{
-    line-height: f(120) !important;
+
+.foot{
+    @extend %w100;
+    @extend %pr;
+    @extend %tar;
+    margin-top: f(-50);
+    img{
+        @extend %dib;
+        width: f(828);
+        height: auto;
+    }
 }
