@@ -1,6 +1,19 @@
 @import "../../assets/scss/define";
 @import "../../assets/scss/reset";
 
+.select2-selection__arrow{
+    display: none !important;
+}
+.select2-selection--single{
+    border: none !important;
+    height: f(105) !important;
+    background-color: transparent !important;
+}
+.select2-selection__rendered{
+    line-height: f(105) !important;
+    font-size: f(44);
+    color: #fff !important;
+}
 html,
 body {
     @extend %pr;
@@ -126,17 +139,21 @@ body{
 .tab{
     @extend %df;
     @extend %aic;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
 }
 .tab-item{
     @extend %df1;
+    @extend %df;
+    @extend %cp;
     @extend %aic;
     @extend %jcc;
     @extend %cfff;
-    font-size: f(40);
+    font-size: f(44);
     height: f(150);
     background-color: #728490;
     &.active{
-        background-color: #35a0dd;
+        background-color: #8497a3;
     }
 }
 
@@ -162,12 +179,17 @@ body{
 }
 .filter-item{
     @extend %df1;
+    @extend %pr;
     select{
         @extend %w100;
         @extend %h100;
         @extend %bsb;
-        @extend %cfff;
-        line-height: f(140);
+        //@extend %tac;
+        @extend %oh;
+        color: #686a6c;
+        //text-align-last: center;
+        height: f(105);
+        line-height: f(105);
         padding: 0 f(25);
         border: none;
         background-color: transparent;
@@ -175,6 +197,21 @@ body{
         appearance:none;
         -moz-appearance:none;
         -webkit-appearance:none;
+        option{
+            @extend %tac;
+        }
+    }
+    &:after{
+        @extend %pa;
+        @extend %t50;
+        @include tfr(45deg);
+        content: '';
+        right: f(50);
+        margin-top: f(-30);
+        width: f(30);
+        height: f(30);
+        border-bottom: 2px solid #686a6c;
+        border-right: 2px solid #686a6c;
     }
 }
 
@@ -185,13 +222,17 @@ body{
     @extend %aic;
     @extend %w100;
     overflow-y: auto;
+    padding-bottom: f(30);
 }
 
 .item{
-    width: f(1000);
+    @extend %bsb;
+    width: f(1100);
     border-radius: f(10);
-    margin-top: f(30);
-    background-color: #6a808d;
+    margin-bottom: f(30);
+    padding: f(20);
+    background-color: #73838e;
+    border: 1px solid #545e69;
     li{
         @extend %df;
         @extend %aic;
@@ -200,15 +241,66 @@ body{
         @extend %df;
         @extend %df1;
         @extend %aic;
-        font-size: f(44);
+        font-size: f(40);
+        margin-top: f(20);
         color: #fff;
+        &:first-child{
+            margin-top: 0;
+        }
         i{
             width: j(23);
             height: j(25);
-            margin-right: j(5);
+            margin: 0 j(5);
             background: url("../../assets/images/css/icon-2-0524.png") no-repeat;
             background-size: j(100) j(200);
             background-position: 0 j(-169);
         }
     }
 }
+
+.table{
+    @extend %bsb;
+    margin-top: f(50);
+    width: f(1100);
+    border-radius: f(10);
+    margin-bottom: f(30);
+    background-color: #798f9b;
+    border: 1px solid #3a434f;
+    .tr{
+        @extend %df;
+        @extend %oh;
+        border-bottom: 1px solid #3a434f;
+        &:last-child{
+            border-bottom: none;
+        }
+    }
+    .td-1{
+        @extend %df;
+        @extend %aic;
+        @extend %jcc;
+        @extend %cfff;
+        @extend %oh;
+        height: f(135);
+        width: f(265);
+        font-size: f(38);
+        border-right: 1px solid #545e69;
+    }
+    .td{
+        @extend %df;
+        @extend %df1;
+        @extend %aic;
+        @extend %jcc;
+        @extend %cfff;
+        @extend %oh;
+        height: f(135);
+        font-size: f(38);
+        border-right: 1px solid #545e69;
+        &:first-child{
+            width: f(120);
+        }
+        &:last-child{
+            border-right: none;
+        }
+    }
+}
+
