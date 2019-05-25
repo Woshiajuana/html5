@@ -1,130 +1,171 @@
 @import "../../../assets/scss/define";
 @import "../../../assets/scss/reset";
-
+input::-webkit-input-placeholder {
+    color: #fff;
+}
 html,
 body {
     @extend %pr;
     @extend %w100;
-    min-height: 100%;
+    @extend %h100;
 }
-
 body{
-    //background: #fff url("../../../assets/images/css/homeland-bg4.jpg") center bottom no-repeat;
-    background-size: 100% auto;
-}
-
-.title{
-    @extend %tac;
-    @extend %fwn;
-    font-size: f(86);
-    padding-top: f(200);
-    color: #268a47;
-}
-
-.main{
     @extend %df;
     @extend %fdc;
-    @extend %aic;
-    margin-top: f(100);
 }
-.item{
-    @extend %cp;
-    width: f(815);
-    height: f(310);
-    margin-bottom: f(30);
-
+.head{
+    @extend %pr;
+    @extend %db;
+    @extend %w100;
+    height: auto;
+    z-index: 9;
 }
-
-.pop-wrap{
-    @extend %pf;
-    @extend %t0;
-    @extend %l0;
-    @extend %r0;
-    @extend %b0;
+.tab{
     @extend %df;
+    @extend %aic;
+    border-bottom: 1px solid #798993;
+}
+.tab-item{
+    @extend %df;
+    @extend %cp;
+    @extend %df1;
     @extend %aic;
     @extend %jcc;
-    background-color: rgba(0,0,0,.3);
-}
-.pop-inner{
-    @extend %df;
-    @extend %aic;
-    @extend %fdc;
-    width: f(860);
-    padding: f(50) 0 f(80);
-    border-radius: f(20);
+    height: j(120);
+    font-size: j(38);
+    border-right: 1px solid #ddd;
+    color: #056235;
     background-color: #fff;
-    h2{
-        @extend %tac;
-        @extend %fwn;
-        line-height: 1.3;
-        padding-bottom: f(50);
-        font-size: f(62);
-        color: #268a47;
+    i{
+        margin-right: f(20);
+        background: url("../../../assets/images/css/icon-2-0524.png") no-repeat;
+        background-size: j(100) j(200);
+    }
+    &.active{
+        @extend %cfff;
+        background-color: #798993;
+        .icon-1{
+            background-position: j(-42) 0;
+        }
+        .icon-2{
+            background-position: j(-42) j(-53);
+        }
+        .icon-3{
+            background-position: j(-47) j(-123);
+        }
+    }
+    .icon-1{
+        width: j(42);
+        height: j(48);
+        background-position: 0 0;
+    }
+    .icon-2{
+        width: j(42);
+        height: j(62);
+        background-position: 0 j(-53);
+    }
+    .icon-3{
+        width: j(47);
+        height: j(42);
+        background-position: 0 j(-123);
     }
 }
-.form{
-    @extend %df;
-    @extend %aic;
-    @extend %fdc;
-}
-.form-item{
-    @extend %df;
-    @extend %aic;
-    width: f(700);
-}
-.input-box{
+.container{
+    @extend %pr;
     @extend %df1;
-    @extend %bsb;
-    margin-bottom: f(20);
-    border: 1px solid #268a47;
-    height: f(120);
-    select,
-    input{
-        @extend %w100;
-        @extend %h100;
-        @extend %bsb;
-        line-height: f(120);
-        padding: 0 f(20);
-        border: none;
-        color: #383838;
-        font-size: f(42);
-        background-color: transparent;
-        appearance:none;
-        -moz-appearance:none;
-        -webkit-appearance:none;
+    @extend %oh;
+    @extend %w100;
+}
+.content{
+    @extend %pa;
+    @extend %w100;
+    @extend %h100;
+    overflow-y: auto;
+    li{
+        @extend %df;
+        @extend %aic;
+        padding: j(25) j(37);
+        border-bottom: 1px solid #ddd;
+        background-color: #fff;
     }
-    &.select{
-        //background: url(../../../assets/images/css/homeland-select.png) right center no-repeat;
-        background-size: auto 100%;
-        select{
-            padding-right: f(120);
+    &.mdsh{
+        li{
+            @extend %df;
+            @extend %aic;
+            padding: j(25) j(37);
+            border-bottom: 1px solid #ddd;
+            background-color: #fff;
+        }
+    }
+    &.mdgl{
+        li{
+            @extend %oh;
+        }
+    }
+    &.mdrl{
+        .prompt{
+            @extend %jcc;
+            @extend %cfff;
+            font-size: j(24);
+            height: j(40);
+            padding: 0;
+            background-color: #009143;
         }
     }
 }
-.null{
-    width: f(20);
+.left{
+    @extend %df1;
+    color: #333;
+    font-size: j(26);
+    p{
+        margin-bottom: j(15);
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
 }
-.button{
+.right{
     @extend %df;
-    @extend %cp;
+    @extend %fdc;
     @extend %aic;
     @extend %jcc;
-    color: #fff;
-    height: f(120);
-    margin-top: f(30);
-    width: f(700);
-    background-color: #268a47;
-    font-size: f(48);
+    .btn{
+        @extend %df;
+        @extend %cp;
+        @extend %aic;
+        @extend %jcc;
+        @extend %cfff;
+        font-size: f(38);
+        width: j(140);
+        height: j(52);
+        margin: j(10) 0;
+        background-color: #017a33;
+    }
+    .btn-red{
+        background-color: #df1a1a;
+    }
 }
-.select2-selection__arrow{
-    display: none !important;
-}
-.select2-selection--single{
-    height: f(120) !important;
-    border: none !important;
-    background-color: transparent !important;
-}
-.select2-selection__rendered{
-    line-height: f(120) !important;
+
+.item{
+    @extend %df1;
+    @extend %oh;
+    color: #333;
+    font-size: j(26);
+    p{
+        @extend %df;
+        @extend %aic;
+        @extend %oh;
+        margin-bottom: j(15);
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+    .level{
+        width: j(23);
+        height: j(25);
+        margin-right: j(5);
+        background: url("../../../assets/images/css/icon-2-0524.png") no-repeat;
+        background-size: j(100) j(200);
+        background-position: 0 j(-169);
+    }
 }
