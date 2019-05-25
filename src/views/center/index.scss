@@ -34,5 +34,46 @@ body {
     @extend %df;
     @extend %fdc;
     @extend %aic;
+    overflow-y: auto;
+}
+.item{
+    padding-top: f(30);
+    width: f(1060);
+    border-bottom: 1px solid #ddd;
+    img{
+        @extend %w100;
+        height: auto;
+    }
+}
+.info{
+    @extend %df;
+    @extend %aic;
+    padding: f(20) f(20);
+}
+.left{
+    @extend %df1;
+    line-height: 1.5;
+    h2{
+        color: #000;
+        font-size: f(46);
+    }
+    p{
+        color: #999;
+        font-size: f(30);
+    }
+    span{
+        color: #009143;
+        font-size: f(30);
+    }
+}
+.button{
+    @extend %df;
+    @extend %aic;
     @extend %jcc;
+    @extend %cp;
+    @extend %cfff;
+    font-size: f(44);
+    width: f(220);
+    height: f(80);
+    background-color: #009143;
 }
