@@ -19,10 +19,11 @@ html{
 }
 .session{
     @extend %df;
-    @extend %w100;
+    //@extend %w100;
     @extend %aic;
-    @extend %bsb;
+    //@extend %bsb;
     @extend %jcs;
+    border-bottom: 2px solid #ddd;
     padding: 0 f(65);
     &.first{
         background: url("../../../assets/images/css/user-0524.jpg") center no-repeat;
@@ -181,29 +182,29 @@ html{
 .foot{
     @extend %df;
     @extend %aic;
+    @extend %fdc;
     @extend %jcc;
     border-top: 1px solid #ddd;
     padding-top: f(50);
     margin: f(20) f(50);
+    img{
+        width: f(1083);
+        height: f(522);
+    }
 }
 
-.button-link{
+.button-group{
+    @extend %w100;
     @extend %df;
     @extend %aic;
-    @extend %jcc;
-    @extend %cp;
-    @extend %cfff;
-    font-size: f(48);
-    width: f(980);
-    height: f(210);
-    border-radius: f(10);
-    background-color: #028b49;
-    box-shadow: 0 0 j(10) j(10) rgba(0,0,0,.1);
-    i{
-        background: url("../../../assets/images/css/jpmj-icon-0524.png") no-repeat;
-        background-size: contain;
-        width: f(161);
-        height: f(147);
-        margin-right: f(30);
+    background: url("../../../assets/images/css/bottom-bg-0524.png") center no-repeat;
+    background-size: contain;
+    height: f(353);
+    padding: f(30) 0;
+    .button-item{
+        @extend %df;
+        @extend %df1;
+        @extend %cp;
+        @extend %h100;
     }
 }
