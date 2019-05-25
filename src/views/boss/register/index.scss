@@ -1,5 +1,18 @@
 @import "../../../assets/scss/define";
 @import "../../../assets/scss/reset";
+.select2-selection__arrow{
+    display: none !important;
+}
+.select2-selection--single{
+    border: none !important;
+    height: f(140) !important;
+    background-color: transparent !important;
+}
+.select2-selection__rendered{
+    line-height: f(140) !important;
+    font-size: f(44);
+    color: #fff !important;
+}
 input::-webkit-input-placeholder {
     color: #fff;
 }
@@ -28,6 +41,7 @@ body{
     @extend %pr;
     @extend %fdc;
     @extend %aic;
+    //@extend %jcc;
     margin: f(-80) auto 0;
     width: f(883);
     height: f(1516);
@@ -46,6 +60,9 @@ body{
     @extend %oh;
     @extend %aic;
     @extend %fdc;
+    .form{
+        min-height: f(800);
+    }
 }
 .form-item{
     @extend %df;
@@ -65,6 +82,11 @@ body{
     &.form-item-null{
         margin-top: 0;
     }
+}
+.form-item-box{
+    height: f(140);
+    border-radius: f(10);
+    background-color: #748490;
 }
 .input-box{
     @extend %df1;
@@ -94,11 +116,30 @@ body{
         }
     }
 }
-.agreement{
+.button-code{
+    @extend %df;
+    @extend %aic;
+    @extend %jcc;
+    @extend %cp;
+    font-size: f(44);
+    color: #fff;
+    width: f(292);
+    height: f(134);
+    margin-right: f(3);
+    border-radius: f(10);
+    background-color: #8396a1;
+}
+.form-item-radio{
+    @extend %df;
+    @extend %aic;
+    font-size: f(44);
+    color: #545454;
+}
+.radio{
     @extend %df;
     @extend %cp;
     @extend %aic;
-    width: f(725);
+    margin-right: f(20);
     height: f(100);
     font-size: f(44);
     color: #545454;
@@ -116,7 +157,10 @@ body{
         }
     }
 }
-
+.agreement{
+    width: f(725);
+    margin-right: 0;
+}
 .button{
     @extend %df;
     @extend %cp;

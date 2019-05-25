@@ -7,9 +7,78 @@ body {
     @extend %w100;
     min-height: 100%;
 }
-
-body{
-    //background: #fff url("../../../../assets/images/css/homeland-bg4.jpg") center bottom no-repeat;
-    background-size: 100% auto;
+.head{
+    @extend %db;
+    @extend %w100;
+    height: auto;
 }
-
+.title{
+    @extend %df;
+    @extend %aic;
+    @extend %jcc;
+    @extend %fwn;
+    height: f(140);
+    background-color: #ececec;
+    font-size: f(38);
+    color: #009143;
+    i{
+        width: f(62);
+        height: f(70);
+        margin-right: f(30);
+        background: url("../../../../assets/images/css/shzt-icon-0524.png") center no-repeat;
+        background-size: contain;
+    }
+}
+.container{
+    @extend %df;
+    @extend %fdc;
+    @extend %aic;
+    @extend %jcc;
+    padding-top: f(154);
+    i{
+        width: f(141);
+        height: f(141);
+    }
+    .prompt{
+        margin-top: f(100);
+        font-size: f(58);
+        color: #df1a1a;
+    }
+    .button{
+        @extend %df;
+        @extend %aic;
+        @extend %jcc;
+        @extend %cfff;
+        @extend %cp;
+        width: f(435);
+        height: f(100);
+        margin-top: f(120);
+        font-size: f(40);
+        border-radius: f(10);
+        background-color: #df1a1a;
+    }
+    &.un-pass-status{
+        i{
+            background: url("../../../../assets/images/css/un-pass-icon-0524.png") center no-repeat;
+            background-size: contain;
+        }
+        .prompt{
+            color: #df1a1a;
+        }
+        .button{
+            background-color: #df1a1a;
+        }
+    }
+    &.pass-status{
+        i{
+            background: url("../../../../assets/images/css/pass-icon-0524.png") center no-repeat;
+            background-size: contain;
+        }
+        .prompt{
+            color: #009143;
+        }
+        .button{
+            background-color: #009143;
+        }
+    }
+}
