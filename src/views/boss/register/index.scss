@@ -44,9 +44,19 @@ body{
     //@extend %jcc;
     margin: f(-80) auto 0;
     width: f(883);
-    height: f(1516);
-    background: url("../../../assets/images/css/zcym-bg-0524.jpg") center no-repeat;
-    background-size: contain;
+    padding-bottom: f(200);
+    background: url("../../../assets/images/css/ddsh-bg-center-0524.jpg") center repeat-y;
+    background-size: 100% auto;
+    &:after{
+        @extend %pa;
+        @extend %l0;
+        @extend %b0;
+        right: f(1);
+        content: '';
+        height: f(75);
+        background: url("../../../assets/images/css/ddsh-bg-bottom-0524.jpg") bottom center no-repeat;
+        background-size: contain;
+    }
 }
 .bar{
     width: f(725);
@@ -54,20 +64,30 @@ body{
     background-color: #fff;
     margin: f(25) 0;
 }
+.form-child{
+    width: f(725);
+    margin-top: f(30);
+    padding-top: f(30) !important;
+    border-top: 1px solid #fff;
+}
 .form{
     @extend %w100;
     @extend %df;
+    @extend %pr;
     @extend %oh;
     @extend %aic;
     @extend %fdc;
+    padding-top: f(85);
+    background: url("../../../assets/images/css/ddsh-bg-top-0524.jpg") top center no-repeat;
+    background-size: 100% auto;
     .form{
-        min-height: f(800);
+        background: none;
     }
 }
 .form-item{
     @extend %df;
     @extend %aic;
-    margin-top: f(40);
+    margin-top: f(25);
     width: f(725);
     p{
         font-size: f(26);
@@ -158,8 +178,9 @@ body{
     }
 }
 .agreement{
+    margin: f(10) 0;
     width: f(725);
-    margin-right: 0;
+    //margin-right: 0;
 }
 .button{
     @extend %df;

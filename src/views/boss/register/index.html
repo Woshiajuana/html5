@@ -21,13 +21,15 @@
             <div class="form-item">
                 <div class="input-box select">
                     <select>
-                        <option>门店老板</option>
+                        <option value="">选择职业</option>
+                        <option value="0">门店老板</option>
+                        <option value="1">机修工</option>
+                        <option value="2">销售</option>
                     </select>
                 </div>
             </div>
-            <div class="bar"></div>
             <!--老板-->
-            <div class="form ">
+            <div class="form form-child hidden">
                 <div class="form-item form-item-null">
                     <div class="input-box select">
                         <select>
@@ -65,7 +67,7 @@
                 </div>
             </div>
             <!--机修工-->
-            <div class="form hidden">
+            <div class="form form-child hidden">
                 <div class="form-item form-item-null">
                     <div class="input-box select">
                         <select>
@@ -111,7 +113,7 @@
                 </div>
             </div>
             <!--销售-->
-            <div class="form hidden">
+            <div class="form form-child hidden">
                 <div class="form-item form-item-p">
                     <div class="input-box">
                         <input type="text" placeholder="手机号码"/>
@@ -145,6 +147,16 @@
         //页面加载完成后初始化select2控件
         $(function () {
             $("select").select2();
+
+            // 切换注册
+            var $elSelect = $('.select select'),
+                $elForm = $('.form-child');
+            $elSelect.on('change', function () {
+                var index = $(this).val();
+                $elForm.addClass('hidden');
+                if (!index && index !== 0) return null;
+                $elForm.eq(index).removeClass('hidden');
+            });
 
             // 获取验证码 (倒计时修改number即可)
             var $elSendBtn = $('.button-code'),
