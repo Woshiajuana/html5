@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--设置字符编码-->
+    <meta charset="UTF-8">
+    <!--手机开发屏幕自适应-->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <!--设置标题-->
+    <title>注册-门店老板</title>
+    <script src="assets/lib/flexible.js"></script>
+</head>
+<body>
+    <img src="../../../assets/images/html/zcye-bg.png" class="head"/>
+    <div class="main">
+        <div class="form">
+            <div class="form-item">
+                <div class="input-box">
+                    <input type="text" placeholder="输入姓名"/>
+                </div>
+            </div>
+            <div class="form-item">
+                <div class="input-box select">
+                    <select>
+                        <option value="">选择职业</option>
+                        <option value="0">门店老板</option>
+                        <option value="1">机修工</option>
+                        <option value="2">销售</option>
+                        <option value="3">经销商</option>
+                        <option value="4">DSR</option>
+                    </select>
+                </div>
+            </div>
+            <!--老板-->
+            <div class="form form-child hidden">
+                <div class="form-item form-item-null">
+                    <div class="input-box select">
+                        <select>
+                            <option>省份*</option>
+                        </select>
+                    </div>
+                    <div class="null"></div>
+                    <div class="input-box select">
+                        <select>
+                            <option>城市*</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-item">
+                    <div class="input-box select">
+                        <select>
+                            <option>选择门店*</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-item form-item-p">
+                    <p>*嘉实多护车保养站人员请务必选择正确的门店名称，通过认证后即可进入嘉盛平台</p>
+                </div>
+                <div class="form-item form-item-p">
+                    <div class="input-box">
+                        <input type="text" placeholder="手机号码"/>
+                    </div>
+                </div>
+                <div class="form-item">
+                    <div class="input-box select">
+                        <select>
+                            <option>经销商*</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <!--机修工-->
+            <div class="form form-child hidden">
+                <div class="form-item form-item-null">
+                    <div class="input-box select">
+                        <select>
+                            <option>省份*</option>
+                        </select>
+                    </div>
+                    <div class="null"></div>
+                    <div class="input-box select">
+                        <select>
+                            <option>城市*</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-item">
+                    <div class="input-box select">
+                        <select>
+                            <option>选择门店*</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-item-radio">
+                    <p>店内职位：</p>
+                    <div class="radio active">
+                        <i></i>
+                        <span>门店员工</span>
+                    </div>
+                    <div class="radio">
+                        <i></i>
+                        <span>机修工</span>
+                    </div>
+                </div>
+                <div class="form-item form-item-p">
+                    <div class="input-box">
+                        <input type="text" placeholder="手机号码"/>
+                    </div>
+                </div>
+                <div class="form-item">
+                    <div class="input-box select">
+                        <select>
+                            <option>经销商*</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <!--销售-->
+            <div class="form form-child hidden">
+                <div class="form-item form-item-p">
+                    <div class="input-box">
+                        <input type="text" placeholder="手机号码"/>
+                    </div>
+                </div>
+                <div class="form-item form-item-box">
+                    <div class="input-box">
+                        <input type="text" placeholder="验证码"/>
+                    </div>
+                    <div class="button-code">
+                        <span>获取验证码</span>
+                    </div>
+                </div>
+            </div>
+            <!--经销商-->
+            <div class="form form-child hidden">
+                <div class="form-item form-item-null">
+                    <div class="input-box select">
+                        <select>
+                            <option>省份*</option>
+                        </select>
+                    </div>
+                    <div class="null"></div>
+                    <div class="input-box select">
+                        <select>
+                            <option>城市*</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-item">
+                    <div class="input-box select">
+                        <select>
+                            <option>选择门店*</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-item">
+                    <div class="input-box select">
+                        <select>
+                            <option>经销商*</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-item form-item-p">
+                    <div class="input-box">
+                        <input type="text" placeholder="手机号码"/>
+                    </div>
+                </div>
+            </div>
+            <!--LTT门店-->
+            <div class="form form-child hidden">
+                <div class="form-item form-item-null">
+                    <div class="input-box select">
+                        <select>
+                            <option>省份*</option>
+                        </select>
+                    </div>
+                    <div class="null"></div>
+                    <div class="input-box select">
+                        <select>
+                            <option>城市*</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-item">
+                    <div class="input-box select">
+                        <select>
+                            <option>经销商*</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-item form-item-p">
+                    <div class="input-box">
+                        <input type="text" placeholder="手机号码"/>
+                    </div>
+                </div>
+                <div class="form-item form-item-p">
+                    <div class="input-box">
+                        <input type="text" placeholder="门店老板姓名"/>
+                    </div>
+                </div>
+                <div class="form-item form-item-p">
+                    <div class="input-box">
+                        <input type="text" placeholder="门店老板手机号码"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="radio agreement active">
+            <i></i>
+            <span>接受用户隐私条款</span>
+        </div>
+        <div class="button">
+            <span>提交</span>
+        </div>
+    </div>
+    <div class="foot">
+        <img src="../../../assets/images/html/zcye-bg2.png"/>
+    </div>
+    <script src="assets/lib/jquery-1.8.1.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+    <script type="text/javascript">
+        //页面加载完成后初始化select2控件
+        $(function () {
+            $("select").select2();
+
+            // 切换注册
+            var $elSelect = $('.select select'),
+                $elForm = $('.form-child');
+            $elSelect.on('change', function () {
+                var index = $(this).val();
+                $elForm.addClass('hidden');
+                if (!index && index !== 0) return null;
+                $elForm.eq(index).removeClass('hidden');
+            });
+
+            // 获取验证码 (倒计时修改number即可)
+            var $elSendBtn = $('.button-code'),
+                number = 10,
+                index = number;
+            $elSendBtn.on('click', function () {
+                if (index !== number)
+                    return null;
+                countDown();
+            });
+            function countDown() {
+                index--;
+                if (index <= 0) {
+                    index = number;
+                    return $elSendBtn.text('获取验证码').removeClass('disabled');
+                }
+                $elSendBtn.text('发送成功(' + index + 's)').addClass('disabled');
+                setTimeout(countDown, 1000);
+            }
+        });
+    </script>
+</body>
+</html>
+
