@@ -1,0 +1,186 @@
+@import "../../../assets/scss/define";
+@import "../../../assets/scss/reset";
+
+html,
+body {
+    @extend %pr;
+    @extend %w100;
+    min-height: 100%;
+}
+
+html{
+    background: url("../../../assets/images/css/bg-0524.jpg") repeat-y center;
+}
+
+.head{
+    @extend %db;
+    @extend %w100;
+    height: auto;
+}
+.session{
+    @extend %df;
+    @extend %w100;
+    @extend %aic;
+    @extend %bsb;
+    @extend %jcs;
+    padding: 0 f(65);
+    &.first{
+        background: url("../../../assets/images/css/user-0524.jpg") center no-repeat;
+        height: f(250);
+        background-size: contain;
+    }
+    &.second{
+        height: f(230);
+        background-color: #017f43;
+    }
+}
+.user{
+    @extend %df;
+    @extend %aic;
+}
+.avatar{
+    @extend %df;
+    @extend %aic;
+    @extend %jcc;
+    border-radius: 50%;
+    background-color: #a6a6a6;
+    height: f(190);
+    width: f(190);
+    margin-right: f(30);
+    img{
+        @extend %db;
+        border-radius: 50%;
+        height: f(180);
+        width: f(180);
+    }
+}
+.info{
+    border-left: 1px solid #444;
+    color: #444;
+    padding-left: f(40);
+    .name{
+        font-size: f(55);
+    }
+    p{
+        font-size: f(36);
+    }
+}
+
+.other{
+    @extend %tar;
+    p{
+        color: #158344;
+        font-size: f(27);
+    }
+    .link{
+        @extend %cp;
+        color: #343434;
+        font-size: f(36);
+        border-bottom: 1px solid #343434;
+    }
+}
+.integral{
+    @extend %df;
+    @extend %aic;
+    @extend %fwb;
+    justify-content: flex-end;
+    font-size: f(40);
+    color: #158344;
+}
+
+.right{
+    p{
+        @extend %cfff;
+        font-size: f(42);
+        line-height: f(60);
+    }
+}
+.button{
+    @extend %cp;
+    width: f(392);
+    height: f(135);
+    background: url("../../../assets/images/css/btn-0524.png") center no-repeat;
+    background-size: contain;
+}
+
+.main{
+    @extend %df;
+    @extend %fww;
+    @extend %jcs;
+    margin-top: f(50);
+    padding: 0 f(40);
+}
+.item{
+    @extend %cp;
+    @extend %df;
+    @extend %aic;
+    @extend %jcc;
+    @extend %cfff;
+    font-size: f(50);
+    width: f(516);
+    height: f(195);
+    background: url("../../../assets/images/css/button-bg-0524.png") center no-repeat;
+    background-size: contain;
+    margin-bottom: f(30);
+    i{
+        margin: 0 f(20) 0 f(50);
+        width: f(113);
+        height: f(127);
+        background: url("../../../assets/images/css/home-icon-0524.png") no-repeat;
+        background-size: f(243) f(571);
+    }
+    span{
+        @extend %df1;
+        @extend %tac;
+    }
+    &.item-1{
+        i{
+
+        }
+    }
+    &.item-2{
+        i{
+            background-position: f(-130) 0;
+        }
+    }
+    &.item-3{
+        i{
+            background-position: 0 f(-147);
+        }
+    }
+    &.item-4{
+        i{
+            background-position: f(-130) f(-147);
+        }
+    }
+    &.item-5{
+        i{
+            background-position: 0 f(-293);
+        }
+    }
+    &.item-6{
+        i{
+            background-position: f(-130) f(-293);
+        }
+    }
+    &.item-7{
+        i{
+            background-position: 0 f(-444);
+        }
+    }
+    &.item-8{
+        i{
+            background-position: f(-130) f(-444);
+        }
+    }
+}
+
+.foot{
+    @extend %df;
+    @extend %aic;
+    @extend %jcc;
+    img{
+        width: f(1083);
+        height: f(522);
+    }
+}
