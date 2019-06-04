@@ -68,14 +68,14 @@ body{
     @extend %oh;
     padding: 0 f(50);
     margin-top: f(30);
-    background: url("../../assets/images/css/xs-btn-0604.png") center top no-repeat;
+    background: url("../../assets/images/css/jxs-btn-icon-0604.png") center top no-repeat;
     background-size: 100% auto
 }
 .entry-item{
     @extend %oh;
     @extend %df1;
     @extend %cp;
-    height: f(432);
+    height: f(420);
 }
 
 .button-group{
