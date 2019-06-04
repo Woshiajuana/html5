@@ -132,6 +132,7 @@ html{
     span{
         @extend %df1;
         @extend %tac;
+        @extend %cfff;
     }
     &.item-1{
         i{
@@ -175,12 +176,58 @@ html{
     }
 }
 
+.button-group{
+    @extend %w100;
+    @extend %df;
+    @extend %aic;
+    padding: f(30) 0;
+    background: url("../../../assets/images/css/jxg-btn-0604.png") center no-repeat;
+    background-size: contain;
+    height: f(425);
+    .button-item{
+        @extend %df;
+        @extend %df1;
+        @extend %cp;
+        @extend %h100;
+    }
+}
+
+.button-link{
+    @extend %df;
+    @extend %aic;
+    @extend %ma;
+    padding: f(40) 0;
+    width: f(985);
+    border-bottom: 1px solid #eee;
+}
+.button-link-item{
+    @extend %df;
+    @extend %cp;
+    @extend %aic;
+    @extend %jcc;
+    @extend %cfff;
+    font-size: f(40);
+    width: f(985);
+    height: f(210);
+    border-radius: f(10);
+    background-color: #017d42;
+    i{
+        width: f(176);
+        height: f(114);
+        margin-right: f(30);
+        background: url("../../../assets/images/css/ltt-icon-0604.png") center no-repeat;
+        background-size: contain;
+    }
+}
+
 .foot{
     @extend %df;
     @extend %aic;
     @extend %jcc;
+    margin-top: f(40);
+    padding-bottom: f(40);
     img{
-        width: f(1083);
-        height: f(522);
+        width: f(1084);
+        height: auto;
     }
 }
