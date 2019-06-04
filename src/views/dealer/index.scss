@@ -1,0 +1,107 @@
+@import "../../assets/scss/define";
+@import "../../assets/scss/reset";
+
+html,
+body {
+    @extend %pr;
+    @extend %w100;
+    min-height: 100%;
+}
+html{
+    @extend %h100;
+    background: url("../../assets/images/css/homeland-mine-bg.jpg") center repeat-y;
+    background-size: 100% auto;
+}
+body{
+    //background: url("../../../assets/images/css/homeland-mine-bg2.jpg") center bottom no-repeat;
+    //background-size: 100% auto;
+}
+.header{
+    @extend %w100;
+    @extend %df;
+    @extend %aic;
+    @extend %bsb;
+    height: f(186);
+    background: url("../../assets/images/css/homeland-mine-bg3.jpg") center no-repeat;
+    background-size: contain;
+    padding: 0 f(70);
+}
+.avatar{
+    width: f(150);
+    height: f(150);
+    border-radius: 50%;
+    margin-right: f(40);
+}
+.info{
+    @extend %df;
+    @extend %df1;
+    @extend %aic;
+}
+.name{
+    font-size: f(68);
+    color: #000;
+    margin-right: f(30);
+}
+.desc{
+    font-size: f(42);
+    color: #666;
+}
+.link{
+    @extend %cp;
+    @extend %df;
+    @extend %aic;
+    @extend %jcc;
+    font-size: f(36);
+    color: #fff;
+    width: f(240);
+    height: f(80);
+    background-color: #1c8a45;
+}
+.banner{
+    @extend %w100;
+    @extend %db;
+    height: auto;
+}
+.main{
+    @extend %df;
+    @extend %aic;
+    @extend %oh;
+    padding: 0 f(50);
+    margin-top: f(30);
+    background: url("../../assets/images/css/ltt-btn-0604.png") center top no-repeat;
+    background-size: 100% auto
+}
+.entry-item{
+    @extend %oh;
+    @extend %df1;
+    @extend %cp;
+    height: f(430);
+}
+
+.button-group{
+    @extend %df;
+    @extend %aic;
+    margin: f(200) auto;
+    border-top: 1px solid #eee;
+    padding-top: f(40);
+    width: f(985);
+}
+.button{
+    @extend %df;
+    @extend %cp;
+    @extend %aic;
+    @extend %jcc;
+    @extend %cfff;
+    font-size: f(40);
+    width: f(985);
+    height: f(210);
+    border-radius: f(10);
+    background-color: #017d42;
+    i{
+        width: f(176);
+        height: f(114);
+        margin-right: f(30);
+        background: url("../../assets/images/css/ltt-icon-0604.png") center no-repeat;
+        background-size: contain;
+    }
+}
