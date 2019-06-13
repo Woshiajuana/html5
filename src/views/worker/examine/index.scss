@@ -1,5 +1,65 @@
 @import "../../../assets/scss/define";
 @import "../../../assets/scss/reset";
+
+.select2-selection__arrow{
+    display: none !important;
+}
+.select2-selection--single{
+    border: none !important;
+    height: f(115) !important;
+    background-color: transparent !important;
+}
+.select2-selection__rendered{
+    line-height: f(115) !important;
+    font-size: f(36);
+    color: #3ba86d !important;
+}
+.filter{
+    @extend %df;
+    @extend %aic;
+    @extend %w100;
+    @extend %bsb;
+    padding: 0 !important;
+    background-color: #ececec !important;
+}
+.filter-item{
+    @extend %df1;
+    @extend %pr;
+    background-color: #ececec;
+    select{
+        @extend %w100;
+        @extend %h100;
+        @extend %bsb;
+        //@extend %tac;
+        @extend %oh;
+        color: #3ba86d;
+        //text-align-last: center;
+        height: f(115);
+        line-height: f(115);
+        padding: 0 f(30);
+        border: none;
+        background-color: transparent;
+        font-size: f(36);
+        appearance:none;
+        -moz-appearance:none;
+        -webkit-appearance:none;
+        option{
+            @extend %tac;
+        }
+    }
+    &:after{
+        @extend %pa;
+        @extend %t50;
+        @include tfr(45deg);
+        content: '';
+        right: f(50);
+        margin-top: f(-30);
+        width: f(30);
+        height: f(30);
+        border-bottom: 2px solid #3ba86d;
+        border-right: 2px solid #3ba86d;
+    }
+}
 input::-webkit-input-placeholder {
     color: #fff;
 }

@@ -30,12 +30,12 @@
             <li class="filter">
                 <div class="filter-item">
                     <select>
-                        <option>DBM筛选</option>
+                        <option>省份</option>
                     </select>
                 </div>
                 <div class="filter-item">
                     <select>
-                        <option>DSR筛选</option>
+                        <option>城市</option>
                     </select>
                 </div>
             </li>
@@ -98,6 +98,18 @@
             </li>
         </ul>
         <ul class="content mdgl hidden">
+            <li class="filter">
+                <div class="filter-item">
+                    <select>
+                        <option>省份</option>
+                    </select>
+                </div>
+                <div class="filter-item">
+                    <select>
+                        <option>城市</option>
+                    </select>
+                </div>
+            </li>
             <li>
                 <div class="item">
                     <p>
@@ -127,6 +139,18 @@
             </li>
         </ul>
         <ul class="content mdrl hidden">
+            <li class="filter">
+                <div class="filter-item">
+                    <select>
+                        <option>省份</option>
+                    </select>
+                </div>
+                <div class="filter-item">
+                    <select>
+                        <option>城市</option>
+                    </select>
+                </div>
+            </li>
             <li class="prompt">*请DBM/DSR 认领自己所管辖的门店</li>
             <li>
                 <div class="left">
@@ -155,8 +179,12 @@
         </ul>
     </div>
     <script src="assets/lib/jquery-1.8.1.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
     <script>
         $(function () {
+            $("select").select2();
+
             var $elTab = $('.tab-item'),
                 $elCon = $('.content'),
                 elTab = Array.prototype.slice.apply($elTab);
