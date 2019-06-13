@@ -76,6 +76,49 @@ body{
     @extend %oh;
     @extend %w100;
 }
+.filter{
+    @extend %df;
+    @extend %aic;
+    @extend %w100;
+    background-color: #ececec;
+}
+.filter-item{
+    @extend %df1;
+    @extend %pr;
+    select{
+        @extend %w100;
+        @extend %h100;
+        @extend %bsb;
+        //@extend %tac;
+        @extend %oh;
+        color: #3ba86d;
+        //text-align-last: center;
+        height: j(115);
+        line-height: j(115);
+        padding: 0 j(30);
+        border: none;
+        background-color: transparent;
+        font-size: j(28);
+        appearance:none;
+        -moz-appearance:none;
+        -webkit-appearance:none;
+        option{
+            @extend %tac;
+        }
+    }
+    &:after{
+        @extend %pa;
+        @extend %t50;
+        @include tfr(45deg);
+        content: '';
+        right: f(50);
+        margin-top: f(-30);
+        width: f(30);
+        height: f(30);
+        border-bottom: 2px solid #3ba86d;
+        border-right: 2px solid #3ba86d;
+    }
+}
 .content{
     @extend %pa;
     @extend %t0;
