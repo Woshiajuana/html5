@@ -298,6 +298,9 @@ body{
         @extend %jcc;
         @extend %cfff;
         @extend %oh;
+        @extend %bsb;
+        padding: 0 j(5);
+        word-break: break-all;
         height: f(135);
         font-size: f(38);
         border-right: 1px solid #545e69;
