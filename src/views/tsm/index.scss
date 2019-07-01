@@ -229,39 +229,115 @@ body{
     @extend %w100;
     overflow-y: auto;
     padding-bottom: f(30);
+
+    .item{
+        @extend %bsb;
+        width: f(1100);
+        border-radius: f(10);
+        margin-bottom: f(30);
+        padding: f(20);
+        background-color: #73838e;
+        border: 1px solid #545e69;
+        li{
+            @extend %df;
+            @extend %aic;
+        }
+        p{
+            @extend %df;
+            @extend %df1;
+            @extend %aic;
+            font-size: f(40);
+            margin-top: f(20);
+            color: #fff;
+            &:first-child{
+                margin-top: 0;
+            }
+            i{
+                width: j(23);
+                height: j(25);
+                margin: 0 j(5);
+                background: url("../../assets/images/css/icon-2-0524.png") no-repeat;
+                background-size: j(100) j(200);
+                background-position: 0 j(-169);
+            }
+        }
+    }
 }
 
-.item{
-    @extend %bsb;
-    width: f(1100);
-    border-radius: f(10);
-    margin-bottom: f(30);
-    padding: f(20);
-    background-color: #73838e;
-    border: 1px solid #545e69;
-    li{
+
+.main{
+    @extend %df;
+    @extend %fww;
+    @extend %jcs;
+    margin-top: f(50);
+    padding: 0 f(40);
+    .item{
+        @extend %cp;
         @extend %df;
         @extend %aic;
-    }
-    p{
-        @extend %df;
-        @extend %df1;
-        @extend %aic;
-        font-size: f(40);
-        margin-top: f(20);
-        color: #fff;
-        &:first-child{
-            margin-top: 0;
-        }
+        @extend %jcc;
+        @extend %cfff;
+        font-size: f(50);
+        width: f(516);
+        height: f(195);
+        background: url("../../assets/images/css/button-bg-0524.png") center no-repeat;
+        background-size: contain;
+        margin-bottom: f(30);
         i{
-            width: j(23);
-            height: j(25);
-            margin: 0 j(5);
-            background: url("../../assets/images/css/icon-2-0524.png") no-repeat;
-            background-size: j(100) j(200);
-            background-position: 0 j(-169);
+            margin: 0 f(20) 0 f(50);
+            width: f(113);
+            height: f(127);
+            background: url("../../assets/images/css/home-icon-0524.png") no-repeat;
+            background-size: f(243) f(571);
+        }
+        a,
+        span{
+            @extend %df1;
+            @extend %tac;
+            color: #158344;
+        }
+        &.item-1{
+            i{
+
+            }
+        }
+        &.item-2{
+            i{
+                background-position: f(-130) 0;
+            }
+        }
+        &.item-3{
+            i{
+                background-position: 0 f(-147);
+            }
+        }
+        &.item-4{
+            i{
+                background-position: f(-130) f(-147);
+            }
+        }
+        &.item-5{
+            i{
+                background-position: 0 f(-293);
+            }
+        }
+        &.item-6{
+            i{
+                background-position: f(-130) f(-293);
+            }
+        }
+        &.item-7{
+            i{
+                background-position: 0 f(-444);
+            }
+        }
+        &.item-8{
+            i{
+                background-position: f(-130) f(-444);
+            }
         }
     }
+
 }
 
 .table{
