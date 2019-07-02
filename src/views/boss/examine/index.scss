@@ -137,6 +137,44 @@ body{
         border-right: 2px solid #3ba86d;
     }
 }
+
+.search{
+    border-bottom: none !important;
+    .search-inner{
+        @extend %df1;
+        @extend %pr;
+        height: j(54);
+        border-radius: j(27);
+        background-color: #ececec;
+        i{
+            @extend %pa;
+            @extend %t50;
+            left: j(20);
+            margin-top: j(-21);
+            width: j(47);
+            height: j(42);
+            background: url("../../../assets/images/css/icon-2-0524.png") no-repeat;
+            background-size: j(100) j(200);
+            background-position: 0 j(-123);
+        }
+        input{
+            @extend %pr;
+            @extend %w100;
+            @extend %h100;
+            @extend %bsb;
+            @extend %c6;
+            padding: 0 j(30) 0 j(90);
+            background-color: transparent;
+            border: none;
+            font-size: j(13);
+            line-height: j(50);
+        }
+        input::-webkit-input-placeholder {
+            color: #666;
+        }
+    }
+}
+
 .content{
     @extend %pa;
     @extend %t0;
