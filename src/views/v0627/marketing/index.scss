@@ -1,0 +1,79 @@
+@import "../../../assets/scss/define";
+@import "../../../assets/scss/reset";
+
+html,
+body {
+    @extend %pr;
+    @extend %h100;
+    @extend %w100;
+}
+.head{
+    @extend %db;
+    @extend %w100;
+    height: auto;
+}
+.title{
+    @extend %df;
+    @extend %aic;
+    @extend %jcc;
+    @extend %fwn;
+    height: f(140);
+    background-color: #ececec;
+    font-size: f(38);
+    color: #009143;
+    i{
+        width: f(53);
+        height: f(62);
+        margin-right: f(30);
+        background: url("../../../assets/images/css/yxzx-icon-0524.png") center no-repeat;
+        background-size: contain;
+    }
+}
+.container{
+    @extend %df1;
+    @extend %df;
+    @extend %fdc;
+    @extend %aic;
+    overflow-y: auto;
+}
+.item{
+    padding-top: f(30);
+    width: f(1060);
+    border-bottom: 1px solid #ddd;
+    img{
+        @extend %w100;
+        height: auto;
+    }
+}
+.info{
+    @extend %df;
+    @extend %aic;
+    padding: f(20) f(20);
+}
+.left{
+    @extend %df1;
+    line-height: 1.5;
+    h2{
+        color: #000;
+        font-size: f(46);
+    }
+    p{
+        color: #999;
+        font-size: f(30);
+    }
+    span{
+        color: #009143;
+        font-size: f(30);
+    }
+}
+.button{
+    @extend %df;
+    @extend %aic;
+    @extend %jcc;
+    @extend %cp;
+    @extend %cfff;
+    font-size: f(44);
+    width: f(220);
+    height: f(80);
+    background-color: #009143;
+}
