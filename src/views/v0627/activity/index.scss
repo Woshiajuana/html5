@@ -1,0 +1,52 @@
+@import "../../../assets/scss/define";
+@import "../../../assets/scss/reset";
+
+html,
+body {
+    @extend %pr;
+    @extend %h100;
+    @extend %w100;
+}
+.head{
+    @extend %db;
+    @extend %w100;
+    height: auto;
+}
+.title{
+    @extend %df;
+    @extend %aic;
+    @extend %jcc;
+    @extend %fwn;
+    height: f(140);
+    background-color: #ececec;
+    font-size: f(38);
+    color: #009143;
+    i{
+        width: f(53);
+        height: f(62);
+        margin-right: f(30);
+        background: url("../../../assets/images/css/yxzx-icon-0524.png") center no-repeat;
+        background-size: contain;
+    }
+}
+.list{
+
+}
+.item{
+    border-bottom: 1px solid #ddd;
+    padding: f(40) f(60);
+    p{
+        @extend %df;
+        @extend %aic;
+        color: #666;
+        font-size: f(36);
+    }
+    span{
+        @extend %df1;
+        @extend %oh;
+        @extend %toe;
+        height: f(70);
+        margin-right: f(30);
+        line-height: f(70);
+    }
+}

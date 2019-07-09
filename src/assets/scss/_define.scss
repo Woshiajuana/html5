@@ -25,6 +25,20 @@
     @return (($px/750 * 750) / $base-font-size) * 0.5rem;
 }
 
+%thct{
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color:transparent;
+}
+
+%wos{
+    -webkit-overflow-scrolling: touch;
+}
+
+%toe{
+    @extend %oh;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
 
 %fs0{
     font-size: 0;
