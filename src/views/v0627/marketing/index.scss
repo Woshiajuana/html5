@@ -45,10 +45,29 @@ body {
         height: auto;
     }
 }
+.prompt{
+    @extend %df;
+    @extend %aic;
+    @extend %jcs;
+    @extend %bsb;
+    width: f(1060);
+    padding: f(20) f(20);
+    p{
+        color: #009143;
+        font-size: f(46);
+    }
+    .link{
+        @extend %cfff;
+        font-size: f(46);
+        padding: f(5) f(30);
+        border-radius: f(25);
+        background-color: #009143;
+    }
+}
 .info{
     @extend %df;
     @extend %aic;
-    padding: f(20) f(20);
+    padding: f(30) f(20);
 }
 .left{
     @extend %df1;
