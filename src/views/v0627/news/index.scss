@@ -35,12 +35,45 @@ body {
     @extend %df;
     @extend %aic;
     @extend %fdc;
+    padding-top: j(20);
 }
 .item{
     width: j(700);
+    padding-bottom: j(20);
+    background-color: #fff;
+    box-shadow: 0 j(3) 0 j(3) rgba(0,0,0,.05);
     img{
         @extend %w100;
+        @extend %db;
         height: auto;
     }
-
+}
+.info{
+    @extend %df;
+    padding: j(10);
+    i{
+        width: j(25);
+        height: j(25);
+        border-radius: 50%;
+        background-color: #017d42;
+        margin-right: j(10);
+        margin-top: j(10);
+    }
+    p{
+        @extend %df1;
+        @extend %oh;
+    }
+    span{
+        @extend %c9;
+        font-size: j(14);
+    }
+    .item-title{
+        @extend %fwb;
+        @extend %toe;
+        @extend %db;
+        color: #000;
+        //height: j(22);
+        //line-height: j(22);
+        font-size: j(32);
+    }
 }
