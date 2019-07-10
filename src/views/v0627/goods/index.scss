@@ -1,0 +1,171 @@
+@import "../../../assets/scss/define";
+@import "../../../assets/scss/reset";
+
+html,
+body {
+    @extend %pr;
+    @extend %h100;
+    @extend %w100;
+}
+.head{
+    @extend %db;
+    @extend %w100;
+    height: auto;
+}
+.banner-section{
+    @extend %pr;
+    @extend %oh;
+    height: j(415);
+    background-color: #f1f1f1;
+    img{
+        @extend %w100;
+        @extend %db;
+    }
+}
+.base-section{
+    @extend %pr;
+    margin: j(-40) auto 0;
+    width: j(680);
+    border-radius: j(12);
+    background-color: #fff;
+    box-shadow: 0 j(3) j(3) j(3) rgba(0,0,0,.05);
+    h1{
+        @extend %df;
+        @extend %aic;
+        @extend %jcc;
+        @extend %oh;
+        @extend %fwn;
+        @extend %toe;
+        height: j(75);
+        line-height: j(75);
+        font-size: j(36);
+        color: #000;
+        background-color: #f1f1f1;
+        border-top-left-radius: j(12);
+        border-top-right-radius: j(12);
+    }
+}
+.base-info{
+    @extend %df;
+    @extend %fdc;
+    padding: j(20) j(40);
+    >div{
+        @extend %df;
+        @extend %aic;
+        height: j(60);
+    }
+    span{
+        color: #000;
+        font-size: j(32);
+    }
+    .color{
+        color: #017e42;
+    }
+    .flex{
+        @extend %df1;
+    }
+}
+.operate{
+    @extend %df;
+    @extend %aic;
+    @extend %bsb;
+    width: j(136);
+    height: j(50);
+    border: 1px solid #d4d4d4;
+    border-radius: 3px;
+    margin-left: j(20);
+    i{
+        @extend %df1;
+        @extend %df;
+        @extend %aic;
+        @extend %jcc;
+        @extend %cp;
+        font-size: j(20);
+        height: j(50);
+    }
+    span{
+        @extend %df1;
+        @extend %df;
+        @extend %aic;
+        @extend %jcc;
+        font-size: j(20);
+        border-left: 1px solid #d4d4d4;
+        border-right: 1px solid #d4d4d4;
+    }
+}
+
+.details-section{
+    margin: j(40) auto;
+    padding-bottom: j(130);
+    border-radius: j(12);
+    width: j(680);
+    box-shadow: 0 j(10) j(3) j(3) rgba(0,0,0,.05);
+    h2{
+        @extend %df;
+        @extend %aic;
+        @extend %jcc;
+        @extend %fwn;
+        color: #000;
+        margin: 0 j(40);
+        font-size: j(32);
+        padding-top: j(20);
+        height: j(80);
+        border-bottom: 1px solid #909090;
+    }
+    p{
+        @extend %tac;
+        color: #000;
+        font-size: j(20);
+        line-height: 1.5;
+        margin-top: j(20);
+    }
+    img{
+        @extend %db;
+        @extend %w100;
+        height: auto;
+    }
+}
+
+.button-section{
+    @extend %pf;
+    @extend %df;
+    @extend %aic;
+    @extend %l0;
+    @extend %r0;
+    @extend %b0;
+    @extend %jcs;
+    padding: 0 j(45) 0 j(120);
+    height: j(102);
+    background-color: #fff;
+    box-shadow: 0 j(-3) j(3) j(3) rgba(0,0,0,.05);
+}
+.button-card{
+    @extend %cp;
+    width: j(69);
+    height: j(80);
+    background: url("../../../assets/images/css/v0627-card.png");
+    background-size: contain;
+}
+.button-group{
+    @extend %df;
+    @extend %oh;
+    width: j(430);
+    height: j(57);
+    border-radius: j(28);
+}
+.button-item{
+    @extend %df;
+    @extend %cp;
+    @extend %df1;
+    @extend %aic;
+    @extend %jcc;
+    font-size: j(34);
+    &:first-child{
+        color: #028a48;
+        background-color: #ececec;
+    }
+    &:last-child{
+        color: #fff;
+        background-color: #028a48;
+    }
+}
