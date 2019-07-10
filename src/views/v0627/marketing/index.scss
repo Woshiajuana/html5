@@ -16,17 +16,19 @@ body {
     @extend %df;
     @extend %aic;
     @extend %jcc;
-    @extend %fwn;
-    height: f(140);
+    height: j(118);
     background-color: #ececec;
-    font-size: f(38);
+    font-size: j(36);
     color: #009143;
     i{
-        width: f(53);
-        height: f(62);
-        margin-right: f(30);
+        width: j(53);
+        height: j(62);
+        margin-right: j(20);
         background: url("../../../assets/images/css/yxzx-icon-0524.png") center no-repeat;
         background-size: contain;
+    }
+    h2{
+        @extend %fwn;
     }
 }
 .container{
@@ -37,8 +39,8 @@ body {
     overflow-y: auto;
 }
 .item{
-    padding-top: f(30);
-    width: f(1060);
+    padding-top: j(20);
+    width: j(700);
     border-bottom: 1px solid #ddd;
     img{
         @extend %w100;
@@ -50,39 +52,39 @@ body {
     @extend %aic;
     @extend %jcs;
     @extend %bsb;
-    width: f(1060);
-    padding: f(20) f(20);
+    width: j(700);
+    padding: j(20) j(10);
     p{
         color: #009143;
-        font-size: f(46);
+        font-size: j(32);
     }
     .link{
         @extend %cfff;
-        font-size: f(46);
-        padding: f(5) f(30);
-        border-radius: f(25);
+        font-size: j(32);
+        padding: j(5) j(30);
+        border-radius: j(25);
         background-color: #009143;
     }
 }
 .info{
     @extend %df;
     @extend %aic;
-    padding: f(30) f(20);
+    padding: j(20) j(10);
 }
 .left{
     @extend %df1;
     line-height: 1.5;
     h2{
         color: #000;
-        font-size: f(46);
+        font-size: j(32);
     }
     p{
         color: #999;
-        font-size: f(30);
+        font-size: j(18);
     }
     span{
         color: #009143;
-        font-size: f(30);
+        font-size: j(14);
     }
 }
 .button{
@@ -91,8 +93,8 @@ body {
     @extend %jcc;
     @extend %cp;
     @extend %cfff;
-    font-size: f(44);
-    width: f(220);
-    height: f(80);
+    font-size: j(32);
+    width: j(180);
+    height: j(60);
     background-color: #009143;
 }

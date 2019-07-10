@@ -17,16 +17,19 @@ body {
     @extend %aic;
     @extend %jcc;
     @extend %fwn;
-    height: f(140);
+    height: j(118);
     background-color: #ececec;
-    font-size: f(38);
+    font-size: j(36);
     color: #009143;
     i{
-        width: f(53);
-        height: f(62);
-        margin-right: f(30);
-        background: url("../../../assets/images/css/yxzx-icon-0524.png") center no-repeat;
+        width: j(63);
+        height: j(86);
+        margin-right: j(20);
+        background: url("../../../assets/images/css/v0627-hd.png") center no-repeat;
         background-size: contain;
+    }
+    h2{
+        @extend %fwn;
     }
 }
 .list{
@@ -34,19 +37,19 @@ body {
 }
 .item{
     border-bottom: 1px solid #ddd;
-    padding: f(40) f(60);
+    padding: j(20) j(30);
     p{
         @extend %df;
         @extend %aic;
         color: #666;
-        font-size: f(36);
+        font-size: j(18);
     }
     span{
         @extend %df1;
         @extend %oh;
         @extend %toe;
-        height: f(70);
-        margin-right: f(30);
-        line-height: f(70);
+        height: j(44);
+        margin-right: j(20);
+        line-height: j(44);
     }
 }

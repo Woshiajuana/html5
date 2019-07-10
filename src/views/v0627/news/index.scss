@@ -16,17 +16,19 @@ body {
     @extend %df;
     @extend %aic;
     @extend %jcc;
-    @extend %fwn;
-    height: f(140);
+    height: j(118);
     background-color: #ececec;
-    font-size: f(38);
+    font-size: j(36);
     color: #009143;
     i{
-        width: f(53);
-        height: f(62);
-        margin-right: f(30);
-        background: url("../../../assets/images/css/yxzx-icon-0524.png") center no-repeat;
+        width: j(61);
+        height: j(70);
+        margin-right: j(20);
+        background: url("../../../assets/images/css/v0627-xx.png") center no-repeat;
         background-size: contain;
+    }
+    h2{
+        @extend %fwn;
     }
 }
 .list{
@@ -35,10 +37,10 @@ body {
     @extend %fdc;
 }
 .item{
-    width: f(1120);
+    width: j(700);
     img{
         @extend %w100;
         height: auto;
     }
-    
+
 }
