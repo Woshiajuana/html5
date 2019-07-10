@@ -39,9 +39,9 @@ body {
 }
 .item{
     width: j(700);
-    padding-bottom: j(20);
+    margin-bottom: j(40);
     background-color: #fff;
-    box-shadow: 0 j(3) 0 j(3) rgba(0,0,0,.05);
+    box-shadow: 0 j(3) j(3) j(3) rgba(0,0,0,.1);
     img{
         @extend %w100;
         @extend %db;
