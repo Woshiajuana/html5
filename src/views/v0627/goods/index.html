@@ -54,8 +54,8 @@
             <div class="button-item"><span>立即兑换</span></div>
         </div>
     </div>
-    <div class="popup-wrap">
-        <div class="popup-inner">
+    <div class="popup-wrap animated" id="elPopup" style="display: none">
+        <div class="popup-inner fadeInUp animated">
             <div class="popup-content">
                 <h2>尺寸选择</h2>
                 <ul class="popup-options">
@@ -103,6 +103,41 @@
             <div class="popup-button"><span>确定</span></div>
         </div>
     </div>
+    <script src="assets/lib/jquery-1.8.1.min.js"></script>
+    <script>
+        $(function () {
+
+            var popupController = (function ($) {
+                var $el = $('#elPopup'),
+                    show = function () {
+                        $el.show();
+                        $('body').css('overflow', 'hidden');
+                    },
+                    hide = function () {
+                        $el.hide();
+                        $('body').css('overflow', 'auto');
+                    };
+                $el.on('click', function () {
+                    hide();
+                }).on('click', '.popup-inner', function (e) {
+                    e.stopPropagation();
+                }).on('click', 'li', function () {
+                    $(this).addClass('popup-active').siblings().removeClass('popup-active');
+                }).on('click', '.popup-button', function () {
+                    // 确认逻辑
+                    hide();
+                });
+                return {
+                    show: show,
+                    hide: hide,
+                }
+            })($);
+
+            $('.button-item').on('click', function () {
+                popupController.show();
+            })
+        });
+    </script>
 </body>
 </html>
 
