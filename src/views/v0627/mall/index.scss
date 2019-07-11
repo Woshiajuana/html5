@@ -1,0 +1,72 @@
+@import "../../../assets/scss/define";
+@import "../../../assets/scss/reset";
+
+html,
+body {
+    @extend %pr;
+    @extend %h100;
+    @extend %w100;
+}
+body{
+    @extend %fdc;
+    @extend %df;
+}
+.head{
+    @extend %db;
+    @extend %w100;
+    height: auto;
+}
+.user-section{
+    @extend %df;
+    @extend %fdc;
+    @extend %aic;
+    height: j(198);
+    padding-top: j(24);
+    background-color: #e5e5e5;
+}
+.user-inner{
+    @extend %pr;
+    @extend %bsb;
+    @extend %cfff;
+    width: j(680);
+    padding-top: j(30);
+    padding-left: j(60);
+    border-top-left-radius: j(12);
+    border-top-right-radius: j(12);
+    height: j(198);
+    background-color: #018245;
+    line-height: 1.5;
+    .label{
+        font-size: j(16);
+    }
+    .value{
+        @extend %fwb;
+        font-size: j(46);
+    }
+    .link{
+        @extend %cfff;
+        @extend %cp;
+        @extend %aic;
+        border-bottom: 1px solid #fff;
+        font-size: j(14);
+        i{
+            width: j(17);
+            height: j(17);
+            margin-right: j(5);
+            background: url("../../../assets/images/css/v0627-xingxing.png") no-repeat;
+            background-size: contain;
+        }
+    }
+    .icon{
+        @extend %pa;
+        @extend %t0;
+        right: j(65);
+        width: j(145);
+        height: j(213);
+        background: url("../../../assets/images/css/v0627-xz.png") no-repeat;
+        background-size: contain;
+    }
+}
+.tab-section{
+    
+}
