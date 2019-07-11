@@ -68,5 +68,142 @@ body{
     }
 }
 .tab-section{
-    
+    @extend %df;
+    @extend %aic;
+    box-shadow: 0 j(3) j(3) j(3) rgba(0,0,0,.05);
+    background-color: #fff;
+    border-bottom-left-radius: j(20);
+    border-bottom-right-radius: j(20);
+}
+.tab-item{
+    @extend %pr;
+    @extend %df1;
+}
+.tab-item-inner{
+    @extend %df;
+    @extend %aic;
+    @extend %jcc;
+    @extend %cp;
+    height: j(60);
+    color: #018245;
+    font-size: j(36);
+    i{
+        width: j(39);
+        height: j(20);
+        background: url("../../../assets/images/css/v0627-arrow.png") no-repeat;
+        background-size: contain;
+        margin-left: j(5);
+    }
+}
+.tab-select{
+    @extend %pa;
+    @extend %l50;
+    margin-left: j(-130);
+    width: j(240);
+    top: j(70);
+    background-color: #fff;
+    border-radius: j(12);
+    padding: j(10);
+    box-shadow: 0 j(3) j(3) j(3) rgba(0,0,0,.1);
+    color: #000;
+    li{
+        @extend %cp;
+        @extend %df;
+        @extend %aic;
+        @extend %jcc;
+        font-size: j(24);
+        height: j(60);
+        border-bottom: 1px solid #ddd;
+        &:last-child{
+            border-bottom: none;
+        }
+    }
+}
+.list{
+    @extend %df1;
+    @extend %df;
+    @extend %jcs;
+    @extend %fww;
+    margin-top: j(10);
+    overflow-y: auto;
+    padding: 0 j(35);
+    padding-top: j(20);
+}
+.item{
+    margin-bottom: j(30);
+    width: j(320);
+    box-shadow: 0 j(5) j(5) j(3) rgba(0,0,0,.1);
+    background-color: #f3f3f3;
+    border-radius: j(12);
+    .name{
+        @extend %fwn;
+        @extend %toe;
+        font-size: j(28);
+        color: #000;
+        margin: 0 j(20);
+        height: j(60);
+        line-height: j(60);
+    }
+}
+.image{
+    @extend %df;
+    @extend %aic;
+    @extend %jcc;
+    @extend %w100;
+    @extend %oh;
+    background-color: #fff;
+    height: j(250);
+    border-top-left-radius: j(12);
+    border-top-right-radius: j(12);
+    img{
+        @extend %w100;
+        height: auto;
+    }
+}
+.info{
+    @extend %df;
+    @extend %aic;
+    @extend %jcs;
+    padding: 0 j(20) j(20);
+    line-height: 1.3;
+    font-size: j(18);
+    p{
+        span{
+            color: #018245;
+        }
+    }
+    .number{
+        @extend %df1;
+        @extend %oh;
+    }
+}
+.item-button{
+    @extend %cp;
+    @extend %df;
+    @extend %aic;
+    @extend %jcc;
+    @extend %cfff;
+    font-size: j(32);
+    height: j(50);
+    line-height: j(50);
+    width: j(120);
+    background-color: #018245;
+    border-radius: j(25);
+}
+.button-section{
+    @extend %df;
+    @extend %pr;
+    @extend %aic;
+    @extend %w100;
+    @extend %jcc;
+    height: j(102);
+    background-color: #fff;
+    box-shadow: 0 j(-3) j(3) j(3) rgba(0,0,0,.05);
+}
+.button-item{
+    @extend %cp;
+    width: j(69);
+    height: j(80);
+    background: url("../../../assets/images/css/v0627-card.png");
+    background-size: contain;
 }
