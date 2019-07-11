@@ -50,6 +50,7 @@ body{
         border-bottom: 1px solid #fff;
         font-size: j(14);
         i{
+            @extend %dib;
             width: j(17);
             height: j(17);
             margin-right: j(5);

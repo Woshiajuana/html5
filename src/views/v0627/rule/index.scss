@@ -1,0 +1,77 @@
+@import "../../../assets/scss/define";
+@import "../../../assets/scss/reset";
+
+html,
+body {
+    @extend %pr;
+    @extend %h100;
+    @extend %w100;
+}
+body{
+    @extend %df;
+    @extend %fdc;
+}
+.head{
+    @extend %db;
+    @extend %w100;
+    height: auto;
+}
+.title{
+    @extend %df;
+    @extend %aic;
+    @extend %jcc;
+    @extend %fwn;
+    height: j(118);
+    background-color: #ececec;
+    font-size: j(36);
+    color: #009143;
+    h2{
+        @extend %fwn;
+    }
+}
+.dl{
+    @extend %df1;
+    overflow-y: auto;
+    color: #333;
+    font-size: j(26);
+    padding: j(40) j(27);
+    line-height: 2.2;
+    dt{
+       @extend %fwb;
+    }
+    dd{
+
+    }
+    table{
+        line-height: 1.5;
+        font-size: j(20);
+        border: 1px solid #ddd;
+        tr{
+
+        }
+        td{
+            padding: j(10) j(10);
+        }
+        .width{
+            width: j(200);
+        }
+    }
+}
+.button-section{
+    @extend %df;
+    @extend %aic;
+    @extend %jcc;
+    padding: j(30) 0;
+}
+.button-item{
+    @extend %cp;
+    @extend %df;
+    @extend %aic;
+    @extend %jcc;
+    @extend %cfff;
+    height: j(60);
+    border-radius: j(30);
+    width: j(340);
+    font-size: j(32);
+    background-color: #017a33;
+}
