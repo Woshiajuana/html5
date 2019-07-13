@@ -1,0 +1,110 @@
+@import "../../assets/scss/_define";
+@import "../../assets/scss/animate.min";
+
+.header-section{
+    @extend %pr;
+    @extend %w100;
+    img{
+        @extend %db;
+        @extend %w100;
+        height: auto;
+    }
+    .menu-button{
+        @extend %pa;
+        @extend %cp;
+        @extend %t0;
+        @extend %r0;
+        @extend %h100;
+        width: j(80);
+    }
+}
+
+.menu-wrap{
+    @extend %dn;
+    @extend %pf;
+    @extend %w100;
+    @extend %t0;
+    @extend %l0;
+    @extend %r0;
+    @extend %b0;
+    z-index: 99;
+    overflow-y: auto;
+    background-color: rgba(0,0,0,.3);
+}
+
+.menu-inner{
+    @extend %w100;
+}
+.menu-item{
+    >.menu-item-cell{
+        &:after{
+            @extend %db;
+        }
+        &:before{
+            @extend %db;
+        }
+    }
+    &.active{
+        >.menu-item-cell{
+            &:after{
+                @extend %db;
+                @include tfr(135deg);
+                margin-top: j(-20);
+            }
+        }
+        .menu-item-child{
+            @extend %db;
+        }
+    }
+
+}
+.menu-item-cell{
+    @extend %df;
+    @extend %aic;
+    @extend %bsb;
+    @extend %cp;
+    @extend %pr;
+    padding-left: j(50);
+    height: j(80);
+    font-size: j(20);
+    color: #017a33;
+    border-bottom: 1px solid #ddd;
+    background-color: #fff;
+    &:before{
+        @extend %pa;
+        @extend %l0;
+        @extend %t0;
+        @extend %b0;
+        @extend %dn;
+        content: '';
+        width: j(12);
+        background-color: #017a33;
+    }
+    &:after{
+        @extend %pa;
+        @extend %dn;
+        @extend %t50;
+        @include tfr(45deg);
+        @include tst(all, .3s);
+        content: '';
+        right: j(32);
+        margin-top: j(-10);
+        width: j(20);
+        height: j(20);
+        border-top: 2px solid #017a33;
+        border-right: 2px solid #017a33;
+    }
+    i{
+        width: j(32);
+        height: j(32);
+        margin-right: j(5);
+        &.menu-home-icon{
+            background: url("~assets/images/css/v0627-home-icon.png") no-repeat;
+            background-size: contain;
+        }
+    }
+
+}
+.menu-item-child{
+    @extend %dn;
+}
