@@ -87,7 +87,7 @@ body{
     @extend %cp;
     height: j(60);
     color: #018245;
-    font-size: j(36);
+    font-size: j(30);
     i{
         width: j(39);
         height: j(20);
@@ -118,6 +118,9 @@ body{
         &:last-child{
             border-bottom: none;
         }
+    }
+    .color{
+        color: #018245;
     }
 }
 .list{
