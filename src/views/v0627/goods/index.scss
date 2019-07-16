@@ -19,6 +19,7 @@ body {
     img{
         @extend %h100;
         @extend %db;
+        @extend %ma;
         width: auto;
     }
 }
