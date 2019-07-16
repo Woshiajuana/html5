@@ -182,7 +182,11 @@
                         $elMenuView.hide();
                     };
                 $elButton.on('click', show);
-                $elMenuView.on('click', 'div.menu-item-cell', function () {
+                $elMenuView.on('click', function() {
+                    hide();
+                }).on('click', '.menu-inner', function (event) {
+                    event.stopPropagation();
+                }).on('click','div.menu-item-cell', function () {
                     $(this).parent('.menu-item').toggleClass('active')
                         .siblings().removeClass('active')
                 });
