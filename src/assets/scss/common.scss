@@ -15,3 +15,68 @@ body {
 :-ms-input-placeholder{ color: #999}           /* IE浏览器 */
 
 
+
+.mall-pop{
+    @extend %pf;
+    @extend %t0;
+    @extend %l0;
+    @extend %r0;
+    @extend %b0;
+    @extend %df;
+    @extend %aic;
+    @extend %jcc;
+    z-index: 999;
+    background-color: rgba(0,0,0,.3);
+}
+.mall-pop-inner{
+    @extend %df;
+    @extend %fdc;
+    @extend %aic;
+    @extend %jcc;
+    @extend %bsb;
+    padding: j(40);
+    min-height: j(325);
+    width: j(680);
+    background-color: #fff;
+    border-radius: j(10);
+}
+.mall-pop-icon{
+    width: j(90);
+    height: j(90);
+    background: url("~assets/images/css/v0627-success.png") no-repeat;
+    background-size: contain;
+}
+.mall-pop-content{
+    @extend %fwb;
+    margin-top: j(20);
+    font-size: j(32);
+    color: #000;
+    line-height: 1.5;
+}
+.mall-pop-button-group{
+    @extend %df;
+    @extend %aic;
+    margin-top: j(40);
+}
+.mall-pop-button{
+    @extend %df;
+    @extend %cp;
+    @extend %aic;
+    @extend %jcc;
+    @extend %cfff;
+    font-size: j(20);
+    width: j(200);
+    height: j(58);
+    background-color: #018345;
+    &:first-child{
+        border-top-left-radius: j(29);
+        border-bottom-left-radius: j(29);
+    }
+    &:last-child{
+        border-top-right-radius: j(29);
+        border-bottom-right-radius: j(29);
+    }
+    &.mall-pop-cancel{
+        background-color: #c7c7c7;
+    }
+}
