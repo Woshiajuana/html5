@@ -17,8 +17,9 @@ body {
     height: j(415);
     background-color: #f1f1f1;
     img{
-        @extend %w100;
+        @extend %h100;
         @extend %db;
+        width: auto;
     }
 }
 .base-section{
