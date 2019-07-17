@@ -142,10 +142,24 @@ body {
 }
 .button-card{
     @extend %cp;
+    @extend %pr;
     width: j(69);
     height: j(80);
     background: url("../../../assets/images/css/v0627-card.png");
     background-size: contain;
+    span{
+        @extend %pa;
+        @extend %r0;
+        @extend %bsb;
+        top: j(-8);
+        font-size: j(14);
+        border: 1px solid red;
+        color: red;
+        background-color: #fff;
+        height: j(32);
+        padding: 0 j(5);
+        border-radius: j(16);
+    }
 }
 .button-group{
     @extend %df;

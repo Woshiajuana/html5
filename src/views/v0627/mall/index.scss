@@ -122,13 +122,16 @@ body{
         color: #018245;
     }
 }
-.list{
+.container{
     @extend %df1;
+    @extend %w100;
+    overflow-y: auto;
+    margin-top: j(10);
+}
+.list{
     @extend %df;
     @extend %jcs;
     @extend %fww;
-    margin-top: j(10);
-    overflow-y: auto;
     padding: 0 j(35);
     padding-top: j(20);
 }
@@ -159,8 +162,8 @@ body{
     border-top-left-radius: j(12);
     border-top-right-radius: j(12);
     img{
-        @extend %w100;
-        height: auto;
+        @extend %h100;
+        width: auto;
     }
 }
 .info{
@@ -205,8 +208,24 @@ body{
 }
 .button-item{
     @extend %cp;
+    @extend %pr;
     width: j(69);
     height: j(80);
     background: url("../../../assets/images/css/v0627-card.png");
     background-size: contain;
+    span{
+        @extend %pa;
+        @extend %r0;
+        @extend %df;
+        @extend %aic;
+        @extend %bsb;
+        top: j(-6);
+        font-size: j(14);
+        border: 1px solid red;
+        color: red;
+        background-color: #fff;
+        height: j(26);
+        padding: 0 j(5);
+        border-radius: j(13);
+    }
 }
