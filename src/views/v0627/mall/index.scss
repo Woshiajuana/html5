@@ -29,7 +29,7 @@ body{
     @extend %cfff;
     width: j(680);
     padding-top: j(30);
-    padding-left: j(60);
+    padding-left: j(50);
     border-top-left-radius: j(12);
     border-top-right-radius: j(12);
     height: j(198);
@@ -37,25 +37,31 @@ body{
     line-height: 1.5;
     .label{
         font-size: j(16);
+        padding-left: j(10);
     }
     .value{
         @extend %fwb;
         font-size: j(46);
+        padding-left: j(10);
     }
     .link{
         @extend %cfff;
         @extend %cp;
         @extend %aic;
-        border-bottom: 1px solid #fff;
+        @extend %dib;
         font-size: j(14);
-        i{
-            @extend %dib;
-            width: j(17);
-            height: j(17);
-            margin-right: j(5);
-            background: url("../../../assets/images/css/v0627-xingxing.png") no-repeat;
-            background-size: contain;
-        }
+        width: j(255);
+        height: j(54);
+        background: url("../../../assets/images/css/v0627-rule-icon.png") no-repeat;
+        background-size: contain;
+        //i{
+        //    @extend %dib;
+        //    width: j(17);
+        //    height: j(17);
+        //    margin-right: j(5);
+        //    background: url("../../../assets/images/css/v0627-xingxing.png") no-repeat;
+        //    background-size: contain;
+        //}
     }
     .icon{
         @extend %pa;
@@ -209,9 +215,9 @@ body{
 .button-item{
     @extend %cp;
     @extend %pr;
-    width: j(69);
-    height: j(80);
-    background: url("../../../assets/images/css/v0627-card.png");
+    width: j(74);
+    height: j(85);
+    background: url("../../../assets/images/css/v0627-card.png") no-repeat;
     background-size: contain;
     span{
         @extend %pa;
@@ -219,13 +225,16 @@ body{
         @extend %df;
         @extend %aic;
         @extend %bsb;
+        @extend %cfff;
+        @extend %jcc;
         top: j(-6);
+        right: j(-20);
+        min-width: j(52);
         font-size: j(14);
-        border: 1px solid red;
-        color: red;
-        background-color: #fff;
-        height: j(26);
+        border: 1px solid #fff;
+        background-color: #ff2121;
+        height: j(24);
         padding: 0 j(5);
-        border-radius: j(13);
+        border-radius: j(12);
     }
 }

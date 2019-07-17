@@ -143,22 +143,27 @@ body {
 .button-card{
     @extend %cp;
     @extend %pr;
-    width: j(69);
-    height: j(80);
-    background: url("../../../assets/images/css/v0627-card.png");
+    width: j(74);
+    height: j(85);
+    background: url("../../../assets/images/css/v0627-card.png") no-repeat;
     background-size: contain;
     span{
         @extend %pa;
         @extend %r0;
+        @extend %df;
+        @extend %aic;
         @extend %bsb;
-        top: j(-8);
+        @extend %cfff;
+        @extend %jcc;
+        top: j(-6);
+        right: j(-20);
+        min-width: j(52);
         font-size: j(14);
-        border: 1px solid red;
-        color: red;
-        background-color: #fff;
-        height: j(32);
+        border: 1px solid #fff;
+        background-color: #ff2121;
+        height: j(24);
         padding: 0 j(5);
-        border-radius: j(16);
+        border-radius: j(12);
     }
 }
 .button-group{
