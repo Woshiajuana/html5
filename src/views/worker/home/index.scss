@@ -119,13 +119,16 @@ html{
     @extend %df;
     @extend %aic;
     @extend %jcc;
-    @extend %cfff;
+    color: #158344;
     font-size: f(50);
     width: f(516);
     height: f(195);
     background: url("../../../assets/images/css/button-bg-0524.png") center no-repeat;
     background-size: contain;
     margin-bottom: f(30);
+    a{
+        color: #158344;
+    }
     i{
         margin: 0 f(20) 0 f(50);
         width: f(113);
@@ -136,7 +139,7 @@ html{
     span{
         @extend %df1;
         @extend %tac;
-        @extend %cfff;
+        color: #158344;
     }
     &.item-1{
         i{
