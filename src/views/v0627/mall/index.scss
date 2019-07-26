@@ -202,15 +202,20 @@ body{
     background-color: #018245;
     border-radius: j(25);
 }
+.button-group{
+    @extend %df;
+    @extend %aic;
+    background-color: #fff;
+    box-shadow: 0 j(-3) j(3) j(3) rgba(0,0,0,.05);
+}
 .button-section{
     @extend %df;
+    @extend %df1;
     @extend %pr;
     @extend %aic;
     @extend %w100;
     @extend %jcc;
     height: j(102);
-    background-color: #fff;
-    box-shadow: 0 j(-3) j(3) j(3) rgba(0,0,0,.05);
 }
 .button-item{
     @extend %cp;
@@ -232,9 +237,20 @@ body{
         min-width: j(52);
         font-size: j(14);
         border: 1px solid #fff;
-        background-color: #ff2121;
+        background-color: #018245;
         height: j(24);
         padding: 0 j(5);
         border-radius: j(12);
+    }
+    .color-1{
+        background-color: #ff2121;
+    }
+}
+.button-order{
+    .button-item{
+        width: j(79);
+        height: j(82);
+        background: url("../../../assets/images/css/v0627-order.png") no-repeat;
+        background-size: contain;
     }
 }
