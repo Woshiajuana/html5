@@ -186,6 +186,7 @@ body{
 .filter-item{
     @extend %df1;
     @extend %pr;
+    width: 50%;
     select{
         @extend %w100;
         @extend %h100;
@@ -259,6 +260,76 @@ body{
                 background: url("../../assets/images/css/icon-2-0524.png") no-repeat;
                 background-size: j(100) j(200);
                 background-position: 0 j(-169);
+            }
+        }
+        .cell{
+            @extend %df;
+            @extend %df1;
+            @extend %aic;
+            margin-top: f(20);
+        }
+        .relation-item{
+            @extend %df;
+            @extend %aic;
+            @extend %jcc;
+            @extend %cfff;
+            font-size: f(36);
+            width: f(300);
+            height: f(60);
+            background-color: #017a33;
+            border-radius: f(30);
+            .select2-selection__arrow{
+                display: none !important;
+            }
+            .select2-selection--single{
+                border: none !important;
+                height: f(60) !important;
+                background-color: transparent !important;
+            }
+            .select2-selection__rendered{
+                @extend %tac;
+                line-height: f(60) !important;
+                font-size: f(36);
+                color: #fff !important;
+            }
+            select{
+                @extend %w100;
+                @extend %h100;
+                @extend %bsb;
+                @extend %tac;
+                @extend %oh;
+                color: #fff;
+                text-align-last: center;
+                height: f(60);
+                line-height: f(60);
+                padding: 0 f(25);
+                border: none;
+                background-color: transparent;
+                font-size: f(36);
+                appearance:none;
+                -moz-appearance:none;
+                -webkit-appearance:none;
+                option{
+                    @extend %tac;
+                }
+            }
+        }
+        .cancel-button{
+            @extend %cp;
+        }
+        .select-relation{
+            @extend %pr;
+            &:after{
+                @extend %pa;
+                @extend %t50;
+                @include tfr(45deg);
+                content: '';
+                right: f(50);
+                margin-top: f(-30);
+                width: f(30);
+                height: f(30);
+                border-bottom: 2px solid #686a6c;
+                border-right: 2px solid #686a6c;
             }
         }
     }
