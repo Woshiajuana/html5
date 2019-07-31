@@ -319,7 +319,7 @@ body{
         }
         .select-relation{
             @extend %pr;
-            &:after{
+            &:before{
                 @extend %pa;
                 top: f(18);
                 content: '';

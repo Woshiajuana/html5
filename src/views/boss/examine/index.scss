@@ -183,8 +183,6 @@ body{
     @extend %h100;
     overflow-y: auto;
     li{
-        @extend %df;
-        @extend %aic;
         padding: j(25) j(37);
         border-bottom: 1px solid #ddd;
         background-color: #fff;
@@ -199,11 +197,38 @@ body{
         }
     }
     &.mdgl{
-        li{
+        .cell-item{
             @extend %oh;
+            @extend %df;
+            @extend %fww;
+        }
+        li{
+            @extend %df1;
+            @extend %oh;
+            color: #333;
+            font-size: j(26);
+            p{
+                @extend %df;
+                @extend %aic;
+                @extend %oh;
+                width: 50%;
+                margin-bottom: j(15);
+            }
+            .level{
+                width: j(23);
+                height: j(25);
+                margin-right: j(5);
+                background: url("../../../assets/images/css/icon-2-0524.png") no-repeat;
+                background-size: j(100) j(200);
+                background-position: 0 j(-169);
+            }
         }
     }
     &.mdrl{
+        li{
+            @extend %df;
+            @extend %aic;
+        }
         .prompt{
             @extend %jcc;
             @extend %cfff;
@@ -214,6 +239,74 @@ body{
         }
     }
 }
+.relation-group{
+    @extend %df;
+    @extend %aic;
+    @extend %jcc;
+    margin-top: j(10);
+}
+.relation-item{
+    @extend %df;
+    @extend %aic;
+    @extend %jcc;
+    @extend %cfff;
+    @extend %pr;
+    width: j(240);
+    height: j(50);
+    margin: 0 j(50);
+    background-color: #e31817;
+}
+.relation-button{
+    @extend %cp;
+}
+.relation-select{
+    .select2-selection__arrow{
+        display: none !important;
+    }
+    .select2-selection--single{
+        border: none !important;
+        height: j(50) !important;
+        background-color: transparent !important;
+    }
+    .select2-selection__rendered{
+        @extend %tac;
+        line-height: j(50) !important;
+        font-size: j(26) !important;
+        color: #fff !important;
+    }
+    select{
+        @extend %w100;
+        @extend %h100;
+        @extend %bsb;
+        @extend %tac;
+        @extend %oh;
+        color: #fff;
+        text-align-last: center;
+        height: j(50);
+        line-height: j(50);
+        padding: 0 j(50) 0 j(50);
+        border: none;
+        background-color: transparent;
+        font-size: j(26);
+        appearance:none;
+        -moz-appearance:none;
+        -webkit-appearance:none;
+        option{
+            @extend %tac;
+        }
+    }
+    &:before{
+        @extend %pa;
+        top: j(15);
+        content: '';
+        right: j(30);
+        width: 0;
+        height: 0;
+        border: j(15) solid;
+        border-color: #fff transparent transparent;
+    }
+}
+
 .left{
     @extend %df1;
     color: #333;
@@ -244,29 +337,5 @@ body{
     }
     .btn-red{
         background-color: #df1a1a;
-    }
-}
-
-.item{
-    @extend %df1;
-    @extend %oh;
-    color: #333;
-    font-size: j(26);
-    p{
-        @extend %df;
-        @extend %aic;
-        @extend %oh;
-        margin-bottom: j(15);
-        &:last-child{
-            margin-bottom: 0;
-        }
-    }
-    .level{
-        width: j(23);
-        height: j(25);
-        margin-right: j(5);
-        background: url("../../../assets/images/css/icon-2-0524.png") no-repeat;
-        background-size: j(100) j(200);
-        background-position: 0 j(-169);
     }
 }

@@ -26,7 +26,7 @@
         </div>
     </div>
     <div class="container">
-        <ul class="content mdsh">
+        <ul class="content mdsh ">
             <li class="filter">
                 <div class="filter-item">
                     <select>
@@ -117,7 +117,7 @@
                 </div>
             </li>
             <li>
-                <div class="item">
+                <div class="cell-item">
                     <p>
                         <span>省市：门店积分门店</span>
                     </p>
@@ -130,8 +130,6 @@
                         <i class="level"></i>
                         <i class="level"></i>
                     </p>
-                </div>
-                <div class="item">
                     <p>
                         <span>门店名称：XXX</span>
                     </p>
@@ -141,6 +139,14 @@
                     <p>
                         <span>DBM姓名：李有才</span>
                     </p>
+                </div>
+                <div class="relation-group">
+                    <span class="relation-item relation-button">取消门店关联</span>
+                    <div class="relation-item relation-select">
+                        <select>
+                            <option>关联DBM</option>
+                        </select>
+                    </div>
                 </div>
             </li>
         </ul>
@@ -189,6 +195,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
     <script>
         $(function () {
+
             $("select").select2();
 
             var $elTab = $('.tab-item'),
