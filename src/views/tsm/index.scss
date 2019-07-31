@@ -155,7 +155,7 @@ body{
     @extend %aic;
     @extend %jcc;
     @extend %cfff;
-    font-size: f(44);
+    font-size: f(40);
     height: f(150);
     background-color: #728490;
     &.active{
@@ -302,7 +302,7 @@ body{
                 text-align-last: center;
                 height: f(60);
                 line-height: f(60);
-                padding: 0 f(25);
+                padding: 0 f(50) 0 f(10);
                 border: none;
                 background-color: transparent;
                 font-size: f(36);
@@ -321,15 +321,13 @@ body{
             @extend %pr;
             &:after{
                 @extend %pa;
-                @extend %t50;
-                @include tfr(45deg);
+                top: f(18);
                 content: '';
-                right: f(50);
-                margin-top: f(-30);
-                width: f(30);
-                height: f(30);
-                border-bottom: 2px solid #686a6c;
-                border-right: 2px solid #686a6c;
+                right: f(30);
+                width: 0;
+                height: 0;
+                border: f(20) solid;
+                border-color: #fff transparent transparent;
             }
         }
     }
