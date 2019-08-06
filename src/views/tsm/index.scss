@@ -449,10 +449,10 @@ body{
         @extend %cfff;
         @extend %oh;
         @extend %bsb;
-        padding: 0 j(5);
+        //padding: 0 j(5);
         word-break: break-all;
         height: f(135);
-        font-size: f(32);
+        font-size: f(36);
         border-right: 1px solid #545e69;
         &:first-child{
             width: f(120);
