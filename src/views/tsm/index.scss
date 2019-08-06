@@ -424,6 +424,11 @@ body{
         &:last-child{
             border-bottom: none;
         }
+        &:first-child{
+            .td{
+                font-size: f(38);
+            }
+        }
     }
     .td-1{
         @extend %df;
@@ -447,7 +452,7 @@ body{
         padding: 0 j(5);
         word-break: break-all;
         height: f(135);
-        font-size: f(38);
+        font-size: f(32);
         border-right: 1px solid #545e69;
         &:first-child{
             width: f(120);
