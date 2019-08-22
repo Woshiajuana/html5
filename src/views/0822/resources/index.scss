@@ -1,0 +1,75 @@
+@import "../../../assets/scss/common";
+
+html,
+body {
+    @extend %pr;
+    @extend %h100;
+    @extend %w100;
+}
+.head{
+    @extend %db;
+    @extend %w100;
+    height: auto;
+}
+.title{
+    @extend %df;
+    @extend %aic;
+    @extend %jcc;
+    height: j(118);
+    background-color: #ececec;
+    font-size: j(36);
+    color: #009143;
+    i{
+        width: j(68);
+        height: j(77);
+        margin-right: j(20);
+        background: url("../../../assets/images/css/v0822-zy.png") center no-repeat;
+        background-size: contain;
+    }
+    h2{
+        @extend %fwn;
+    }
+}
+.section{
+    @extend %df;
+    @extend %fdc;
+    background-color: #fff;
+    padding: 0 j(45);
+    border-bottom: 2px solid #ddd;
+    &:last-child{
+        border-bottom: none;
+    }
+    dt{
+        @extend %fwb;
+        @extend %df;
+        @extend %aic;
+        color: #009143;
+        font-size: j(32);
+        height: j(80);
+    }
+    dd{
+        @extend %df1;
+        @extend %df;
+        @extend %aic;
+        @extend %jcc;
+        @extend %cp;
+        @extend %cfff;
+        margin-bottom: j(20);
+        font-size: j(32);
+        height: j(100);
+        border-radius: j(10);
+        box-shadow: 0 3px 3px 3px rgba(0,0,0,.1);
+        &.color-1{
+            background-color: #31a463;
+        }
+        &.color-2{
+            background-color: #daac89;
+        }
+        &.color-3{
+            background-color: #c1c3c8;
+        }
+        &.color-4{
+            background-color: #606060;
+        }
+    }
+}
