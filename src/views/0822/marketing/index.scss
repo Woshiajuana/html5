@@ -1,0 +1,105 @@
+@import "../../../assets/scss/common";
+
+html,
+body {
+    @extend %pr;
+    @extend %h100;
+    @extend %w100;
+}
+.head{
+    @extend %db;
+    @extend %w100;
+    height: auto;
+}
+.title{
+    @extend %df;
+    @extend %aic;
+    @extend %jcc;
+    height: j(118);
+    background-color: #ececec;
+    font-size: j(36);
+    color: #009143;
+    i{
+        width: j(53);
+        height: j(62);
+        margin-right: j(20);
+        background: url("../../../assets/images/css/yxzx-icon-0524.png") center no-repeat;
+        background-size: contain;
+    }
+    h2{
+        @extend %fwn;
+    }
+}
+.container{
+    @extend %df1;
+    @extend %df;
+    @extend %fdc;
+    @extend %aic;
+    overflow-y: auto;
+}
+.item{
+    padding-top: j(20);
+    width: j(700);
+    border-bottom: 1px solid #ddd;
+    img{
+        @extend %w100;
+        height: auto;
+    }
+    .link{
+        @extend %cp;
+        font-size: j(32);
+        color: #017a33;
+        border-bottom: 1px solid #017a33;
+    }
+}
+.prompt{
+    @extend %df;
+    @extend %aic;
+    @extend %jcs;
+    @extend %bsb;
+    width: j(700);
+    padding: j(20) j(10);
+    p{
+        color: #009143;
+        font-size: j(32);
+    }
+    .link{
+        @extend %cfff;
+        font-size: j(32);
+        padding: j(5) j(30);
+        border-radius: j(25);
+        background-color: #009143;
+    }
+}
+.info{
+    @extend %df;
+    @extend %aic;
+    padding: j(20) j(10);
+}
+.left{
+    @extend %df1;
+    line-height: 1.5;
+    h2{
+        color: #000;
+        font-size: j(32);
+    }
+    p{
+        color: #999;
+        font-size: j(18);
+    }
+    span{
+        color: #009143;
+        font-size: j(14);
+    }
+}
+.button{
+    @extend %df;
+    @extend %aic;
+    @extend %jcc;
+    @extend %cp;
+    @extend %cfff;
+    font-size: j(32);
+    width: j(180);
+    height: j(60);
+    background-color: #009143;
+}
