@@ -24,57 +24,57 @@
             <li class="item">
                 <p class="label">1.	请问您希望在以下哪个平台公开并宣传门店相关信息（地址/联系方式/门店图片）（可多选）</p>
                 <div class="radio-group">
-                    <div class="radio-item"><i></i><span>嘉实多官方网站</span></div>
+                    <div class="radio-item active"><i></i><span>嘉实多官方网站</span></div>
                     <div class="radio-item"><i></i><span>嘉实多车保养管家小程序</span></div>
                     <div class="radio-item"><i></i><span>百度地图</span></div>
                     <div class="radio-item"><i></i><span>高德地图</span></div>
                 </div>
             </li>
-            <li class="item">
+            <li class="item flex">
                 <p class="label">2.	门店名称：</p>
                 <p class="value">嘉实多XX门店</p>
             </li>
-            <li class="item">
+            <li class="item flex">
                 <p class="label">3.	门店所在省份：</p>
-                <div class="value-group">
+                <div class="value-group select">
                     <select>
                         <option>省份</option>
                     </select>
                 </div>
             </li>
-            <li class="item">
+            <li class="item flex">
                 <p class="label">4.	门店所在城市：</p>
-                <div class="value-group">
+                <div class="value-group select">
                     <select>
                         <option>城市</option>
                     </select>
                 </div>
             </li>
-            <li class="item">
+            <li class="item flex">
                 <p class="label">5.	门店所在区县：</p>
                 <div class="value-group">
                     <input type="text" placeholder="请输入区县">
                 </div>
             </li>
-            <li class="item">
+            <li class="item flex">
                 <p class="label">6.	门店所在地址：</p>
                 <div class="value-group">
                     <input type="text" placeholder="请输入地址">
                 </div>
             </li>
-            <li class="item">
+            <li class="item flex">
                 <p class="label">7.	门店联系人姓名：</p>
                 <div class="value-group">
                     <input type="text" placeholder="请输入姓名">
                 </div>
             </li>
-            <li class="item">
+            <li class="item flex">
                 <p class="label">8.	门店联系人方式：</p>
                 <div class="value-group">
                     <input type="text" placeholder="请输入电话号码">
                 </div>
             </li>
-            <li class="item">
+            <li class="item flex">
                 <p class="label">9.	门店资质注册号：</p>
                 <div class="value-group">
                     <input type="text" placeholder="请输入注册号">
@@ -135,38 +135,19 @@
                 </div>
             </li>
         </ul>
-        <div class="button-group">
-            <div class="button"><span>上传</span></div>
-        </div>
     </div>
 
+    <div class="button-group">
+        <div class="button"><span>提交</span></div>
+    </div>
     <script src="assets/lib/jquery-1.8.1.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
     <script>
         $(function () {
-            var MenuController = (function ($) {
-                var $elButton = $('.menu-button'),
-                    $elMenuView = $('#menu-view'),
-                    show = function () {
-                        $elMenuView.show();
-                    },
-                    hide = function () {
-                        $elMenuView.hide();
-                    };
-                $elButton.on('click', show);
-                $elMenuView.on('click', function() {
-                    hide();
-                }).on('click', '.menu-inner', function (event) {
-                    event.stopPropagation();
-                }).on('click','div.menu-item-cell', function () {
-                    $(this).parent('.menu-item').toggleClass('active')
-                        .siblings().removeClass('active')
-                });
-                return {
-                    show: show,
-                    hide: hide,
-                }
-            })($)
-        });
+
+            $("select").select2();
+        })
     </script>
 </body>
 </html>
