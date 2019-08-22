@@ -1,0 +1,486 @@
+@import "../../../assets/scss/define";
+@import "../../../assets/scss/reset";
+
+.select2-selection__arrow{
+    display: none !important;
+}
+.select2-selection--single{
+    border: none !important;
+    height: f(105) !important;
+    background-color: transparent !important;
+}
+.select2-selection__rendered{
+    line-height: f(105) !important;
+    font-size: f(44);
+    color: #fff !important;
+}
+html,
+body {
+    @extend %pr;
+    @extend %w100;
+    //@extend %h100;
+}
+
+html{
+    background: url("../../../assets/images/css/bg-0524.jpg") repeat-y center;
+}
+body{
+    @extend %df;
+    @extend %fdc;
+}
+.head{
+    @extend %db;
+    @extend %w100;
+    height: auto;
+}
+.session{
+    @extend %df;
+    @extend %w100;
+    @extend %aic;
+    @extend %bsb;
+    @extend %jcs;
+    padding: 0 f(65);
+    &.first{
+        background: url("../../../assets/images/css/user-0524.jpg") center no-repeat;
+        height: f(250);
+        background-size: 100%;
+    }
+    &.second{
+        height: f(230);
+        background-color: #017f43;
+    }
+}
+.user{
+    @extend %df;
+    @extend %aic;
+}
+.avatar{
+    @extend %df;
+    @extend %aic;
+    @extend %jcc;
+    border-radius: 50%;
+    background-color: #a6a6a6;
+    height: f(190);
+    width: f(190);
+    margin-right: f(30);
+    img{
+        @extend %db;
+        border-radius: 50%;
+        height: f(180);
+        width: f(180);
+    }
+}
+.info{
+    border-left: 1px solid #444;
+    color: #444;
+    padding-left: f(40);
+    .name{
+        font-size: f(55);
+    }
+    p{
+        font-size: f(36);
+    }
+}
+.other{
+    @extend %tar;
+    p{
+        color: #158344;
+        font-size: f(27);
+    }
+    .link{
+        @extend %cp;
+        color: #343434;
+        font-size: f(36);
+        border-bottom: 1px solid #343434;
+    }
+    .null{
+        min-height: f(100);
+    }
+}
+.integral{
+    @extend %df;
+    @extend %aic;
+    @extend %fwb;
+    justify-content: flex-end;
+    font-size: f(40);
+    color: #158344;
+}
+
+.button-group{
+    @extend %df;
+    @extend %aic;
+    @extend %jcs;
+    padding: f(50) f(30);
+    .null{
+        width: f(30);
+    }
+}
+.button-link{
+    @extend %df;
+    @extend %aic;
+    @extend %jcc;
+    @extend %cp;
+    @extend %cfff;
+    font-size: f(42);
+    width: f(530);
+    height: f(195);
+    border-radius: f(10);
+    background-color: #028b49;
+    box-shadow: 0 0 j(10) j(10) rgba(0,0,0,.1);
+    .icon{
+        background: url("../../../assets/images/css/wldhmx-0524.png") no-repeat;
+        background-size: contain;
+        width: f(108);
+        height: f(140);
+    }
+    i{
+        margin-right: f(30);
+    }
+    &.mdgl{
+        background-color: #c33228;
+        i{
+            background: url("../../../assets/images/css/v0822-search.png") no-repeat;
+            background-size: contain;
+            width: f(107);
+            height: f(100);
+        }
+    }
+}
+
+.tab{
+    @extend %df;
+    @extend %aic;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+.tab-item{
+    @extend %df1;
+    @extend %df;
+    @extend %cp;
+    @extend %aic;
+    @extend %jcc;
+    @extend %cfff;
+    font-size: f(40);
+    height: f(150);
+    background-color: #728490;
+    &.active{
+        background-color: #8497a3;
+    }
+}
+
+.container{
+    //@extend %df1;
+    @extend %pr;
+    @extend %w100;
+}
+.content{
+    //@extend %pa;
+    //@extend %t0;
+    //@extend %l0;
+    @extend %w100;
+    //@extend %h100;
+    @extend %df;
+    @extend %aic;
+    @extend %fdc;
+}
+.filter{
+    @extend %df;
+    @extend %aic;
+    @extend %w100;
+}
+.filter-item{
+    @extend %df1;
+    @extend %pr;
+    width: 50%;
+    select{
+        @extend %w100;
+        @extend %h100;
+        @extend %bsb;
+        //@extend %tac;
+        @extend %oh;
+        color: #686a6c;
+        //text-align-last: center;
+        height: f(105);
+        line-height: f(105);
+        padding: 0 f(25);
+        border: none;
+        background-color: transparent;
+        font-size: f(44);
+        appearance:none;
+        -moz-appearance:none;
+        -webkit-appearance:none;
+        option{
+            @extend %tac;
+        }
+    }
+    &:after{
+        @extend %pa;
+        @extend %t50;
+        @include tfr(45deg);
+        content: '';
+        right: f(50);
+        margin-top: f(-30);
+        width: f(30);
+        height: f(30);
+        border-bottom: 2px solid #686a6c;
+        border-right: 2px solid #686a6c;
+    }
+}
+
+.list{
+    @extend %df1;
+    @extend %df;
+    @extend %fdc;
+    @extend %aic;
+    @extend %w100;
+    overflow-y: auto;
+    padding-bottom: f(30);
+
+    .item{
+        @extend %bsb;
+        width: f(1100);
+        border-radius: f(10);
+        margin-bottom: f(30);
+        padding: f(20);
+        background-color: #73838e;
+        border: 1px solid #545e69;
+        li{
+            @extend %df;
+            @extend %aic;
+        }
+        p{
+            @extend %df;
+            @extend %df1;
+            @extend %aic;
+            font-size: f(40);
+            margin-top: f(20);
+            color: #fff;
+            &:first-child{
+                margin-top: 0;
+            }
+            i{
+                width: j(23);
+                height: j(25);
+                margin: 0 j(5);
+                background: url("../../../assets/images/css/icon-2-0524.png") no-repeat;
+                background-size: j(100) j(200);
+                background-position: 0 j(-169);
+            }
+        }
+        .cell{
+            @extend %df;
+            @extend %df1;
+            @extend %aic;
+            margin-top: f(20);
+        }
+        .relation-item{
+            @extend %df;
+            @extend %aic;
+            @extend %jcc;
+            @extend %cfff;
+            font-size: f(36);
+            width: f(300);
+            height: f(60);
+            background-color: #017a33;
+            border-radius: f(30);
+            .select2-selection__arrow{
+                display: none !important;
+            }
+            .select2-selection--single{
+                border: none !important;
+                height: f(60) !important;
+                background-color: transparent !important;
+            }
+            .select2-selection__rendered{
+                @extend %tac;
+                line-height: f(60) !important;
+                font-size: f(36);
+                color: #fff !important;
+            }
+            select{
+                @extend %w100;
+                @extend %h100;
+                @extend %bsb;
+                @extend %tac;
+                @extend %oh;
+                color: #fff;
+                text-align-last: center;
+                height: f(60);
+                line-height: f(60);
+                padding: 0 f(50) 0 f(10);
+                border: none;
+                background-color: transparent;
+                font-size: f(36);
+                appearance:none;
+                -moz-appearance:none;
+                -webkit-appearance:none;
+                option{
+                    @extend %tac;
+                }
+            }
+        }
+        .cancel-button{
+            @extend %cp;
+        }
+        .select-relation{
+            @extend %pr;
+            &:before{
+                @extend %pa;
+                top: f(18);
+                content: '';
+                right: f(30);
+                width: 0;
+                height: 0;
+                border: f(20) solid;
+                border-color: #fff transparent transparent;
+            }
+        }
+    }
+}
+
+
+.main{
+    @extend %df;
+    @extend %fww;
+    @extend %jcs;
+    margin-top: f(50);
+    padding: 0 f(40);
+    .item{
+        @extend %cp;
+        @extend %df;
+        @extend %aic;
+        @extend %jcc;
+        @extend %cfff;
+        font-size: f(50);
+        width: f(516);
+        height: f(195);
+        background: url("../../../assets/images/css/button-bg-0524.png") center no-repeat;
+        background-size: contain;
+        margin-bottom: f(30);
+        i{
+            margin: 0 f(20) 0 f(50);
+            width: f(113);
+            height: f(127);
+            background: url("../../../assets/images/css/home-icon-0524.png") no-repeat;
+            background-size: f(243) f(571);
+        }
+        a,
+        span{
+            @extend %df1;
+            @extend %tac;
+            color: #158344;
+        }
+        &.item-1{
+            i{
+
+            }
+        }
+        &.item-2{
+            i{
+                background-position: f(-130) 0;
+            }
+        }
+        &.item-3{
+            i{
+                background-position: 0 f(-147);
+            }
+        }
+        &.item-4{
+            i{
+                background-position: f(-130) f(-147);
+            }
+        }
+        &.item-5{
+            i{
+                background-position: 0 f(-293);
+            }
+        }
+        &.item-6{
+            i{
+                background-position: f(-130) f(-293);
+            }
+        }
+        &.item-7{
+            i{
+                background-position: 0 f(-444);
+            }
+        }
+        &.item-8{
+            i{
+                background-position: f(-130) f(-444);
+            }
+        }
+    }
+
+}
+
+.table{
+    @extend %bsb;
+    margin-top: f(50);
+    width: f(1100);
+    border-radius: f(10);
+    margin-bottom: f(30);
+    background-color: #798f9b;
+    border: 1px solid #3a434f;
+    .tr{
+        @extend %df;
+        @extend %oh;
+        border-bottom: 1px solid #3a434f;
+        &:last-child{
+            border-bottom: none;
+        }
+        &:first-child{
+            .td{
+                font-size: f(38);
+            }
+        }
+    }
+    .td-1{
+        @extend %df;
+        @extend %aic;
+        @extend %jcc;
+        @extend %cfff;
+        @extend %oh;
+        height: f(135);
+        width: f(265);
+        font-size: f(38);
+        border-right: 1px solid #545e69;
+    }
+    .td{
+        @extend %df;
+        @extend %df1;
+        @extend %aic;
+        @extend %jcc;
+        @extend %cfff;
+        @extend %oh;
+        @extend %bsb;
+        //padding: 0 j(5);
+        word-break: break-all;
+        height: f(135);
+        font-size: f(36);
+        border-right: 1px solid #545e69;
+        &:first-child{
+            width: f(120);
+        }
+        &:last-child{
+            border-right: none;
+        }
+    }
+}
+
+.button-section-group{
+    @extend %w100;
+    @extend %bsb;
+    @extend %df;
+    @extend %aic;
+    background: url("../../../assets/images/css/v0822-button.png") center no-repeat;
+    background-size: contain;
+    height: f(402);
+    padding: 0 f(40);
+    .button-item{
+        @extend %df;
+        @extend %df1;
+        @extend %cp;
+        @extend %h100;
+    }
+}

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--设置字符编码-->
+    <meta charset="UTF-8">
+    <!--手机开发屏幕自适应-->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <!--设置标题-->
+    <title>宣传项目</title>
+    <script src="assets/lib/flexible.js"></script>
+</head>
+<body>
+    <div class="header-section">
+        <img src="../../../assets/images/html/head-0524.jpg"/>
+        <div class="menu-button"></div>
+    </div>
+    <div class="title">
+        <h2>线上门店信息宣传项目</h2>
+    </div>
+
+    <div class="container">
+        <p class="prompt">为了更好地线上增加嘉实多护车保养站的曝光，嘉实多计划在官方网站/微信小程序/百度地图/高德地图中宣传门店信息，引流更多高端消费者。如果您有兴趣加入本次营销项目，快来填写下方申请吧！</p>
+        <ul class="content">
+            <li class="item">
+                <p class="label">1.	请问您希望在以下哪个平台公开并宣传门店相关信息（地址/联系方式/门店图片）（可多选）</p>
+                <div class="radio-group">
+                    <div class="radio-item"><i></i><span>嘉实多官方网站</span></div>
+                    <div class="radio-item"><i></i><span>嘉实多车保养管家小程序</span></div>
+                    <div class="radio-item"><i></i><span>百度地图</span></div>
+                    <div class="radio-item"><i></i><span>高德地图</span></div>
+                </div>
+            </li>
+            <li class="item">
+                <p class="label">2.	门店名称：</p>
+                <p class="value">嘉实多XX门店</p>
+            </li>
+            <li class="item">
+                <p class="label">3.	门店所在省份：</p>
+                <div class="value-group">
+                    <select>
+                        <option>省份</option>
+                    </select>
+                </div>
+            </li>
+            <li class="item">
+                <p class="label">4.	门店所在城市：</p>
+                <div class="value-group">
+                    <select>
+                        <option>城市</option>
+                    </select>
+                </div>
+            </li>
+            <li class="item">
+                <p class="label">5.	门店所在区县：</p>
+                <div class="value-group">
+                    <input type="text" placeholder="请输入区县">
+                </div>
+            </li>
+            <li class="item">
+                <p class="label">6.	门店所在地址：</p>
+                <div class="value-group">
+                    <input type="text" placeholder="请输入地址">
+                </div>
+            </li>
+            <li class="item">
+                <p class="label">7.	门店联系人姓名：</p>
+                <div class="value-group">
+                    <input type="text" placeholder="请输入姓名">
+                </div>
+            </li>
+            <li class="item">
+                <p class="label">8.	门店联系人方式：</p>
+                <div class="value-group">
+                    <input type="text" placeholder="请输入电话号码">
+                </div>
+            </li>
+            <li class="item">
+                <p class="label">9.	门店资质注册号：</p>
+                <div class="value-group">
+                    <input type="text" placeholder="请输入注册号">
+                </div>
+            </li>
+            <li class="item">
+                <p class="label">10. 门店店招照片：<span>（可摄像头或者上传相册图片）</span></p>
+                <div class="photo-group">
+                    <div class="photo-item">
+                        <div class="image">
+                            <img src="../../../assets/images/html/v0822-sl01.jpg" alt=""/>
+                        </div>
+                        <span>示例图片</span>
+                    </div>
+                    <div class="photo-item photo-btn">
+                        <div class="image">
+                            <img src="" alt=""/>
+                            <input type="file"/>
+                        </div>
+                        <span>上传图片</span>
+                    </div>
+                </div>
+            </li>
+            <li class="item">
+                <p class="label">11. 营业执照照片：<span>（可摄像头或者上传相册图片）</span></p>
+                <div class="photo-group">
+                    <div class="photo-item">
+                        <div class="image">
+                            <img src="../../../assets/images/html/v0822-sl01.jpg" alt=""/>
+                        </div>
+                        <span>示例图片</span>
+                    </div>
+                    <div class="photo-item photo-btn">
+                        <div class="image">
+                            <img src="" alt=""/>
+                            <input type="file"/>
+                        </div>
+                        <span>上传图片</span>
+                    </div>
+                </div>
+            </li>
+            <li class="item">
+                <p class="label">11. 店主手持身份证照片：<span>（可摄像头或者上传相册图片）</span></p>
+                <div class="photo-group">
+                    <div class="photo-item">
+                        <div class="image">
+                            <img src="../../../assets/images/html/v0822-sl01.jpg" alt=""/>
+                        </div>
+                        <span>示例图片</span>
+                    </div>
+                    <div class="photo-item photo-btn">
+                        <div class="image">
+                            <img src="" alt=""/>
+                            <input type="file"/>
+                        </div>
+                        <span>上传图片</span>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <div class="button-group">
+            <div class="button"><span>上传</span></div>
+        </div>
+    </div>
+
+    <script src="assets/lib/jquery-1.8.1.min.js"></script>
+    <script>
+        $(function () {
+            var MenuController = (function ($) {
+                var $elButton = $('.menu-button'),
+                    $elMenuView = $('#menu-view'),
+                    show = function () {
+                        $elMenuView.show();
+                    },
+                    hide = function () {
+                        $elMenuView.hide();
+                    };
+                $elButton.on('click', show);
+                $elMenuView.on('click', function() {
+                    hide();
+                }).on('click', '.menu-inner', function (event) {
+                    event.stopPropagation();
+                }).on('click','div.menu-item-cell', function () {
+                    $(this).parent('.menu-item').toggleClass('active')
+                        .siblings().removeClass('active')
+                });
+                return {
+                    show: show,
+                    hide: hide,
+                }
+            })($)
+        });
+    </script>
+</body>
+</html>
+
