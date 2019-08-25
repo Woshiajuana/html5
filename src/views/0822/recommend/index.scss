@@ -1,0 +1,28 @@
+@import "../../../assets/scss/common";
+
+html,
+body {
+    @extend %pr;
+    @extend %w100;
+}
+
+.container{
+    @extend %w100;
+    @extend %df;
+    @extend %aic;
+    @extend %fdc;
+    padding: j(30) 0;
+}
+
+.item{
+    width: j(614);
+    margin: j(20) 0;
+    a,
+    img{
+        @extend %db;
+        @extend %w100;
+        height: auto;
+    }
+}
+
+
