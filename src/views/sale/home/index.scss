@@ -223,15 +223,15 @@ html{
         @extend %h100;
         &.zytd{
             background: url("../../../assets/images/css/v0822-zytd.png") center no-repeat;
-            background-size: auto 80%;
+            background-size: auto 77%;
         }
         &.jpxsmj{
             background: url("../../../assets/images/css/v0822-jpxsmj.png") center no-repeat;
-            background-size: contain;
+            background-size: auto 80%;
         }
         &.yxzx{
             background: url("../../../assets/images/css/v0822-yxzx.png") center no-repeat;
-            background-size: contain;
+            background-size: auto 80%;
         }
     }
 }
