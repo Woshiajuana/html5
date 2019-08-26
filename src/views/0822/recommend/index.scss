@@ -25,4 +25,84 @@ body {
     }
 }
 
+.footer{
+    @extend %df;
+    @extend %aic;
+    @extend %fdc;
+    margin: j(50) 0;
+}
+.button{
+    @extend %df;
+    @extend %aic;
+    @extend %jcc;
+    @extend %cfff;
+    @extend %fwb;
+    height: j(100);
+    width: j(390);
+    border-radius: j(50);
+    background-color: #017a33;
+    font-size: j(32);
+    i{
+        width: j(54);
+        height: j(61);
+        background: url("../../../assets/images/css/v0822-down.png") center no-repeat;
+        background-size: contain;
+        margin-right: j(16);
+    }
+}
 
+.popup-warp{
+    @extend %pf;
+    @extend %t0;
+    @extend %l0;
+    @extend %r0;
+    @extend %b0;
+    @extend %w100;
+    @extend %h100;
+    @extend %df;
+    @extend %aic;
+    @extend %jcc;
+    z-index: 9;
+    background-color: rgba(0,0,0,.3);
+}
+.popup-inner{
+    @extend %pr;
+    @extend %df;
+    @extend %fdc;
+    @extend %aic;
+    @extend %jcc;
+    width: j(690);
+    padding: j(60) j(5);
+    line-height: 1.5;
+    background-color: #fff;
+    border-radius: j(10);
+    p{
+        @extend %tac;
+    }
+}
+.popup-icon{
+    width: j(76);
+    height: j(85);
+    background: url("../../../assets/images/css/v0822-down-pop.png") center no-repeat;
+    background-size: contain;
+    margin-bottom: j(20);
+}
+.popup-close{
+    @extend %pa;
+    @extend %t0;
+    @extend %r0;
+    @extend %cp;
+    width: j(72);
+    height: j(65);
+    background: url("../../../assets/images/css/v0822-pop-close.png") center no-repeat;
+    background-size: contain;
+}
+.popup-prompt{
+    @extend %fwb;
+    font-size: j(32);
+    color: #333;
+}
+.popup-text{
+    color: #017a33;
+    font-size: j(24);
+}
