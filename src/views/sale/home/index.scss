@@ -214,14 +214,24 @@ html{
     @extend %w100;
     @extend %df;
     @extend %aic;
-    background: url("../../../assets/images/css/jxg-btn-0604.png") center no-repeat;
     background-size: contain;
-    height: f(425);
-    padding: f(30) 0;
+    height: f(432);
     .button-item{
         @extend %df;
         @extend %df1;
         @extend %cp;
         @extend %h100;
+        &.zytd{
+            background: url("../../../assets/images/css/v0822-zytd.png") center no-repeat;
+            background-size: auto 80%;
+        }
+        &.jpxsmj{
+            background: url("../../../assets/images/css/v0822-jpxsmj.png") center no-repeat;
+            background-size: contain;
+        }
+        &.yxzx{
+            background: url("../../../assets/images/css/v0822-yxzx.png") center no-repeat;
+            background-size: contain;
+        }
     }
 }
