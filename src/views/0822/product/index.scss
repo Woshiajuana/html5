@@ -1,0 +1,79 @@
+@import "../../../assets/scss/common";
+
+html,
+body {
+    @extend %pr;
+    @extend %w100;
+}
+.head{
+    @extend %db;
+    @extend %w100;
+    height: auto;
+}
+.title{
+    @extend %df;
+    @extend %aic;
+    @extend %jcc;
+    height: j(118);
+    background-color: #ececec;
+    font-size: j(36);
+    color: #009143;
+    i{
+        width: j(62);
+        height: j(70);
+        margin-right: j(20);
+        background: url("../../../assets/images/css/shzt-icon-0524.png") center no-repeat;
+        background-size: contain;
+    }
+    h2{
+        @extend %fwn;
+    }
+}
+
+.container{
+    background-color: #fff;
+}
+.item{
+    @extend %df;
+    @extend %aic;
+    padding: j(20) j(40);
+    border-bottom: 1px solid #ddd;
+    img{
+        @extend %bsb;
+        @extend %db;
+        border: 1px solid #009143;
+        width: j(160);
+        height: j(160);
+    }
+}
+.info{
+    @extend %df1;
+    margin-right: j(20);
+    height: j(160);
+    line-height: 1.5;
+    a{
+        @extend %db;
+    }
+    p{
+        font-size: j(26);
+        color: #333;
+        padding-left: j(40);
+    }
+    .time{
+        font-size: j(20);
+        color: #999;
+    }
+    .prompt{
+        @extend %pr;
+        &:before{
+            @extend %pa;
+            left: 0;
+            top: j(15);
+            content: '';
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            background-color: #009143;
+        }
+    }
+}
