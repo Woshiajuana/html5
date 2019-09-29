@@ -1,0 +1,174 @@
+@import "../../../assets/scss/common";
+
+html,
+body {
+    @extend %pr;
+    @extend %w100;
+    @extend %h100;
+    background-color: #ececec;
+}
+.head{
+    @extend %db;
+    @extend %w100;
+    height: auto;
+}
+body{
+    @extend %df;
+    @extend %fdc;
+}
+.title{
+    @extend %df;
+    @extend %aic;
+    @extend %jcc;
+    height: j(118);
+    background-color: #ececec;
+    font-size: j(36);
+    color: #009143;
+    i{
+        width: j(81);
+        height: j(50);
+        margin-right: j(20);
+        background: url("../../../assets/images/css/v0929-title.png") center no-repeat;
+        background-size: contain;
+    }
+    h2{
+        @extend %fwn;
+    }
+}
+
+.tab-section{
+    @extend %df;
+    @extend %aic;
+    background-color: #fff;
+    padding-right: j(20);
+    box-shadow: 0 j(2) j(5) j(5) rgba(0,0,0,.1);
+}
+.select-group{
+    @extend %df;
+    @extend %df1;
+    @extend %aic;
+    height: j(80);
+}
+.select-item{
+    @extend %pr;
+    @extend %df;
+    @extend %aic;
+    @extend %jcc;
+    @extend %df1;
+    font-size: j(32);
+    height: j(80);
+    color: #009143;
+    select{
+        @extend %df;
+        @extend %df1;
+        @extend %jcc;
+        @extend %aic;
+    }
+}
+.select-text{
+    @extend %cp;
+    @extend %df;
+    @extend %df1;
+    @extend %jcc;
+    @extend %aic;
+    height: j(80);
+    font-size: j(32);
+    color: #009143;
+    &:after{
+        margin-left: j(5);
+        content: '';
+        background: url("../../../assets/images/css/v0929-arrow.png") center no-repeat;
+        width: j(39);
+        height: j(20);
+        background-size: contain;
+    }
+}
+.select-options{
+    @extend %pa;
+    left: j(20);
+    right: j(20);
+    top: j(88);
+    background-color: #fff;
+    border-radius: j(10);
+    padding: 0 j(10);
+    box-shadow: 0 j(2) j(5) j(5) rgba(0,0,0,.1);
+    .options{
+        @extend %cp;
+        @extend %c3;
+        @extend %pr;
+        @extend %df;
+        @extend %aic;
+        @extend %jcc;
+        height: j(60);
+        font-size: j(28);
+        border-bottom: 1px solid #333;
+        &:last-child{
+            border-bottom: none;
+        }
+        &.active{
+            color: #009143;
+        }
+    }
+}
+.input-group{
+    @extend %pr;
+    width: j(260);
+    height: j(50);
+    border-radius: j(30);
+    background-color: #ddd;
+    i{
+        @extend %pa;
+        @extend %t50;
+        left: j(10);
+        margin-top: j(-15);
+        width: j(30);
+        height: j(30);
+        background: url("../../../assets/images/css/v0929-search.png") center no-repeat;
+        background-size: contain;
+    }
+    input{
+        @extend %pa;
+        @extend %t0;
+        @extend %l0;
+        @extend %r0;
+        @extend %b0;
+        @extend %bsb;
+        @extend %w100;
+        border: none;
+        padding: 0 j(10) 0 j(50);
+        background-color: transparent;
+    }
+}
+
+.list-section{
+    @extend %w100;
+    @extend %df1;
+    overflow-y: auto;
+    dt{
+        @extend %c3;
+        @extend %df;
+        @extend %aic;
+        font-size: j(28);
+        height: j(70);
+        padding: 0 j(40);
+    }
+    dd{
+        @extend %df;
+        @extend %aic;
+        @extend %jcs;
+        padding: 0 j(40);
+        border-bottom: 1px solid #ececec;
+        height: j(100);
+        background-color: #fff;
+    }
+    .label{
+        @extend %c3;
+        font-size: j(36);
+    }
+    .value{
+        @extend %fwb;
+        color: #009143;
+        font-size: j(48);
+    }
+
+}
