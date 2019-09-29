@@ -88,6 +88,8 @@ body{
     left: j(20);
     right: j(20);
     top: j(88);
+    max-height: j(600);
+    overflow-y: auto;
     background-color: #fff;
     border-radius: j(10);
     padding: 0 j(10);
