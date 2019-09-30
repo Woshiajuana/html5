@@ -172,5 +172,11 @@ body{
         color: #009143;
         font-size: j(48);
     }
+    .null-prompt{
+        @extend %c9;
+        @extend %jcc;
+        font-size: j(28);
+        height: j(200);
+    }
 
 }

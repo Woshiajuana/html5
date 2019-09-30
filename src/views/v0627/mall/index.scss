@@ -39,29 +39,30 @@ body{
         font-size: j(16);
         padding-left: j(10);
     }
+    .link-group{
+        @extend %df;
+        @extend %aic;
+    }
     .value{
         @extend %fwb;
         font-size: j(46);
         padding-left: j(10);
     }
     .link{
-        @extend %cfff;
         @extend %cp;
+        @extend %df;
         @extend %aic;
-        @extend %dib;
+        color: #f2f2f2;
         font-size: j(14);
-        width: j(255);
-        height: j(54);
-        background: url("../../../assets/images/css/v0627-rule-icon.png") no-repeat;
-        background-size: contain;
-        //i{
-        //    @extend %dib;
-        //    width: j(17);
-        //    height: j(17);
-        //    margin-right: j(5);
-        //    background: url("../../../assets/images/css/v0627-xingxing.png") no-repeat;
-        //    background-size: contain;
-        //}
+        margin-right: j(20);
+        border-bottom: 1px solid #ddd;
+        i{
+            width: j(38);
+            height: j(33);
+            margin-right: j(10);
+            background: url("../../../assets/images/css/v0929-icon.png") no-repeat;
+            background-size: contain;
+        }
     }
     .icon{
         @extend %pa;
@@ -103,9 +104,8 @@ body{
 }
 .tab-select{
     @extend %pa;
-    @extend %l50;
-    margin-left: j(-130);
-    width: j(240);
+    left: j(20);
+    right: j(20);
     top: j(70);
     background-color: #fff;
     border-radius: j(12);
