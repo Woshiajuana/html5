@@ -165,12 +165,12 @@ body{
     }
     .label{
         @extend %c3;
-        font-size: j(36);
+        font-size: j(32);
     }
     .value{
         @extend %fwb;
         color: #009143;
-        font-size: j(48);
+        font-size: j(42);
     }
     .null-prompt{
         @extend %c9;
