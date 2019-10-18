@@ -195,3 +195,75 @@ body {
     width: j(200);
     background-color: #017a33;
 }
+
+.popup-wrap{
+    @extend %pf;
+    @extend %w100;
+    @extend %l0;
+    @extend %r0;
+    @extend %t0;
+    @extend %b0;
+    //@extend %df;
+    //@extend %aic;
+    //@extend %jcc;
+    z-index: 9;
+    align-items: flex-start;
+    overflow-y: auto;
+    padding: j(120) 0;
+    background-color: rgba(0,0,0,.3);
+}
+.popup-inner{
+    @extend %df;
+    @extend %fdc;
+    @extend %aic;
+    @extend %ma;
+    width: j(650);
+    background-color: #fff;
+    border-radius: j(12);
+}
+.popup-icon{
+    @extend %bsb;
+    margin-top: j(-60);
+    border: j(4) solid #ccc;
+    border-radius: 50%;
+    width: j(120);
+    height: j(120);
+    background: url("../../../assets/images/css/v1018-icon.png") no-repeat;
+    background-size: contain;
+    background-color: #118c44;
+}
+.popup-title{
+    @extend %c3;
+    @extend %fwn;
+    font-size: j(42);
+    line-height: 1.5;
+    margin: j(10) 0;
+}
+.popup-content{
+    border: 1px solid #d3c075;
+    img{
+        width: j(585);
+        height: auto;
+    }
+}
+.popup-prompt{
+    @extend %c9;
+    font-size: j(28);
+    line-height: 1.5;
+    margin: j(10) 0;
+}
+.popup-button{
+    @extend %df;
+    @extend %cp;
+    @extend %cfff;
+    @extend %aic;
+    @extend %jcc;
+    @extend %bsb;
+    border: j(4) solid #ccc;
+    border-radius: j(30);
+    width: j(260);
+    height: j(60);
+    font-size: j(28);
+    margin-bottom: j(-30);
+    background-color: #118c44;
+}
