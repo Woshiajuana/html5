@@ -1,0 +1,76 @@
+@import "../../../assets/scss/common";
+
+html,
+body {
+    @extend %pr;
+    @extend %h100;
+    @extend %w100;
+}
+body{
+    @extend %df;
+    @extend %fdc;
+    background: url("../../../assets/images/css/bg-0524.jpg") repeat-y center;
+}
+.head{
+    @extend %db;
+    @extend %w100;
+    height: auto;
+    img{
+        @extend %db;
+        @extend %w100;
+        height: auto;
+    }
+}
+.main-section{
+    @extend %df1;
+    @extend %df;
+    @extend %fdc;
+    @extend %aic;
+    @extend %jcc;
+}
+
+.button-item{
+    @extend %cp;
+    width: f(843);
+    height: f(210);
+    background: url("../../../assets/images/css/v20191122-icon.png") no-repeat;
+    background-size: f(843) f(1073);
+    &:nth-child(1) {
+        background-position: 0 0;
+    }
+    &:nth-child(2) {
+        background-position: 0 f(-215);
+    }
+    &:nth-child(3) {
+        background-position: 0 f(-430);
+    }
+    &:nth-child(4) {
+        background-position: 0 f(-645);
+    }
+    &:nth-child(5) {
+        background-position: 0 f(-860);
+    }
+}
+
+
+.footer-section{
+    @extend %db;
+    @extend %pr;
+    @extend %w100;
+    height: auto;
+    &:after{
+        @extend %pa;
+        @extend %r0;
+        top: f(-130);
+        content: '';
+        width: f(303);
+        height: f(132);
+        background: url("../../../assets/images/css/v20191122-icon2.png") no-repeat;
+        background-size: contain;
+    }
+    img{
+        @extend %db;
+        @extend %w100;
+        height: auto;
+    }
+}
