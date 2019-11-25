@@ -3,13 +3,16 @@
 html,
 body {
     @extend %pr;
-    @extend %h100;
     @extend %w100;
+}
+html{
+    @extend %h100;
 }
 body{
     @extend %df;
     @extend %fdc;
     background: url("../../../assets/images/css/bg-0524.jpg") repeat-y center;
+    min-height: 100%;
 }
 .head{
     @extend %db;
@@ -27,6 +30,7 @@ body{
     @extend %fdc;
     @extend %aic;
     @extend %jcc;
+    margin-bottom: f(600);
 }
 
 .button-item{
@@ -55,7 +59,9 @@ body{
 
 .footer-section{
     @extend %db;
-    @extend %pr;
+    @extend %b0;
+    @extend %l0;
+    @extend %pa;
     @extend %w100;
     height: auto;
     &:after{
