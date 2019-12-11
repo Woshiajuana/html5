@@ -1,0 +1,199 @@
+@import "../../../../assets/scss/com20191211";
+
+html,
+body {
+    @extend %pr;
+    @extend %w100;
+}
+
+.header-section{
+    @extend %pr;
+    @extend %df;
+    @extend %aic;
+    @extend %fdc;
+    @extend %oh;
+    height: f(520);
+    background-color: #06974a;
+}
+.header-title{
+    @extend %cfff;
+    @extend %fwb;
+    margin-top: f(80);
+    letter-spacing: f(10);
+    font-size: f(60);
+}
+.header-avatar{
+    @extend %bsb;
+    margin-top: f(20);
+    width: f(160);
+    height: f(160);
+    border: 1px #ddd solid;
+    border-radius: 50%;
+}
+.header-info{
+    @extend %df;
+    @extend %w100;
+    @extend %aic;
+    @extend %cfff;
+    @extend %bsb;
+    padding: 0 f(100);
+    margin-top: f(20);
+    p{
+        @extend %df1;
+        @extend %jcc;
+        @extend %aic;
+        @extend %df;
+    }
+    i{
+        margin-right: f(20);
+    }
+    .user-icon{
+        width: f(39);
+        height: f(47);
+        background: url("../../../../assets/images/css/20191211-mtc-user.png") center no-repeat;
+        background-size: contain;
+    }
+    .tel-icon{
+        width: f(53);
+        height: f(48);
+        background: url("../../../../assets/images/css/20191211-mtc-tel.png") center no-repeat;
+        background-size: contain;
+    }
+}
+.header-link{
+    @extend %pa;
+    @extend %cp;
+    @extend %df;
+    @extend %aic;
+    @extend %jcc;
+    @extend %cfff;
+    right: f(40);
+    top: f(200);
+    width: f(225);
+    height: f(65);
+    background: url("../../../../assets/images/css/20191211-mtc-link.png") center no-repeat;
+    background-size: contain;
+}
+
+
+.notice-section{
+    @extend %pr;
+    @extend %df;
+    @extend %aic;
+    @extend %boxs;
+    margin: f(-50) auto 0;
+    width: f(1055);
+    height: f(100);
+    border-radius: f(50);
+    background-color: #fff;
+}
+.notice-icon{
+    @extend %pr;
+    @extend %df;
+    @extend %aic;
+    @extend %jcc;
+    margin: 0 f(50);
+    i{
+        width: f(75);
+        height: f(79);
+        background: url("../../../../assets/images/css/20191211-mtc-tz.png") center no-repeat;
+        background-size: contain;
+    }
+    span{
+        @extend %pa;
+        @extend %cfff;
+        top: f(10);
+        left: f(40);
+        padding: 0 f(5);
+        border-radius: f(15);
+        height: f(30);
+        background-color: red;
+        font-size: f(28);
+        line-height: f(40);
+        border: 1px #fff solid;
+    }
+}
+.notice-content{
+    p{
+        @extend %c3;
+        font-size: f(36);
+    }
+}
+
+.section{
+    @extend %boxs;
+    @extend %bsb;
+    border-radius: f(20);
+    margin: f(40) auto;
+    width: f(1055);
+    padding: 0 f(30);
+}
+.menu-ul{
+    @extend %df;
+    @extend %fww;
+}
+.menu-item{
+    @extend %cp;
+    @extend %df;
+    @extend %aic;
+    @extend %jcc;
+    @extend %fdc;
+    i{
+        width: f(100);
+        height: f(100);
+    }
+    h3{
+        @extend %c3;
+        font-size: f(42);
+    }
+    p{
+        font-size: f(36);
+        color: #06974a;
+    }
+    strong{
+        color: red;
+    }
+}
+
+
+.entry-section{
+    @extend %df;
+    @extend %aic;
+    @extend %jcc;
+    width: f(1055);
+    margin: f(100) auto;
+}
+.entry-item{
+    @extend %cp;
+    @extend %df;
+    @extend %fdc;
+    @extend %df1;
+    @extend %aic;
+    @extend %jcc;
+    height: f(200);
+    &:nth-child(1) {
+        background: url("../../../../assets/images/css/20191211-entry-1.png") center no-repeat;
+        background-size: contain;
+    }
+    &:nth-child(2) {
+        background: url("../../../../assets/images/css/20191211-entry-2.png") center no-repeat;
+        background-size: contain;
+    }
+    &:nth-child(3) {
+        background: url("../../../../assets/images/css/20191211-entry-3.png") center no-repeat;
+        background-size: contain;
+    }
+    &:nth-child(4) {
+        background: url("../../../../assets/images/css/20191211-entry-4.png") center no-repeat;
+        background-size: contain;
+    }
+}
+
+.advert-section{
+    width: f(1055);
+    margin: f(30) auto;
+    img{
+        @extend %w100;
+        height: auto;
+    }
+}
