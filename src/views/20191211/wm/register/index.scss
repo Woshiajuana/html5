@@ -43,20 +43,32 @@ body{
     @extend %fdc;
     @extend %aic;
     //@extend %jcc;
-    margin: f(-80) auto 0;
+    margin: 0 auto 0;
     width: f(883);
     padding-bottom: f(200);
     background: url("../../../../assets/images/css/20191211-vm-r-c.png") center repeat-y;
-    background-size: f(978) auto;
+    background-size: 100% auto;
+    &:before{
+        @extend %pa;
+        @extend %l0;
+        top: f(-59);
+        right: f(1);
+        content: '';
+        height: f(69);
+        background: url("../../../../assets/images/css/20191211-vm-r-t.png") top center no-repeat;
+        background-size: 100% auto;
+        background-position: f(-0);
+    }
     &:after{
         @extend %pa;
         @extend %l0;
-        @extend %b0;
+        bottom: f(-60);
         right: f(1);
         content: '';
-        height: f(75);
-        background: url("../../../../assets/images/css/20191211-vm-r-b.png") bottom center no-repeat;
-        background-size: f(977) auto;
+        height: f(69);
+        background: url("../../../../assets/images/css/20191211-vm-r-b.png") bottom no-repeat;
+        background-position: f(-4);
+        background-size: 100% auto;
     }
 }
 .bar{
@@ -79,8 +91,6 @@ body{
     @extend %aic;
     @extend %fdc;
     padding-top: f(85);
-    background: url("../../../../assets/images/css/20191211-vm-r-t.png") top center no-repeat;
-    background-size: f(975) auto;
     .form{
         background: none;
     }
