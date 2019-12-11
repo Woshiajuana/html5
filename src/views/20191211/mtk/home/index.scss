@@ -32,14 +32,32 @@ body {
 }
 .header-info{
     @extend %df;
+    @extend %w100;
     @extend %aic;
     @extend %cfff;
+    @extend %bsb;
+    padding: 0 f(100);
     margin-top: f(20);
     p{
-
+        @extend %df1;
+        @extend %jcc;
+        @extend %aic;
+        @extend %df;
     }
     i{
-
+        margin-right: f(20);
+    }
+    .user-icon{
+        width: f(39);
+        height: f(47);
+        background: url("../../../../assets/images/css/20191211-mtc-user.png") center no-repeat;
+        background-size: contain;
+    }
+    .tel-icon{
+        width: f(53);
+        height: f(48);
+        background: url("../../../../assets/images/css/20191211-mtc-tel.png") center no-repeat;
+        background-size: contain;
     }
 }
 .header-link{
@@ -51,7 +69,10 @@ body {
     @extend %cfff;
     right: f(40);
     top: f(200);
-    background-color: #ddd;
+    width: f(225);
+    height: f(65);
+    background: url("../../../../assets/images/css/20191211-mtc-link.png") center no-repeat;
+    background-size: contain;
 }
 
 
@@ -68,23 +89,34 @@ body {
 }
 .notice-icon{
     @extend %pr;
-    margin-left: f(50);
+    @extend %df;
+    @extend %aic;
+    @extend %jcc;
+    margin: 0 f(50);
     i{
-        width: f(50);
-        height: f(50);
-        background-color: red;
+        width: f(75);
+        height: f(79);
+        background: url("../../../../assets/images/css/20191211-mtc-tz.png") center no-repeat;
+        background-size: contain;
     }
     span{
+        @extend %pa;
         @extend %cfff;
+        top: f(10);
+        left: f(40);
+        padding: 0 f(5);
         border-radius: f(15);
         height: f(30);
         background-color: red;
+        font-size: f(28);
+        line-height: f(40);
+        border: 1px #fff solid;
     }
 }
 .notice-content{
     p{
         @extend %c3;
-        font-size: f(30);
+        font-size: f(36);
     }
 }
 
@@ -96,13 +128,28 @@ body {
     width: f(1055);
     padding: 0 f(30);
     &.data-section{
-
+        i{
+            background: url("../../../../assets/images/css/20191211-mtc-zl.png") center no-repeat;
+            width: f(68);
+            height: f(58);
+            background-size: contain;
+        }
     }
     &.train-section{
-
+        i{
+            background: url("../../../../assets/images/css/20191211-mtc-sj.png") center no-repeat;
+            width: f(69);
+            height: f(75);
+            background-size: contain;
+        }
     }
     &.integral-section{
-
+        i{
+            background: url("../../../../assets/images/css/20191211-mtc-jf.png") center no-repeat;
+            width: f(66);
+            height: f(67);
+            background-size: contain;
+        }
     }
 }
 .section-title{
@@ -115,7 +162,6 @@ body {
         margin-left: f(10);
         width: f(50);
         height: f(50);
-        background-color: red;
     }
 }
 .section-ul{
@@ -188,24 +234,31 @@ body {
     @extend %aic;
     @extend %jcc;
     width: f(1055);
-    margin: f(30) auto;
+    margin: f(100) auto;
 }
 .entry-item{
+    @extend %cp;
     @extend %df;
     @extend %fdc;
     @extend %df1;
     @extend %aic;
     @extend %jcc;
-    i{
-        width: f(200);
-        height: f(200);
-        background-color: red;
+    height: f(200);
+    &:nth-child(1) {
+        background: url("../../../../assets/images/css/20191211-entry-1.png") center no-repeat;
+        background-size: contain;
     }
-    span{
-        @extend %fwb;
-        margin-top: f(30);
-        color: #06974a;
-        font-size: f(36);
+    &:nth-child(2) {
+        background: url("../../../../assets/images/css/20191211-entry-2.png") center no-repeat;
+        background-size: contain;
+    }
+    &:nth-child(3) {
+        background: url("../../../../assets/images/css/20191211-entry-3.png") center no-repeat;
+        background-size: contain;
+    }
+    &:nth-child(4) {
+        background: url("../../../../assets/images/css/20191211-entry-4.png") center no-repeat;
+        background-size: contain;
     }
 }
 
