@@ -1,0 +1,209 @@
+@import "../../../../assets/scss/com20191211";
+
+.select2-selection__arrow{
+    display: none !important;
+}
+.select2-selection--single{
+    border: none !important;
+    height: f(140) !important;
+    background-color: transparent !important;
+}
+.select2-selection__rendered{
+    line-height: f(140) !important;
+    font-size: f(44);
+    color: #fff !important;
+}
+input::-webkit-input-placeholder {
+    color: #fff;
+}
+html,
+body {
+    @extend %pr;
+    @extend %w100;
+    min-height: 100%;
+}
+html{
+    background: url("../../../../assets/images/css/20191211-vm-b.jpg") repeat-y center;
+}
+body{
+    //background: url("../../../assets/images/css/zcye-bg2.png") right bottom no-repeat;
+    //background-size: f(828) auto;
+}
+.header-section{
+    @extend %pr;
+    img{
+        @extend %w100;
+        @extend %db;
+        height: auto;
+    }
+}
+.main{
+    @extend %df;
+    @extend %pr;
+    @extend %fdc;
+    @extend %aic;
+    //@extend %jcc;
+    margin: f(-80) auto 0;
+    width: f(883);
+    padding-bottom: f(200);
+    background: url("../../../../assets/images/css/20191211-vm-r-c.png") center repeat-y;
+    background-size: 100% auto;
+    &:after{
+        @extend %pa;
+        @extend %l0;
+        @extend %b0;
+        right: f(1);
+        content: '';
+        height: f(75);
+        background: url("../../../../assets/images/css/20191211-vm-r-b.png") bottom center no-repeat;
+        background-size: contain;
+    }
+}
+.bar{
+    width: f(725);
+    height: 1px;
+    background-color: #fff;
+    margin: f(25) 0;
+}
+.form-child{
+    width: f(725);
+    margin-top: f(30);
+    padding-top: f(30) !important;
+    border-top: 1px solid #fff;
+}
+.form{
+    @extend %w100;
+    @extend %df;
+    @extend %pr;
+    @extend %oh;
+    @extend %aic;
+    @extend %fdc;
+    padding-top: f(85);
+    background: url("../../../../assets/images/css/20191211-vm-r-t.png") top center no-repeat;
+    background-size: 100% auto;
+    .form{
+        background: none;
+    }
+}
+.form-item{
+    @extend %df;
+    @extend %aic;
+    margin-top: f(25);
+    width: f(725);
+    p{
+        font-size: f(26);
+        color: #e40521;
+    }
+    .null{
+        width: j(30);
+    }
+    &.form-item-p{
+        margin-top: f(20);
+    }
+    &.form-item-null{
+        margin-top: 0;
+    }
+}
+.form-item-box{
+    height: f(140);
+    border-radius: f(10);
+    background-color: #748490;
+}
+.input-box{
+    @extend %df1;
+    height: f(140);
+    border-radius: f(10);
+    background-color: #748490;
+    select,
+    input{
+        @extend %w100;
+        @extend %h100;
+        @extend %bsb;
+        line-height: f(140);
+        padding: 0 f(25);
+        border: none;
+        background-color: transparent;
+        font-size: f(44);
+        color: #fff;
+        appearance:none;
+        -moz-appearance:none;
+        -webkit-appearance:none;
+    }
+    &.select{
+        background: #748490 url(../../../../assets/images/css/select-arrow-0524.png) right center no-repeat;
+        background-size: f(116) auto;
+        select{
+            padding-right: f(120);
+        }
+    }
+}
+.button-code{
+    @extend %df;
+    @extend %aic;
+    @extend %jcc;
+    @extend %cp;
+    font-size: f(44);
+    color: #fff;
+    width: f(292);
+    height: f(134);
+    margin-right: f(3);
+    border-radius: f(10);
+    background-color: #8396a1;
+}
+.form-item-radio{
+    @extend %df;
+    @extend %aic;
+    font-size: f(44);
+    color: #545454;
+}
+.radio{
+    @extend %df;
+    @extend %cp;
+    @extend %aic;
+    margin-right: f(20);
+    height: f(100);
+    font-size: f(44);
+    color: #545454;
+    i{
+        margin-right: f(10);
+        width: f(46);
+        height: f(50);
+        border-radius: f(10);
+        background-color: #6a808d;
+    }
+    &.active{
+        i{
+            background: url("../../../../assets/images/css/icon-select-0524.jpg") center no-repeat;
+            background-size: contain;
+        }
+    }
+}
+.agreement{
+    margin: f(10) 0;
+    width: f(725);
+    //margin-right: 0;
+}
+.button{
+    @extend %df;
+    @extend %cp;
+    @extend %aic;
+    @extend %jcc;
+    @extend %cfff;
+    font-size: f(43);
+    width: f(725);
+    height: f(140);
+    border-radius: f(10);
+    background-color: #067026;
+}
+
+.foot{
+    @extend %w100;
+    @extend %pr;
+    @extend %tar;
+    margin-top: f(-50);
+    img{
+        @extend %dib;
+        width: f(828);
+        height: auto;
+    }
+}
