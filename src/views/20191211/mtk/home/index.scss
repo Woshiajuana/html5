@@ -4,5 +4,116 @@ html,
 body {
     @extend %pr;
     @extend %w100;
-    min-height: 100%;
+}
+
+.header-section{
+    @extend %df;
+    @extend %aic;
+    @extend %fdc;
+    @extend %oh;
+    height: f(520);
+    background-color: #06974a;
+}
+.header-title{
+    @extend %cfff;
+    @extend %fwb;
+    margin-top: f(100);
+    letter-spacing: f(10);
+    font-size: f(60);
+}
+.header-avatar{
+    width: f(160);
+    height: f(160);
+    border: 1px #ddd solid;
+    border-radius: 50%;
+}
+.header-info{
+    p{
+
+    }
+    i{
+
+    }
+}
+.header-link{
+
+}
+
+
+.notice-section{
+
+}
+.notice-icon{
+    i{
+
+    }
+    span{
+
+    }
+}
+.notice-content{
+    p{
+
+    }
+}
+
+.section{
+    &.data-section{
+
+    }
+    &.train-section{
+
+    }
+    &.integral-section{
+
+    }
+}
+.section-title{
+    i{
+
+    }
+}
+.section-ul{
+    li{
+
+    }
+    .ul-value{
+
+    }
+    .ul-label{
+
+    }
+    .color-red{
+
+    }
+}
+.section-info{
+    p{
+
+    }
+    strong{
+
+    }
+}
+.section-button{
+
+}
+
+.entry-section{
+
+}
+.entry-item{
+    i{
+
+    }
+    span{
+
+    }
+}
+
+.advert-section{
+    img{
+        @extend %w100;
+        height: auto;
+    }
 }
