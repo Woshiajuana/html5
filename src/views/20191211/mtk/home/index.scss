@@ -7,6 +7,7 @@ body {
 }
 
 .header-section{
+    @extend %pr;
     @extend %df;
     @extend %aic;
     @extend %fdc;
@@ -17,17 +18,22 @@ body {
 .header-title{
     @extend %cfff;
     @extend %fwb;
-    margin-top: f(100);
+    margin-top: f(80);
     letter-spacing: f(10);
     font-size: f(60);
 }
 .header-avatar{
+    @extend %bsb;
+    margin-top: f(20);
     width: f(160);
     height: f(160);
     border: 1px #ddd solid;
     border-radius: 50%;
 }
 .header-info{
+    @extend %df;
+    @extend %aic;
+    @extend %cfff;
     p{
 
     }
@@ -36,7 +42,15 @@ body {
     }
 }
 .header-link{
-
+    @extend %pa;
+    @extend %cp;
+    @extend %df;
+    @extend %aic;
+    @extend %jcc;
+    @extend %cfff;
+    right: f(40);
+    top: f(200);
+    background-color: #ddd;
 }
 
 
