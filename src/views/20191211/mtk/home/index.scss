@@ -1,0 +1,8 @@
+@import "../../../../assets/scss/com20191211";
+
+html,
+body {
+    @extend %pr;
+    @extend %w100;
+    min-height: 100%;
+}
