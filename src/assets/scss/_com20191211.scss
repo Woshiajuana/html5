@@ -1,3 +1,7 @@
 
 @import "../../assets/scss/reset";
 @import "../../assets/scss/define";
+
+%boxs{
+    box-shadow: 0 0 j(5) j(5) rgba(0,0,0,.05);
+}

@@ -34,6 +34,7 @@ body {
     @extend %df;
     @extend %aic;
     @extend %cfff;
+    margin-top: f(20);
     p{
 
     }
@@ -55,7 +56,13 @@ body {
 
 
 .notice-section{
-
+    @extend %pr;
+    @extend %boxs;
+    margin: f(-50) auto;
+    width: f(1055);
+    height: f(100);
+    border-radius: f(50);
+    background-color: #fff;
 }
 .notice-icon{
     i{
