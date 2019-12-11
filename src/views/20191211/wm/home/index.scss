@@ -143,9 +143,45 @@ body {
     line-height: 1.5;
     height: f(350);
     i{
-        width: f(100);
-        height: f(100);
+        width: f(125);
+        height: f(125);
         background-color: red;
+    }
+    &:nth-child(1) {
+        i{
+            background: url("../../../../assets/images/css/20191211-vm-m-1.png") center no-repeat;
+            background-size: auto f(100);
+        }
+    }
+    &:nth-child(2) {
+        i{
+            background: url("../../../../assets/images/css/20191211-vm-m-2.png") center no-repeat;
+            background-size: auto f(123);
+        }
+    }
+    &:nth-child(3) {
+        i{
+            background: url("../../../../assets/images/css/20191211-vm-m-3.png") center no-repeat;
+            background-size: auto f(109);
+        }
+    }
+    &:nth-child(4) {
+        i{
+            background: url("../../../../assets/images/css/20191211-vm-m-4.png") center no-repeat;
+            background-size: auto f(97);
+        }
+    }
+    &:nth-child(5) {
+        i{
+            background: url("../../../../assets/images/css/20191211-vm-m-5.png") center no-repeat;
+            background-size: auto f(98);
+        }
+    }
+    &:nth-child(6) {
+        i{
+            background: url("../../../../assets/images/css/20191211-vm-m-6.png") center no-repeat;
+            background-size: auto f(84);
+        }
     }
     h3{
         @extend %c3;
@@ -187,22 +223,30 @@ body {
     }
     &:nth-child(1) {
         border-top: none;
-        background: url("../../../../assets/images/css/20191211-entry-1.png") center no-repeat;
-        background-size: auto f(200);
+        background: url("../../../../assets/images/css/20191211-vm-e-1.png") center no-repeat;
+        background-size: auto f(198);
     }
     &:nth-child(2) {
         border-top: none;
-        background: url("../../../../assets/images/css/20191211-entry-2.png") center no-repeat;
-        background-size: auto f(200);
+        background: url("../../../../assets/images/css/20191211-vm-e-2.png") center no-repeat;
+        background-size: auto f(197);
     }
     &:nth-child(3) {
         border-top: none;
-        background: url("../../../../assets/images/css/20191211-entry-3.png") center no-repeat;
-        background-size: auto f(200);
+        background: url("../../../../assets/images/css/20191211-vm-e-3.png") center no-repeat;
+        background-size: auto f(187);
     }
     &:nth-child(4) {
-        background: url("../../../../assets/images/css/20191211-entry-4.png") center no-repeat;
-        background-size: auto f(200);
+        background: url("../../../../assets/images/css/20191211-vm-e-4.png") center no-repeat;
+        background-size: auto f(184);
+    }
+    &:nth-child(5) {
+        background: url("../../../../assets/images/css/20191211-vm-e-5.png") center no-repeat;
+        background-size: auto f(170);
+    }
+    &:nth-child(6) {
+        background: url("../../../../assets/images/css/20191211-vm-e-6.png") center no-repeat;
+        background-size: auto f(178);
     }
 }
 
