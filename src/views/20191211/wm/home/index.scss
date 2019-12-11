@@ -131,6 +131,7 @@ body {
 .menu-ul{
     @extend %df;
     @extend %fww;
+    padding: f(50) 0;
 }
 .menu-item{
     @extend %cp;
@@ -138,12 +139,18 @@ body {
     @extend %aic;
     @extend %jcc;
     @extend %fdc;
+    width: 33.3%;
+    line-height: 1.5;
+    height: f(350);
     i{
         width: f(100);
         height: f(100);
+        background-color: red;
     }
     h3{
         @extend %c3;
+        @extend %fwn;
+        margin-top: f(20);
         font-size: f(42);
     }
     p{
@@ -160,6 +167,7 @@ body {
     @extend %df;
     @extend %aic;
     @extend %jcc;
+    @extend %fww;
     width: f(1055);
     margin: f(100) auto;
 }
@@ -167,25 +175,34 @@ body {
     @extend %cp;
     @extend %df;
     @extend %fdc;
-    @extend %df1;
     @extend %aic;
     @extend %jcc;
-    height: f(200);
+    @extend %bsb;
+    width: 33.33%;
+    height: f(300);
+    border-top: 1px #eee solid;
+    border-right: 1px #eee solid;
+    &:nth-child(3n){
+        border-right: none;
+    }
     &:nth-child(1) {
+        border-top: none;
         background: url("../../../../assets/images/css/20191211-entry-1.png") center no-repeat;
-        background-size: contain;
+        background-size: auto f(200);
     }
     &:nth-child(2) {
+        border-top: none;
         background: url("../../../../assets/images/css/20191211-entry-2.png") center no-repeat;
-        background-size: contain;
+        background-size: auto f(200);
     }
     &:nth-child(3) {
+        border-top: none;
         background: url("../../../../assets/images/css/20191211-entry-3.png") center no-repeat;
-        background-size: contain;
+        background-size: auto f(200);
     }
     &:nth-child(4) {
         background: url("../../../../assets/images/css/20191211-entry-4.png") center no-repeat;
-        background-size: contain;
+        background-size: auto f(200);
     }
 }
 
