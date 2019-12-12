@@ -1,0 +1,49 @@
+@import "../../../../../assets/scss/com20191211";
+
+
+html,
+body {
+    @extend %pr;
+    @extend %w100;
+    min-height: 100%;
+}
+html{
+    background: url("../../../../../assets/images/css/20191211-vm-b.jpg") repeat-y center;
+}
+
+.news-section{
+    @extend %boxs;
+    @extend %oh;
+    margin: f(40) auto;
+    width: f(1050);
+    min-height: f(1500);
+    border-radius: f(5);
+    background-color: #fff;
+}
+.news-head{
+    padding: f(40) f(50);
+    line-height: 1.5;
+    border-bottom: 1px #eee solid;
+    h1{
+        @extend %df1;
+        @extend %fwn;
+        @extend %c3;
+        font-size: f(46);
+    }
+    p{
+        @extend %c9;
+        font-size: f(36);
+    }
+
+}
+.news-content{
+    @extend %c6;
+    margin-top: f(20);
+    font-size: f(42);
+    padding: 0 f(50) f(200);
+    img{
+        @extend %db;
+        margin: f(30) auto;
+        width: f(950);
+    }
+}
