@@ -1,0 +1,74 @@
+@import "../../../../assets/scss/com20191211";
+
+
+html,
+body {
+    @extend %pr;
+    @extend %w100;
+    min-height: 100%;
+}
+html{
+    background: url("../../../../assets/images/css/20191211-vm-b.jpg") repeat-y center;
+}
+
+.news-section{
+    @extend %boxs;
+    @extend %oh;
+    margin: f(40) auto;
+    width: f(1050);
+    min-height: f(1500);
+    border-radius: f(5);
+    background-color: #fff;
+}
+.news-item{
+    padding: f(50);
+    line-height: 1.5;
+    border-bottom: 1px #ddd solid;
+}
+.news-title{
+    @extend %df;
+    @extend %aic;
+    margin-right: f(20);
+    i{
+        width: f(10);
+        height: f(10);
+        border-radius: 50%;
+        background-color: red;
+        margin-right: f(10);
+    }
+    h2{
+        @extend %df1;
+        @extend %fwn;
+        @extend %twno;
+        @extend %c3;
+        font-size: f(46);
+    }
+    span{
+        @extend %c9;
+        margin-left: f(40);
+        font-size: f(36);
+
+    }
+    &:after{
+        @include tfr(-45deg);
+        content: '';
+        width: f(20);
+        height: f(20);
+        border-bottom: 1px #999 solid;
+        border-right: 1px #999 solid;
+    }
+
+}
+.news-content{
+    @extend %c6;
+    margin-top: f(20);
+    font-size: f(42);
+}
+.news-null{
+    @extend %df;
+    @extend %aic;
+    @extend %jcc;
+    @extend %c9;
+    font-size: f(42);
+    height: f(400);
+}
