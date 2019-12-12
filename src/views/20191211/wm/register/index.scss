@@ -5,16 +5,16 @@
 }
 .select2-selection--single{
     border: none !important;
-    height: f(140) !important;
+    height: f(150) !important;
     background-color: transparent !important;
 }
 .select2-selection__rendered{
-    line-height: f(140) !important;
+    line-height: f(150) !important;
     font-size: f(44);
-    color: #fff !important;
+    color: #6a808d !important;
 }
 input::-webkit-input-placeholder {
-    color: #fff;
+    color: #6a808d;
 }
 html,
 body {
@@ -25,26 +25,38 @@ body {
 html{
     background: url("../../../../assets/images/css/20191211-vm-b.jpg") repeat-y center;
 }
-body{
-    //background: url("../../../assets/images/css/zcye-bg2.png") right bottom no-repeat;
-    //background-size: f(828) auto;
-}
 .header-section{
     @extend %pr;
+    @extend %df;
+    @extend %aic;
+    @extend %jcc;
+    z-index: 1;
     img{
         @extend %w100;
         @extend %db;
         height: auto;
     }
+    &:after{
+        @extend %db;
+        @extend %pa;
+        left: f(-2);
+        bottom: f(-183);
+        content: '';
+        background: url("../../../../assets/images/css/20191211-vm-r-i-1.png") repeat-y center;
+        width: f(262);
+        height: f(183);
+        background-size: contain;
+    }
 }
-.main{
+
+
+.main-section{
     @extend %df;
     @extend %pr;
     @extend %fdc;
     @extend %aic;
-    //@extend %jcc;
-    margin: 0 auto 0;
-    width: f(883);
+    margin: f(150) auto 0;
+    width: f(960);
     padding-bottom: f(200);
     background: url("../../../../assets/images/css/20191211-vm-r-c.png") center repeat-y;
     background-size: 100% auto;
@@ -72,13 +84,13 @@ body{
     }
 }
 .bar{
-    width: f(725);
+    width: f(800);
     height: 1px;
     background-color: #fff;
     margin: f(25) 0;
 }
 .form-child{
-    width: f(725);
+    width: f(800);
     margin-top: f(30);
     padding-top: f(30) !important;
     border-top: 1px solid #fff;
@@ -99,7 +111,7 @@ body{
     @extend %df;
     @extend %aic;
     margin-top: f(25);
-    width: f(725);
+    width: f(800);
     p{
         font-size: f(26);
         color: #e40521;
@@ -115,33 +127,33 @@ body{
     }
 }
 .form-item-box{
-    height: f(140);
+    height: f(150);
     border-radius: f(10);
-    background-color: #748490;
 }
 .input-box{
     @extend %df1;
-    height: f(140);
+    height: f(150);
     border-radius: f(10);
-    background-color: #748490;
+    background-color: #f9f9f9;
+    border: 1px #bfc6cd solid;
     select,
     input{
         @extend %w100;
         @extend %h100;
         @extend %bsb;
-        line-height: f(140);
+        line-height: f(150);
         padding: 0 f(25);
         border: none;
         background-color: transparent;
         font-size: f(44);
-        color: #fff;
+        color: #6a808d;
         appearance:none;
         -moz-appearance:none;
         -webkit-appearance:none;
     }
     &.select{
-        background: #748490 url(../../../../assets/images/css/select-arrow-0524.png) right center no-repeat;
-        background-size: f(116) auto;
+        background: #f9f9f9 url('../../../../assets/images/css/20191211-vm-s-i.png') right center no-repeat;
+        background-size: f(164) auto;
         select{
             padding-right: f(120);
         }
@@ -155,8 +167,8 @@ body{
     font-size: f(44);
     color: #fff;
     width: f(292);
-    height: f(134);
-    margin-right: f(3);
+    height: f(150);
+    margin-left: f(30);
     border-radius: f(10);
     background-color: #8396a1;
 }
@@ -189,9 +201,8 @@ body{
     }
 }
 .agreement{
-    margin: f(10) 0;
-    width: f(725);
-    //margin-right: 0;
+    margin: f(50) 0;
+    width: f(800);
 }
 .button{
     @extend %df;
@@ -199,21 +210,17 @@ body{
     @extend %aic;
     @extend %jcc;
     @extend %cfff;
-    font-size: f(43);
-    width: f(725);
-    height: f(140);
+    @extend %fwb;
+    font-size: f(56);
+    width: f(800);
+    height: f(150);
     border-radius: f(10);
-    background-color: #067026;
+    background-color: #059b4b;
 }
 
-.foot{
+.footer-section{
     @extend %w100;
-    @extend %pr;
-    @extend %tar;
-    margin-top: f(-50);
-    img{
-        @extend %dib;
-        width: f(828);
-        height: auto;
-    }
+    height: f(208);
+    background: url("../../../../assets/images/css/20191211-vm-r-i-2.png") right center no-repeat;
+    background-size: auto 100%;
 }
