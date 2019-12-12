@@ -4,11 +4,16 @@ html,
 body {
     @extend %pr;
     @extend %w100;
-    min-height: 100%;
+    @extend %h100;
 }
 
 html{
     background: url("../../../../../assets/images/css/20191211-vm-b.jpg") repeat-y center;
+}
+
+body{
+    @extend %df;
+    @extend %fdc;
 }
 
 .header-section{
@@ -87,7 +92,8 @@ html{
     width: f(1050);
     border-radius: f(5);
     background-color: #e0e2e6;
-    height: f(130);
+    height: f(100);
+    padding: f(15) 0;
 }
 .tab-item{
     @extend %df;
@@ -100,17 +106,18 @@ html{
     font-size: f(42);
     &:nth-child(1){
         i{
-            width: f(50);
+            width: f(62);
             height: f(62);
-            background: url("../../../../../assets/images/css/20191211-sa-i-i-4.png") left no-repeat;
+            background: url("../../../../../assets/images/css/20191211-sa-d-i-1.png") left no-repeat;
             background-size: contain;
         }
     }
     &:nth-child(2){
+        border-right: none;
         i{
-            width: f(50);
-            height: f(70);
-            background: url("../../../../../assets/images/css/20191211-sa-i-i-5.png") left no-repeat;
+            width: f(60);
+            height: f(66);
+            background: url("../../../../../assets/images/css/20191211-sa-d-i-4.png") left no-repeat;
             background-size: contain;
         }
     }
@@ -119,11 +126,182 @@ html{
     }
     &.active{
         color: #02a44f;
-
+        &:nth-child(1){
+            i{
+                width: f(64);
+                height: f(64);
+                background: url("../../../../../assets/images/css/20191211-sa-d-i-3.png") left no-repeat;
+                background-size: contain;
+            }
+        }
+        &:nth-child(2){
+            border-right: none;
+            i{
+                width: f(62);
+                height: f(67);
+                background: url("../../../../../assets/images/css/20191211-sa-d-i-2.png") left no-repeat;
+                background-size: contain;
+            }
+        }
     }
 }
 
 .main-section{
+    @extend %df1;
+    @extend %oh;
+}
+.order-ul{
+    @extend %w100;
+    @extend %h100;
+    overflow-y: auto;
+}
+.order-li{
+    @extend %bsb;
+    margin: f(30) auto;
+    border-radius: f(5);
+    background-color: #e0e2e6;
+    width: f(1050);
+}
+.order-title{
+    @extend %df;
+    @extend %aic;
+    @extend %jcs;
+    @extend %c6;
+    font-size: f(36);
+    padding: 0 f(30);
+    height: f(100);
+    border-bottom: 1px #ccc solid;
+}
+.order-type{
+    &.color-1{
+        color: #02a44f;
+    }
+    &.color-2{
+        color: red;
+    }
+    &.color-3{
+        @extend %c6;
+    }
+}
+.order-content{
+    @extend %df;
+    @extend %aic;
+    padding: f(40) f(50) 0;
+}
+.order-image{
+    @extend %oh;
+    @extend %df;
+    @extend %aic;
+    @extend %jcc;
+    width: f(250);
+    height: f(250);
+    margin-right: f(30);
+    border-radius: f(10);
+    background-color: #fff;
+    img{
+        max-width: f(200);
+        height: f(200);
+        width: auto;
+    }
+}
+.order-info{
+    @extend %df1;
+    height: f(250);
+    p{
+        @extend %df;
+        @extend %aic;
+        @extend %jcs;
+        font-size: f(42);
+        height: f(80);
+    }
+    span{
+        @extend %c9;
+    }
+    .order-name{
+        @extend %c3;
+    }
+    .order-number{
+        color: #d1aa58;
+    }
+}
+.order-prompt{
+    @extend %tar;
+    @extend %c3;
+    font-size: f(36);
+    padding: 0 f(40);
+}
+.order-operate{
+    @extend %tar;
+    padding: f(30) f(40);
+}
+.order-link{
+    @extend %dib;
+    @extend %cp;
+    @extend %bsb;
+    font-size: f(36);
+    color: #02a44f;
+    border: 1px #02a44f solid;
+    height: f(70);
+    line-height: f(70);
+    padding: 0 f(30);
+    border-radius: f(50);
+}
 
+.integral-dl{
+    @extend %h100;
+    @extend %ma;
+    width: f(1050);
+    overflow-y: auto;
+    border-radius: f(5);
+    background-color: #fff;
+}
+.integral-dt{
+    @extend %df;
+    @extend %aic;
+    @extend %jcs;
+    @extend %c6;
+    padding: 0 f(50);
+    height: f(100);
+    background-color: #f2f2f2;
+    span{
+        @extend %cp;
+    }
+}
+.integral-dd{
+    @extend %df;
+    @extend %aic;
+    padding: f(30) f(40);
+    border-bottom: 1px #f2f2f2 solid;
+}
+.integral-dd-label{
+    @extend %df1;
+    line-height: 1.5;
+    h2{
+        @extend %c3;
+        @extend %fwn;
+        font-size: f(42);
+    }
+    span{
+        @extend %c6;
+        font-size: f(36);
+    }
+}
+.integral-dd-value{
+    @extend %fwb;
+    font-size: f(56);
+    &.color-1{
+        color: red;
+    }
+    &.color-2{
+        color: #d1aa58;
+    }
+}
+.integral-null{
+    @extend %df;
+    @extend %aic;
+    @extend %jcc;
+    @extend %c9;
+    font-size: f(42);
+    height: f(200);
 }
 
