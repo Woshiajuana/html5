@@ -45,11 +45,14 @@
     }
 }
 .notice-content{
+    @extend %c3;
+    @extend %oh;
     height: f(100);
-    p{
-        //@extend %
-        @extend %c3;
+    font-size: f(36);
+    li{
+        @extend %df;
+        @extend %aic;
+        @extend %twno;
         height: f(100);
-        font-size: f(36);
     }
 }
