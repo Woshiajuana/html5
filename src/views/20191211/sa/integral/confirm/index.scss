@@ -112,6 +112,11 @@ html{
     color: #03a14e;
     border: 1px #03a14e solid;
     border-radius: f(12);
+    &.disabled{
+        color: #ddd;
+        cursor: default;
+        border: 1px #ddd solid;
+    }
 }
 .form-added-wrap{
     @extend %df;
