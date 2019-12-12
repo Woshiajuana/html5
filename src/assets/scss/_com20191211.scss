@@ -47,12 +47,21 @@
 .notice-content{
     @extend %c3;
     @extend %oh;
+    @extend %df1;
+    @extend %pr;
     height: f(100);
     font-size: f(36);
+    ul{
+        @extend %pr;
+        @extend %w100;
+    }
+    a{
+        @extend %c3;
+    }
     li{
-        @extend %df;
-        @extend %aic;
         @extend %twno;
+        @extend %pr;
         height: f(100);
+        line-height: f(100);
     }
 }

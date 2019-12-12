@@ -27,7 +27,12 @@
             <span>11</span>
         </div>
         <div class="notice-content">
-            <p>最新消息|嘉实多极护专享活动上线</p>
+            <ul>
+                <li>最新消息|嘉实多极护专享活嘉实多极护专享活动上线嘉实多极护专享活动上线动上线</li>
+                <li>最新消息|嘉实多极护专享活动上线1</li>
+                <li>最新消息|嘉实多极护专享活动上线2</li>
+                <li>最新消息|嘉实多极护专享活动上线3</li>
+            </ul>
         </div>
     </div>
 
@@ -78,7 +83,18 @@
     <div class="advert-section">
         <img src="../../../../assets/images/html/20191211-ad-1.jpg" alt="链接"/>
     </div>
-
+    <script src="assets/lib/jquery-1.8.1.min.js"></script>
+    <script src="assets/lib/ajuanCarousel-1.0.js"></script>
+    <script>
+        $(function () {
+            $('.notice-content').AjuanCarousel({
+                mode: 'roll',
+                roll:{
+                    isAxisX: false
+                },
+            });
+        })
+    </script>
 </body>
 </html>
 

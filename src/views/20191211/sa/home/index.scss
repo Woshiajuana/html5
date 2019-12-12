@@ -72,7 +72,20 @@ html{
     background-size: contain;
 }
 
-
+.notice-section{
+    background-color: transparent;
+    box-shadow: none;
+    margin-top: 0;
+}
+.notice-content{
+    @extend %cfff;
+    a{
+        @extend %cfff;
+    }
+}
+.notice-icon{
+    margin-left: 0;
+}
 
 .banner-section{
     margin: f(20) auto;
