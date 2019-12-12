@@ -11,10 +11,15 @@ html{
     background: url("../../../../assets/images/css/20191211-vm-b.jpg") repeat-y center;
 }
 
+%icon{
+    background: url("../../../../assets/images/css/20191211-e-b.png") no-repeat;
+    background-size: f(820) f(1932);
+}
 .entry-section{
     @extend %w100;
     @extend %pr;
     @extend %oh;
+    padding: f(50) 0;
     &:after{
         @extend %pa;
         @extend %t0;
@@ -29,11 +34,33 @@ html{
 .entry-item{
     @extend %db;
     @extend %cp;
-    margin: f(30) auto;
-    width: f(1050);
-    img{
-        @extend %w100;
-        @extend %db;
-        height: auto;
+    @extend %oh;
+    @extend %icon;
+    margin: f(20) auto;
+    width: f(820);
+    height: f(230);
+    &.entry-1{
+        background-position: 0 f(-10);
+    }
+    &.entry-2{
+        background-position: 0 f(-250);
+    }
+    &.entry-3{
+        background-position: 0 f(-490);
+    }
+    &.entry-4{
+        background-position: 0 f(-730);
+    }
+    &.entry-5{
+        background-position: 0 f(-970);
+    }
+    &.entry-6{
+        background-position: 0 f(-1210);
+    }
+    &.entry-7{
+        background-position: 0 f(-1450);
+    }
+    &.entry-8{
+        background-position: 0 f(-1690);
     }
 }
