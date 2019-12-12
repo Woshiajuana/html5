@@ -1,0 +1,129 @@
+@import "../../../../../assets/scss/com20191211";
+
+html,
+body {
+    @extend %pr;
+    @extend %w100;
+    min-height: 100%;
+}
+
+html{
+    background: url("../../../../../assets/images/css/20191211-vm-b.jpg") repeat-y center;
+}
+
+.header-section{
+    @extend %pr;
+    @extend %df;
+    @extend %aic;
+    @extend %oh;
+    height: f(320);
+    padding: 0 f(60);
+    background-color: #dedede;
+    &:after{
+        @extend %pa;
+        @extend %t0;
+        @extend %l0;
+        content: '';
+        width: f(183);
+        height: f(73);
+        background: url("../../../../../assets/images/css/20191211-sa-he-1.png") center no-repeat;
+        background-size: contain;
+    }
+}
+.header-avatar{
+    @extend %bsb;
+    margin-top: f(20);
+    width: f(160);
+    height: f(160);
+    border: 1px #999 solid;
+    border-radius: 50%;
+    margin-right: f(30);
+}
+.header-content{
+    @extend %df1;
+    @extend %c3;
+    h2{
+        font-size: f(42);
+    }
+}
+.header-stars{
+    @extend %df;
+    @extend %aic;
+    margin: f(10) 0 f(20);
+    height: f(65);
+    i{
+        width: f(50);
+        height: f(65);
+        background: url("../../../../../assets/images/css/20191211-sa-i-i-2.png") left no-repeat;
+        background-size: contain;
+        &.active{
+            background: url("../../../../../assets/images/css/20191211-sa-i-i-1.png") left no-repeat;
+            background-size: contain;
+        }
+    }
+}
+.header-action{
+    @extend %df;
+    @extend %aic;
+    @extend %jcc;
+    @extend %fdc;
+    p{
+        @extend %tar;
+        @extend %c6;
+        margin-top: f(20);
+        line-height: 1.2;
+        font-size: f(36);
+    }
+    strong{
+        font-size: f(64);
+        color: red;
+    }
+}
+
+.tab-section{
+    @extend %df;
+    @extend %boxs;
+    margin: f(30) auto;
+    width: f(1050);
+    border-radius: f(5);
+    background-color: #e0e2e6;
+    height: f(130);
+}
+.tab-item{
+    @extend %df;
+    @extend %cp;
+    @extend %df1;
+    @extend %aic;
+    @extend %jcc;
+    @extend %c6;
+    border-right: 1px #999 solid;
+    font-size: f(42);
+    &:nth-child(1){
+        i{
+            width: f(50);
+            height: f(62);
+            background: url("../../../../../assets/images/css/20191211-sa-i-i-4.png") left no-repeat;
+            background-size: contain;
+        }
+    }
+    &:nth-child(2){
+        i{
+            width: f(50);
+            height: f(70);
+            background: url("../../../../../assets/images/css/20191211-sa-i-i-5.png") left no-repeat;
+            background-size: contain;
+        }
+    }
+    i{
+        margin-right: f(20);
+    }
+    &.active{
+        color: #02a44f;
+
+    }
+}
+
+.main-section{
+
+}
+
