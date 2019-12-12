@@ -17,6 +17,7 @@ html{
     @extend %aic;
     @extend %oh;
     height: f(320);
+    padding: 0 f(60);
     background-color: #dedede;
     &:after{
         @extend %pa;
@@ -38,17 +39,25 @@ html{
     border-radius: 50%;
 }
 .header-content{
-
+    @extend %df1;
+}
+.header-action{
+    @extend %df;
+    @extend %aic;
+    @extend %jcc;
+    @extend %fdc;
+}
+.header-logo{
+    margin-top: f(20);
+    height: f(150);
+    width: auto;
 }
 .header-link{
-    @extend %pa;
     @extend %cp;
     @extend %df;
     @extend %aic;
     @extend %jcc;
     @extend %cfff;
-    right: f(40);
-    top: f(200);
     width: f(225);
     height: f(65);
     background: url("../../../../assets/images/css/20191211-mtc-link.png") center no-repeat;
