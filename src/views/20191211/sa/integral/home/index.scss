@@ -108,5 +108,169 @@ html{
     background-size: contain;
 }
 
+.search-section{
+    @extend %df;
+    @extend %aic;
+    @extend %bsb;
+    margin: f(30) auto;
+    border-radius: f(50);
+    width: f(1050);
+    height: f(100);
+    background-color: #fff;
+    border: 2px #078d4b solid;
+}
+.search-input{
+    @extend %df1;
+    input{
+        @extend %w100;
+        @extend %h100;
+        @extend %bsb;
+        padding: 0 f(40);
+        border: none;
+        height: f(80);
+        line-height: f(80);
+        background-color: transparent;
+    }
+}
+.search-button{
+    @extend %cp;
+    width: f(160);
+    height: f(100);
+    border-radius: f(50);
+    background: #02a44f url("../../../../../assets/images/css/20191211-sa-i-i-3.png") center no-repeat;
+    background-size: f(80) auto;
+}
 
+.filter-section{
+    @extend %df;
+    @extend %boxs;
+    margin: f(30) auto;
+    width: f(1050);
+    border-radius: f(5);
+    background-color: #e0e2e6;
+    height: f(130);
+}
+.filter-section-item{
+    @extend %df;
+    @extend %cp;
+    @extend %df1;
+    @extend %aic;
+    @extend %jcc;
+    font-size: f(42);
+    color: #02a44f;
+    &:nth-child(1){
+        i{
+            width: f(50);
+            height: f(62);
+            background: url("../../../../../assets/images/css/20191211-sa-i-i-4.png") left no-repeat;
+            background-size: contain;
+        }
+    }
+    &:nth-child(2){
+        i{
+            width: f(50);
+            height: f(70);
+            background: url("../../../../../assets/images/css/20191211-sa-i-i-5.png") left no-repeat;
+            background-size: contain;
+        }
+    }
+    &:nth-child(3){
+        i{
+            width: f(52);
+            height: f(53);
+            background: url("../../../../../assets/images/css/20191211-sa-i-i-6.png") left no-repeat;
+            background-size: contain;
+        }
+    }
+    i{
+        margin-right: f(20);
+    }
+    &:after{
+        content: '';
+        margin-left: f(10);
+        margin-top: f(12);
+        width: 0;
+        height: 0;
+        border-width: f(15);
+        border-style: solid;
+        border-color: #02a44f transparent transparent transparent;
+    }
+}
 
+.goods-section{
+    @extend %df;
+    @extend %aic;
+    @extend %jcs;
+    @extend %fww;
+    margin: f(30) auto;
+    width: f(1050);
+}
+.goods-item{
+    @extend %boxs;
+    @extend %oh;
+    width: f(517);
+    margin-bottom: f(30);
+    border-radius: f(10);
+    background-color: #f5f5f5;
+    i{
+        @extend %pa;
+        @extend %b0;
+        @extend %l0;
+    }
+    &.new{
+        i{
+            width: f(226);
+            height: f(50);
+            background: red url("../../../../../assets/images/css/20191211-sa-i-i-10.jpg") left no-repeat;
+            background-size: contain;
+        }
+    }
+    &.hot{
+        i{
+            width: f(227);
+            height: f(50);
+            background: url("../../../../../assets/images/css/20191211-sa-i-i-9.jpg") left no-repeat;
+            background-size: contain
+        }
+    }
+}
+.goods-image{
+    @extend %w100;
+    @extend %pr;
+    @extend %df;
+    @extend %aic;
+    @extend %jcc;
+    background-color: #fff;
+    height: f(520);
+    img{
+        height: f(430);
+        max-width: f(500);
+    }
+}
+.goods-info{
+    padding: f(30);
+}
+.goods-name{
+    @extend %twno;
+    @extend %c3;
+    font-size: f(32);
+}
+.goods-opt{
+    @extend %df;
+    @extend %oh;
+    @extend %aic;
+    margin-top: f(10);
+    span{
+        @extend %twno;
+        @extend %df1;
+        color: red;
+        font-size: f(42);
+    }
+}
+.goods-btn{
+    @extend %cp;
+    width: f(187);
+    height: f(71);
+    background: url("../../../../../assets/images/css/20191211-sa-i-i-8.png") left no-repeat;
+    background-size: contain;
+}
