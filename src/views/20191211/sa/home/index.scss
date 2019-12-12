@@ -14,13 +14,6 @@ body {
     height: f(320);
     background-color: #dedede;
 }
-.header-title{
-    @extend %cfff;
-    @extend %fwb;
-    margin-top: f(80);
-    letter-spacing: f(10);
-    font-size: f(60);
-}
 .header-avatar{
     @extend %bsb;
     margin-top: f(20);
