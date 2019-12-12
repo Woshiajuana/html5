@@ -123,3 +123,134 @@ html{
         height: auto;
     }
 }
+
+.menu-section{
+    @extend %df;
+    @extend %fww;
+    margin: f(30) auto;
+    width: f(1055);
+}
+.menu-item{
+    @extend %cp;
+    margin: f(5) 0;
+    &.menu-flex{
+        @extend %w100;
+    }
+    &:nth-child(1){
+        height: f(181);
+        background: url("../../../../assets/images/css/20191211-sa-m-1.png") center no-repeat;
+        background-size: contain;
+    }
+    &:nth-child(2){
+        height: f(136);
+        width: f(520);
+        background: url("../../../../assets/images/css/20191211-sa-m-2.png") center no-repeat;
+        background-size: contain;
+    }
+    &:nth-child(3){
+        margin-left: f(15);
+        height: f(136);
+        width: f(520);
+        background: url("../../../../assets/images/css/20191211-sa-m-3.png") center no-repeat;
+        background-size: contain;
+    }
+}
+
+.section{
+    @extend %boxs;
+    margin: f(30) auto;
+    width: f(1050);
+    border-radius: f(5);
+    background-color: #e0e2e6;
+    &.integral-section{
+        padding: f(20) 0;
+    }
+}
+.integral-cell{
+    @extend %df;
+    @extend %aic;
+    @extend %jcs;
+    padding: 0 f(30);
+    margin: f(12) auto;
+}
+.integral-title{
+    @extend %c3;
+    @extend %fwb;
+    font-size: f(56);
+}
+.integral-number{
+    @extend %df1;
+    @extend %fwb;
+    font-size: f(56);
+    color: red;
+    margin-left: f(20);
+}
+.integral-btn{
+    @extend %cp;
+    width: f(219);
+    height: f(76);
+    background: url("../../../../assets/images/css/20191211-sa-b-l.png") center no-repeat;
+    background-size: contain;
+}
+.integral-rule{
+    @extend %df;
+    @extend %cp;
+    @extend %aic;
+    @extend %jcc;
+    @extend %c6;
+    height: f(40);
+    padding: 0 f(20);
+    border: 1px #999 solid;
+    font-size: f(30);
+    border-radius: f(20);
+}
+.integral-order{
+    @extend %cp;
+    @extend %c6;
+    font-size: f(30);
+    margin-right: f(10);
+}
+.integral-content{
+    @extend %df;
+    @extend %fww;
+    @extend %jcs;
+    padding: 0 f(20);
+}
+.integral-item{
+    @extend %df;
+    @extend %pr;
+    @extend %aic;
+    @extend %jcc;
+    width: f(500);
+    height: f(260);
+    margin-top: f(20);
+    background-color: #fff;
+    border-radius: f(10);
+    &.new-type{
+        &:after{
+            @extend %pa;
+            content: '';
+            top: f(10);
+            right: f(10);
+            width: f(71);
+            height: f(55);
+            background: url("../../../../assets/images/css/20191211-sa-i-n.png") center no-repeat;
+            background-size: contain;
+        }
+    }
+    img{
+        @extend %pr;
+        height: f(220);
+        width: auto;
+    }
+    i,.cart{
+        @extend %pa;
+        @extend %cp;
+        right: f(20);
+        bottom: f(20);
+        width: f(52);
+        height: f(43);
+        background: url("../../../../assets/images/css/20191211-sa-i-v.png") center no-repeat;
+        background-size: contain;
+    }
+}
