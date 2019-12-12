@@ -227,15 +227,18 @@ html{
     background-color: #fff;
     border-radius: f(10);
     &.new-type{
-        &:after{
-            @extend %pa;
-            content: '';
-            top: f(10);
-            right: f(10);
-            width: f(71);
-            height: f(55);
-            background: url("../../../../assets/images/css/20191211-sa-i-n.png") center no-repeat;
-            background-size: contain;
+        span{
+            @extend %pr;
+            &:after{
+                @extend %pa;
+                right: f(-35);
+                top: f(-20);
+                content: '';
+                width: f(71);
+                height: f(55);
+                background: url("../../../../assets/images/css/20191211-sa-i-n.png") center no-repeat;
+                background-size: contain;
+            }
         }
     }
     img{
@@ -243,14 +246,116 @@ html{
         height: f(220);
         width: auto;
     }
+    span{
+        @extend %pr;
+    }
     i,.cart{
         @extend %pa;
         @extend %cp;
         right: f(20);
         bottom: f(20);
-        width: f(52);
-        height: f(43);
-        background: url("../../../../assets/images/css/20191211-sa-i-v.png") center no-repeat;
+        width: f(70);
+        height: f(69);
+        background: url("../../../../assets/images/css/20191211-sa-i-c.png") center no-repeat;
         background-size: contain;
+    }
+}
+
+.train-section{
+    padding-bottom: f(30);
+    margin-bottom: f(100);
+}
+.train-title{
+    @extend %df;
+    @extend %aic;
+    @extend %c3;
+    padding: 0 f(30);
+    font-size: f(42);
+    height: f(100);
+    border-bottom: 1px #ccc solid;
+}
+.train-honor{
+    @extend %df;
+    @extend %aic;
+}
+.train-honor-item{
+    @extend %df;
+    @extend %df1;
+    @extend %aic;
+    @extend %jcc;
+    &:nth-child(1){
+        i{
+            width: f(155);
+            height: f(198);
+            background: url("../../../../assets/images/css/20191211-sa-h-2.png") center no-repeat;
+            background-size: contain;
+        }
+    }
+    &:nth-child(2){
+        i{
+            width: f(199);
+            height: f(175);
+            background: url("../../../../assets/images/css/20191211-sa-h-1.png") center no-repeat;
+            background-size: contain;
+        }
+    }
+    i{
+        margin-right: f(20);
+    }
+    p{
+        @extend %c3;
+        font-size: f(42);
+    }
+    strong{
+        color: red;
+    }
+}
+.train-button-group{
+    @extend %df;
+    @extend %aic;
+    @extend %jcs;
+    padding: 0 f(24);
+    margin-top: f(30);
+}
+.train-button-item{
+    @extend %df;
+    @extend %aic;
+    @extend %cp;
+    @extend %bsb;
+    @extend %jcc;
+    @extend %fdc;
+    width: f(490);
+    height: f(145);
+    border-radius: f(10);
+    border: 1px #02a44f solid;
+    &:nth-child(1){
+        i{
+            width: f(84);
+            height: f(55);
+            background: url("../../../../assets/images/css/20191211-sa-i-b.png") center no-repeat;
+            background-size: contain;
+        }
+    }
+    &:nth-child(2){
+        i{
+            width: f(52);
+            height: f(43);
+            background: url("../../../../assets/images/css/20191211-sa-i-v.png") center no-repeat;
+            background-size: contain;
+        }
+    }
+    p{
+        @extend %df;
+        @extend %aic;
+        @extend %fwb;
+        font-size: f(48);
+        color: #02a44f;
+    }
+    i{
+        margin-right: f(20);
+    }
+    span{
+        @extend %c6;
+        font-size: f(30);
     }
 }
