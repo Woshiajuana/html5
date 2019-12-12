@@ -1,0 +1,39 @@
+@import "../../../../assets/scss/com20191211";
+
+
+html,
+body {
+    @extend %pr;
+    @extend %w100;
+    min-height: 100%;
+}
+html{
+    background: url("../../../../assets/images/css/20191211-vm-b.jpg") repeat-y center;
+}
+
+.entry-section{
+    @extend %w100;
+    @extend %pr;
+    @extend %oh;
+    &:after{
+        @extend %pa;
+        @extend %t0;
+        @extend %l0;
+        content: '';
+        width: f(183);
+        height: f(73);
+        background: url("../../../../assets/images/css/20191211-sa-he-1.png") center no-repeat;
+        background-size: contain;
+    }
+}
+.entry-item{
+    @extend %db;
+    @extend %cp;
+    margin: f(30) auto;
+    width: f(1050);
+    img{
+        @extend %w100;
+        @extend %db;
+        height: auto;
+    }
+}
