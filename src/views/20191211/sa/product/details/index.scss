@@ -1,0 +1,34 @@
+@import "../../../../../assets/scss/com20191211";
+
+
+html,
+body {
+    @extend %pr;
+    @extend %w100;
+    min-height: 100%;
+}
+html{
+    background: url("../../../../../assets/images/css/20191211-vm-b.jpg") repeat-y center;
+}
+
+.product-section{
+    @extend %boxs;
+    @extend %oh;
+    margin: f(40) auto;
+    width: f(1050);
+    padding-top: f(50);
+    min-height: f(1500);
+    border-radius: f(5);
+    background-color: #fff;
+}
+.product-content{
+    @extend %c6;
+    margin-top: f(20);
+    font-size: f(42);
+    padding: 0 f(50) f(200);
+    img{
+        @extend %db;
+        margin-bottom: f(40);
+        width: f(950);
+    }
+}
