@@ -4,6 +4,11 @@ html,
 body {
     @extend %pr;
     @extend %w100;
+    min-height: 100%;
+}
+
+html{
+    background: url("../../../../assets/images/css/20191211-vm-b.jpg") repeat-y center;
 }
 
 .header-section{
@@ -13,6 +18,16 @@ body {
     @extend %oh;
     height: f(320);
     background-color: #dedede;
+    &:after{
+        @extend %pa;
+        @extend %t0;
+        @extend %l0;
+        content: '';
+        width: f(183);
+        height: f(73);
+        background: url("../../../../assets/images/css/20191211-sa-he-1.png") center no-repeat;
+        background-size: contain;
+    }
 }
 .header-avatar{
     @extend %bsb;
@@ -22,35 +37,8 @@ body {
     border: 1px #ddd solid;
     border-radius: 50%;
 }
-.header-info{
-    @extend %df;
-    @extend %w100;
-    @extend %aic;
-    @extend %cfff;
-    @extend %bsb;
-    padding: 0 f(100);
-    margin-top: f(20);
-    p{
-        @extend %df1;
-        @extend %jcc;
-        @extend %aic;
-        @extend %df;
-    }
-    i{
-        margin-right: f(20);
-    }
-    .user-icon{
-        width: f(39);
-        height: f(47);
-        background: url("../../../../assets/images/css/20191211-mtc-user.png") center no-repeat;
-        background-size: contain;
-    }
-    .tel-icon{
-        width: f(53);
-        height: f(48);
-        background: url("../../../../assets/images/css/20191211-mtc-tel.png") center no-repeat;
-        background-size: contain;
-    }
+.header-content{
+
 }
 .header-link{
     @extend %pa;
@@ -72,19 +60,16 @@ body {
     @extend %pr;
     @extend %df;
     @extend %aic;
-    @extend %boxs;
-    margin: f(-50) auto 0;
+    margin: f(20) auto 0;
     width: f(1055);
     height: f(100);
-    border-radius: f(50);
-    background-color: #fff;
 }
 .notice-icon{
     @extend %pr;
     @extend %df;
     @extend %aic;
     @extend %jcc;
-    margin: 0 f(50);
+    margin-right: f(50);
     i{
         width: f(75);
         height: f(79);
@@ -107,8 +92,17 @@ body {
 }
 .notice-content{
     p{
-        @extend %c3;
+        @extend %cfff;
         font-size: f(36);
     }
 }
 
+.banner-section{
+    margin: f(20) auto;
+    width: f(1055);
+    img{
+        @extend %w100;
+        @extend %db;
+        height: auto;
+    }
+}
