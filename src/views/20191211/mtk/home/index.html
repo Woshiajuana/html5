@@ -129,7 +129,23 @@
     <div class="advert-section">
         <img src="../../../../assets/images/html/20191211-ad-1.jpg" alt="链接"/>
     </div>
+    <script src="assets/lib/jquery-1.8.1.min.js"></script>
+    <script src="assets/lib/jquery.marquee.min.js"></script>
+    <script>
+        $(function () {
+            $('.notice-content p').marquee({
+                direction: 'bottom',
+                pixels: 2,
+                speed: 30
+            }, function(){
+                console.log("执行了一次");
+            });
+            // var NoticeController = (function () {
+            //     var $el =
+            // })();
 
+        })
+    </script>
 </body>
 </html>
 

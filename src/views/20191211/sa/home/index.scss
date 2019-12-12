@@ -73,46 +73,6 @@ html{
 }
 
 
-.notice-section{
-    @extend %pr;
-    @extend %df;
-    @extend %aic;
-    margin: f(20) auto 0;
-    width: f(1055);
-    height: f(100);
-}
-.notice-icon{
-    @extend %pr;
-    @extend %df;
-    @extend %aic;
-    @extend %jcc;
-    margin-right: f(50);
-    i{
-        width: f(75);
-        height: f(79);
-        background: url("../../../../assets/images/css/20191211-mtc-tz.png") center no-repeat;
-        background-size: contain;
-    }
-    span{
-        @extend %pa;
-        @extend %cfff;
-        top: f(10);
-        left: f(40);
-        padding: 0 f(5);
-        border-radius: f(15);
-        height: f(30);
-        background-color: red;
-        font-size: f(28);
-        line-height: f(40);
-        border: 1px #fff solid;
-    }
-}
-.notice-content{
-    p{
-        @extend %cfff;
-        font-size: f(36);
-    }
-}
 
 .banner-section{
     margin: f(20) auto;
