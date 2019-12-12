@@ -57,7 +57,7 @@ html{
     @extend %aic;
     margin: f(150) auto 0;
     width: f(960);
-    padding-bottom: f(200);
+    padding: f(100) 0 f(200);
     background: url("../../../../assets/images/css/20191211-vm-r-c.png") center repeat-y;
     background-size: 100% auto;
     &:before{
@@ -223,4 +223,5 @@ html{
     height: f(208);
     background: url("../../../../assets/images/css/20191211-vm-r-i-2.png") right center no-repeat;
     background-size: auto 100%;
+    margin-bottom: f(200);
 }
