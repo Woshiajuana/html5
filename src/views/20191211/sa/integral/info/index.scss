@@ -1,0 +1,90 @@
+@import "../../../../../assets/scss/com20191211";
+
+html,
+body {
+    @extend %pr;
+    @extend %w100;
+    @extend %h100;
+}
+html{
+    background: url("../../../../../assets/images/css/20191211-vm-b.jpg") repeat-y center;
+}
+body{
+    @extend %df;
+    @extend %fdc;
+}
+
+.main-section{
+    @extend %pr;
+    @extend %df;
+    @extend %aic;
+    @extend %oh;
+    &:after{
+        @extend %pa;
+        @extend %t0;
+        @extend %l0;
+        content: '';
+        width: f(183);
+        height: f(73);
+        background: url("../../../../../assets/images/css/20191211-sa-he-1.png") center no-repeat;
+        background-size: contain;
+    }
+}
+
+.goods-content{
+    @extend %boxs;
+    @extend %oh;
+    margin: f(40) auto;
+    width: f(1050);
+    border-radius: f(5);
+    background-color: #fff;
+}
+.goods-image{
+    @extend %df;
+    @extend %aic;
+    @extend %jcc;
+    margin: f(75) auto;
+    width: f(900);
+    height: f(900);
+    background-color: #f5f5f5;
+    img{
+        width: auto;
+        height: f(800);
+        max-width: f(800);
+    }
+}
+.goods-info{
+    @extend %df;
+    @extend %aic;
+    @extend %jcs;
+    width: f(900);
+    margin: f(50) auto;
+    @extend %fwn;
+    @extend %c3;
+    font-size: f(42);
+}
+.goods-name{
+    @extend %fwn;
+    @extend %c3;
+    font-size: f(42);
+}
+.goods-prompt{
+    @extend %c9;
+    strong{
+        color: #d1aa58;
+    }
+}
+.goods-button{
+    @extend %cp;
+    @extend %df;
+    @extend %aic;
+    @extend %jcc;
+    @extend %fwb;
+    @extend %cfff;
+    margin: f(30) auto f(80);
+    font-size: f(46);
+    width: f(900);
+    height: f(150);
+    background-color: #03a14e;
+    border-radius: f(12);
+}
