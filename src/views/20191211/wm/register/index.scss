@@ -56,30 +56,28 @@ html{
     @extend %fdc;
     @extend %aic;
     margin: f(150) auto 0;
-    width: f(960);
+    width: f(980);
     padding: f(100) 0 f(200);
-    background: url("../../../../assets/images/css/20191211-vm-r-c.png") center repeat-y;
+    background: url("../../../../assets/images/css/20191211-r-b-c-1.png") center repeat-y;
     background-size: 100% auto;
     &:before{
         @extend %pa;
         @extend %l0;
-        top: f(-59);
-        right: f(1);
+        @extend %r0;
+        top: f(-60);
         content: '';
-        height: f(69);
-        background: url("../../../../assets/images/css/20191211-vm-r-t.png") top center no-repeat;
+        height: f(70);
+        background: url("../../../../assets/images/css/20191211-r-b.png") top no-repeat;
         background-size: 100% auto;
-        background-position: f(-0);
     }
     &:after{
         @extend %pa;
         @extend %l0;
+        @extend %r0;
         bottom: f(-60);
-        right: f(1);
         content: '';
-        height: f(69);
-        background: url("../../../../assets/images/css/20191211-vm-r-b.png") bottom no-repeat;
-        background-position: f(-4);
+        height: f(60);
+        background: url("../../../../assets/images/css/20191211-r-b.png") bottom no-repeat;
         background-size: 100% auto;
     }
 }
