@@ -143,7 +143,9 @@ html{
 
 .filter-section{
     @extend %df;
+    @extend %pr;
     @extend %boxs;
+    z-index: 9;
     margin: f(30) auto;
     width: f(1050);
     border-radius: f(5);
@@ -152,10 +154,10 @@ html{
 }
 .filter-section-item{
     @extend %df;
-    @extend %cp;
     @extend %df1;
     @extend %aic;
     @extend %jcc;
+    @extend %pr;
     font-size: f(42);
     color: #02a44f;
     &:nth-child(1){
@@ -185,6 +187,15 @@ html{
     i{
         margin-right: f(20);
     }
+}
+.filter-section-inner{
+    @extend %cp;
+    @extend %w100;
+    @extend %h100;
+    @extend %df;
+    @extend %aic;
+    @extend %jcc;
+    @extend %oh;
     &:after{
         content: '';
         margin-left: f(10);
@@ -195,10 +206,44 @@ html{
         border-style: solid;
         border-color: #02a44f transparent transparent transparent;
     }
+    span{
+        @extend %twno;
+        height: f(80);
+        line-height: f(80);
+        max-width: f(220);
+    }
+}
+.filter-select{
+    @extend %pa;
+    @extend %boxs;
+    left: f(20);
+    right: f(20);
+    top: 102%;
+    background-color: #fff;
+    border-radius: f(10);
+    li{
+        @extend %cp;
+        @extend %c6;
+        @extend %twno;
+        @extend %tac;
+        @extend %w100;
+        font-size: f(36);
+        height: f(80);
+        line-height: f(80);
+        padding: 0 f(10);
+        border-bottom: 1px #ddd solid;
+        &:last-child{
+            border-bottom: none;
+        }
+        &.active{
+            color: #02a44f;
+        }
+    }
 }
 
 .goods-section{
     @extend %df;
+    @extend %pr;
     @extend %aic;
     @extend %jcs;
     @extend %fww;

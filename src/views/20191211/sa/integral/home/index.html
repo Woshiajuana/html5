@@ -39,16 +39,37 @@
 
     <div class="filter-section">
         <div class="filter-section-item">
-            <i></i>
-            <span>积分礼品</span>
+            <div class="filter-section-inner">
+                <i></i>
+                <span>积分礼品</span>
+            </div>
+            <ul class="filter-select" style="display: none">
+                <li>CASCAS物料CAS物料CAS物料物料</li>
+                <li>门店工具</li>
+                <li>消费者礼品</li>
+            </ul>
         </div>
         <div class="filter-section-item">
-            <i></i>
-            <span>勋章礼品</span>
+            <div class="filter-section-inner">
+                <i></i>
+                <span>勋章礼品</span>
+            </div>
+            <ul class="filter-select" style="display: none">
+                <li>CAS物料</li>
+                <li>门店工具</li>
+                <li>消费者礼品</li>
+            </ul>
         </div>
         <div class="filter-section-item">
-            <i></i>
-            <span>礼品总类</span>
+            <div class="filter-section-inner">
+                <i></i>
+                <span>礼品总类</span>
+            </div>
+            <ul class="filter-select" style="display: none">
+                <li>CAS物料</li>
+                <li>门店工具</li>
+                <li>消费者礼品</li>
+            </ul>
         </div>
     </div>
 
@@ -137,7 +158,20 @@
             </div>
         </div>
     </div>
-
+    <script src="assets/lib/jquery-1.8.1.min.js"></script>
+    <script>
+        $(function () {
+            $('.filter-section-item').on('click', '.filter-section-inner', function () {
+                $(this).siblings('.filter-select').toggle();
+            }).on('click', '.filter-select li', function () {
+                $(this).addClass('active')
+                    .siblings().removeClass('active')
+                    .parent().hide()
+                    .siblings('.filter-section-inner')
+                    .find('span').text($(this).text());
+            });
+        });
+    </script>
 </body>
 </html>
 
