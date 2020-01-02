@@ -1,0 +1,107 @@
+@import "../../../../assets/scss/com20191211";
+@import "../../../../assets/scss/swiper.min.scss";
+
+
+html,
+body {
+    @extend %pr;
+    @extend %w100;
+    min-height: 100%;
+}
+html{
+    background: url("../../../../assets/images/css/20191211-vm-b.jpg") repeat-y center;
+}
+
+.product-section{
+    @extend %w100;
+    @extend %pr;
+    @extend %oh;
+    &:after{
+        @extend %pa;
+        @extend %t0;
+        @extend %l0;
+        content: '';
+        width: f(183);
+        height: f(73);
+        background: url("../../../../assets/images/css/20191211-sa-he-1.png") center no-repeat;
+        background-size: contain;
+    }
+}
+.product-item{
+    @extend %db;
+    @extend %cp;
+    margin: f(30) auto;
+    width: f(1050);
+    img{
+        @extend %w100;
+        @extend %db;
+        height: auto;
+    }
+}
+
+.link-group{
+    @extend %df;
+    @extend %aic;
+    @extend %jcs;
+    width: f(1055);
+    margin: f(100) auto f(140);
+    .link-item{
+        &:nth-child(1){
+            height: f(134);
+            width: f(520);
+            background: url("../../../../assets/images/css/20191211-sa-m-4.png") center no-repeat;
+            background-size: 100% auto;
+        }
+        &:nth-child(2){
+            height: f(134);
+            width: f(520);
+            background: url("../../../../assets/images/css/20191211-sa-m-5.png") center no-repeat;
+            background-size: 100% auto;
+        }
+    }
+}
+
+.swiper-wrap{
+    @extend %pf;
+    @extend %t0;
+    @extend %l0;
+    @extend %b0;
+    @extend %r0;
+    @extend %df;
+    @extend %aic;
+    @extend %jcc;
+    @extend %w100;
+    @extend %h100;
+    overflow-y: auto;
+    z-index: 9;
+    background-color: #000;
+    .swiper-pagination-bullet{
+        background-color: #fff;
+    }
+}
+.swiper-wrap-inner,
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    img{
+        width: 100%;
+        height: auto;
+    }
+}

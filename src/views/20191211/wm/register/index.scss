@@ -178,18 +178,21 @@ html{
 }
 .radio{
     @extend %df;
-    @extend %cp;
     @extend %aic;
     margin-right: f(20);
     height: f(100);
     font-size: f(44);
     color: #545454;
     i{
+        @extend %cp;
         margin-right: f(10);
         width: f(46);
         height: f(50);
         border-radius: f(10);
         background-color: #6a808d;
+    }
+    span{
+        @extend %cp;
     }
     &.active{
         i{

@@ -74,6 +74,26 @@ body {
     background: url("../../../../assets/images/css/20191211-mtc-link.png") center no-repeat;
     background-size: contain;
 }
+.header-help-link{
+    @extend %cfff;
+    @extend %pa;
+    @extend %cp;
+    @extend %tac;
+    @extend %df;
+    @extend %aic;
+    right: f(60);
+    top: f(280);
+    font-size: f(32);
+    border-bottom: 1px solid #fff;
+    i{
+        @extend %dib;
+        margin-left: f(8);
+        width: f(40);
+        height: f(40);
+        background: url("../../../../assets/images/css/20191211-help-fff-icon.png") center no-repeat;
+        background-size: contain;
+    }
+}
 
 
 .section{

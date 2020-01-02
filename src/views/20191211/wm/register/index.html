@@ -63,6 +63,35 @@
         </div>
     </div>
     <div class="footer-section"></div>
+
+    <div class="popup-wrap" style="display: none">
+        <div class="popup-inner">
+            <h2 class="popup-title">— 隐私条款 —</h2>
+            <div class="popup-content">
+                <dl>
+                    <dd>注册赢积分注册赢积分注册赢积分注册赢积分注册赢积分注册赢积分注册赢积分</dd>
+                    <dt>注册赢积分<span class="popup-color-red">(2000分)</span></dt>
+                    <dd>注册赢积分注册赢积分注册赢积分注册赢积分注册赢积分注册赢积分注册赢积分</dd>
+                    <dt>注册赢积分<span class="popup-color-red">(2000分)</span></dt>
+                    <dd><span class="popup-type">勋章获取规则</span></dd>
+                    <dd>注册赢积分注册赢积分注册赢积分注册赢积分注册赢积分注册赢积分注册赢积分</dd>
+                    <dd>注册赢积分注册赢积分注册赢积分注册赢积分注册赢积分注册赢积分注册赢积分</dd>
+                    <dd>注册赢积分注册赢积分注册赢积分注册赢积分注册赢积分注册赢积分注册赢积分</dd>
+                    <dd><span class="popup-type">勋章获取规则</span></dd>
+                    <dd>注册赢积分注册赢积分注册赢积分注册赢积分注册赢积分注册赢积分注册赢积分</dd>
+                    <dd><span class="popup-type">勋章获取规则</span></dd>
+                    <dd>注册赢积分注册赢积分注册赢积分注册赢积分注册赢积分注册赢积分注册赢积分</dd>
+                    <dd>注册赢积分注册赢积分注册赢积分注册赢积分注册赢积分注册赢积分注册赢积分</dd>
+                    <dd>注册赢积分注册赢积分注册赢积分注册赢积分注册赢积分注册赢积分注册赢积分</dd>
+                    <dd><span class="popup-type">勋章获取规则</span></dd>
+                    <dd>注册赢积分注册赢积分注册赢积分注册赢积分注册赢积分注册赢积分注册赢积分</dd>
+                </dl>
+            </div>
+            <div class="popup-close"></div>
+        </div>
+    </div>
+
+
     <script src="assets/lib/jquery-1.8.1.min.js"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
@@ -99,6 +128,16 @@
                 $elSendBtn.text('发送成功(' + index + 's)').addClass('disabled');
                 setTimeout(countDown, 1000);
             }
+
+            $('.agreement').on('click', 'i', function () {
+                $('.agreement').toggleClass('active');
+            }).on('click', 'span', function () {
+                $('.popup-wrap').show();
+            });
+            $('.popup-wrap').on('click', '.popup-close', function () {
+                $('.popup-wrap').hide();
+            });
+
         });
     </script>
 </body>

@@ -23,6 +23,7 @@
                 <i></i>
             </div>
             <a href="javascript:;">我的订单详情</a>
+            <a href="javascript:;" class="header-rule-link">了解商城规则</a>
         </div>
         <div class="header-action">
             <a href="javascript:;" class="header-link"></a>
@@ -158,6 +159,32 @@
             </div>
         </div>
     </div>
+    <div class="popup-wrap" style="display: none">
+        <div class="popup-inner">
+            <h2 class="popup-title">— 隐私条款 —</h2>
+            <div class="popup-content">
+                <dl>
+                    <dd>注册赢积分注册赢积分注册赢积分注册赢积分注册赢积分注册赢积分注册赢积分</dd>
+                    <dt>注册赢积分<span class="popup-color-red">(2000分)</span></dt>
+                    <dd>注册赢积分注册赢积分注册赢积分注册赢积分注册赢积分注册赢积分注册赢积分</dd>
+                    <dt>注册赢积分<span class="popup-color-red">(2000分)</span></dt>
+                    <dd><span class="popup-type">勋章获取规则</span></dd>
+                    <dd>注册赢积分注册赢积分注册赢积分注册赢积分注册赢积分注册赢积分注册赢积分</dd>
+                    <dd>注册赢积分注册赢积分注册赢积分注册赢积分注册赢积分注册赢积分注册赢积分</dd>
+                    <dd>注册赢积分注册赢积分注册赢积分注册赢积分注册赢积分注册赢积分注册赢积分</dd>
+                    <dd><span class="popup-type">勋章获取规则</span></dd>
+                    <dd>注册赢积分注册赢积分注册赢积分注册赢积分注册赢积分注册赢积分注册赢积分</dd>
+                    <dd><span class="popup-type">勋章获取规则</span></dd>
+                    <dd>注册赢积分注册赢积分注册赢积分注册赢积分注册赢积分注册赢积分注册赢积分</dd>
+                    <dd>注册赢积分注册赢积分注册赢积分注册赢积分注册赢积分注册赢积分注册赢积分</dd>
+                    <dd>注册赢积分注册赢积分注册赢积分注册赢积分注册赢积分注册赢积分注册赢积分</dd>
+                    <dd><span class="popup-type">勋章获取规则</span></dd>
+                    <dd>注册赢积分注册赢积分注册赢积分注册赢积分注册赢积分注册赢积分注册赢积分</dd>
+                </dl>
+            </div>
+            <div class="popup-close"></div>
+        </div>
+    </div>
     <script src="assets/lib/jquery-1.8.1.min.js"></script>
     <script>
         $(function () {
@@ -169,6 +196,13 @@
                     .parent().hide()
                     .siblings('.filter-section-inner')
                     .find('span').text($(this).text());
+            });
+
+            $('.header-rule-link').on('click', function () {
+                $('.popup-wrap').show();
+            });
+            $('.popup-wrap').on('click', '.popup-close', function () {
+                $('.popup-wrap').hide();
             });
         });
     </script>

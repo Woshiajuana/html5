@@ -57,7 +57,7 @@ html{
 }
 .header-logo{
     margin-top: f(20);
-    height: f(150);
+    height: f(100);
     width: auto;
 }
 .header-link{
@@ -71,6 +71,23 @@ html{
     background: url("../../../../assets/images/css/20191211-mtc-link.png") center no-repeat;
     background-size: contain;
 }
+.header-help-link{
+    @extend %c3;
+    @extend %cp;
+    @extend %tac;
+    @extend %df;
+    @extend %aic;
+    font-size: f(32);
+    border-bottom: 1px solid #333;
+    i{
+        @extend %dib;
+        margin-left: f(8);
+        width: f(40);
+        height: f(40);
+        background: url("../../../../assets/images/css/20191211-help-333-icon.png") center no-repeat;
+        background-size: contain;
+    }
+}
 
 .notice-section{
     background-color: transparent;
@@ -81,6 +98,11 @@ html{
     @extend %cfff;
     a{
         @extend %cfff;
+    }
+    ul{
+        li{
+            @extend %cfff;
+        }
     }
 }
 .notice-icon{
@@ -116,16 +138,29 @@ html{
     }
     &:nth-child(2){
         height: f(136);
-        width: f(520);
+        width: f(524);
         background: url("../../../../assets/images/css/20191211-sa-m-2.png") center no-repeat;
-        background-size: contain;
+        background-size: 100% auto;
     }
     &:nth-child(3){
-        margin-left: f(15);
+        margin-left: f(10);
         height: f(136);
         width: f(520);
         background: url("../../../../assets/images/css/20191211-sa-m-3.png") center no-repeat;
-        background-size: contain;
+        background-size: 100% auto;
+    }
+    &:nth-child(4){
+        height: f(134);
+        width: f(520);
+        background: url("../../../../assets/images/css/20191211-sa-m-4.png") center no-repeat;
+        background-size: 100% auto;
+    }
+    &:nth-child(5){
+        margin-left: f(15);
+        height: f(134);
+        width: f(520);
+        background: url("../../../../assets/images/css/20191211-sa-m-5.png") center no-repeat;
+        background-size: 100% auto;
     }
 }
 
