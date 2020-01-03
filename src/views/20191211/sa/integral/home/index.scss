@@ -266,7 +266,7 @@ html{
         i{
             width: f(226);
             height: f(50);
-            background: red url("../../../../../assets/images/css/20191211-sa-i-i-10.jpg") left no-repeat;
+            background: url("../../../../../assets/images/css/20191211-sa-i-i-10.jpg") left no-repeat;
             background-size: contain;
         }
     }
@@ -305,17 +305,38 @@ html{
     @extend %oh;
     @extend %aic;
     margin-top: f(10);
+    .goods-number{
+        @extend %df;
+        @extend %df1;
+        @extend %aic;
+        @extend %oh;
+    }
     span{
         @extend %twno;
-        @extend %df1;
         color: red;
-        font-size: f(42);
+        font-size: f(36);
+        &.line-through{
+            color: #dda06d;
+            text-decoration: line-through;
+        }
+        &:first-child{
+            margin-right: f(5);
+        }
     }
 }
 .goods-btn{
     @extend %cp;
-    width: f(187);
-    height: f(71);
-    background: url("../../../../../assets/images/css/20191211-sa-i-i-8.png") left no-repeat;
-    background-size: contain;
+    @extend %df;
+    @extend %aic;
+    @extend %jcc;
+    @extend %bsb;
+    @extend %cfff;
+    width: f(135);
+    height: f(70);
+    font-size: f(36);
+    //background: url("../../../../../assets/images/css/20191211-sa-i-i-8.png") left no-repeat;
+    //background-size: contain;
+    background-color: #02a44f;
+    border-radius: f(35);
+    border: 1px #bbb solid;
 }
