@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--设置字符编码-->
+    <meta charset="UTF-8">
+    <!--手机开发屏幕自适应-->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <!--设置标题-->
+    <title>数据中心</title>
+    <script src="assets/lib/flexible.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/mescroll.js@1.4.1/mescroll.min.css">
+</head>
+<body>
+    <div class="tab-section">
+        <div class="tab-item active" data-index="0">
+            <i></i>
+            <span>门店数据</span>
+        </div>
+        <div class="tab-item" data-index="1">
+            <i></i>
+            <span>SA数据</span>
+        </div>
+    </div>
+    <div class="main-section">
+        <div class="main-inner">
+            <div class="filter-wrap">
+                <div class="filter-item width-df1 select-item">
+                    <select>
+                        <option>省份</option>
+                        <option>省份1</option>
+                    </select>
+                </div>
+                <div class="filter-item width-df1 select-item">
+                    <select>
+                        <option>城市</option>
+                        <option>城市1</option>
+                    </select>
+                </div>
+                <div class="filter-item width40 search-item">
+                    <input type="text" placeholder="搜索"/>
+                </div>
+            </div>
+            <div class="content-list mescroll" id="mescroll-md">
+                <div class="content-list-content">
+                    <p class="null">暂无数据</p>
+                    <!--<div class="content-item">-->
+                        <!--<p><span>姓名：Marson</span><span class="color9">积分数量：</span><strong>30000</strong></p>-->
+                        <!--<p>浙江省 杭州市</p>-->
+                        <!--<p>门店名称：门店名称门店名称门店名称门店名称门店名称门店名称门店名称门店名称门店名称门店名称</p>-->
+                        <!--<p>集团信息：集团信息</p>-->
+                        <!--<p>品牌名称：品牌名称</p>-->
+                    <!--</div>-->
+                    <!--<div class="content-item">-->
+                        <!--<p><span>姓名：Marson</span><span class="color9">积分数量：</span><strong>30000</strong></p>-->
+                        <!--<p>浙江省 杭州市</p>-->
+                        <!--<p>门店名称：门店名称</p>-->
+                        <!--<p>集团信息：集团信息</p>-->
+                        <!--<p>品牌名称：品牌名称</p>-->
+                    <!--</div>-->
+                    <!--<div class="content-item">-->
+                        <!--<p><span>姓名：Marson</span><span class="color9">积分数量：</span><strong>30000</strong></p>-->
+                        <!--<p>浙江省 杭州市</p>-->
+                        <!--<p>门店名称：门店名称</p>-->
+                        <!--<p>集团信息：集团信息</p>-->
+                        <!--<p>品牌名称：品牌名称</p>-->
+                    <!--</div>-->
+                    <!--<div class="content-item">-->
+                        <!--<p><span>姓名：Marson</span><span class="color9">积分数量：</span><strong>30000</strong></p>-->
+                        <!--<p>浙江省 杭州市</p>-->
+                        <!--<p>门店名称：门店名称</p>-->
+                        <!--<p>集团信息：集团信息</p>-->
+                        <!--<p>品牌名称：品牌名称</p>-->
+                    <!--</div>-->
+                    <!--<div class="content-item">-->
+                        <!--<p><span>姓名：Marson</span><span class="color9">积分数量：</span><strong>30000</strong></p>-->
+                        <!--<p>浙江省 杭州市</p>-->
+                        <!--<p>门店名称：门店名称</p>-->
+                        <!--<p>集团信息：集团信息</p>-->
+                        <!--<p>品牌名称：品牌名称</p>-->
+                    <!--</div>-->
+                    <!--<div class="content-item">-->
+                        <!--<p><span>姓名：Marson</span><span class="color9">积分数量：</span><strong>30000</strong></p>-->
+                        <!--<p>浙江省 杭州市</p>-->
+                        <!--<p>门店名称：门店名称</p>-->
+                        <!--<p>集团信息：集团信息</p>-->
+                        <!--<p>品牌名称：品牌名称</p>-->
+                    <!--</div>-->
+                    <!--<div class="content-item">-->
+                        <!--<p><span>姓名：Marson</span><span class="color9">积分数量：</span><strong>30000</strong></p>-->
+                        <!--<p>浙江省 杭州市</p>-->
+                        <!--<p>门店名称：门店名称</p>-->
+                        <!--<p>集团信息：集团信息</p>-->
+                        <!--<p>品牌名称：品牌名称</p>-->
+                    <!--</div>-->
+                </div>
+            </div>
+        </div>
+        <div style="display: none" class="main-inner">
+            <div class="filter-wrap">
+                <div class="filter-item width-df1 select-item">
+                    <select>
+                        <option>省份</option>
+                        <option>省份1</option>
+                    </select>
+                </div>
+                <div class="filter-item width-df1 select-item">
+                    <select>
+                        <option>城市</option>
+                        <option>城市1</option>
+                    </select>
+                </div>
+                <div class="filter-item width40 select-item">
+                    <select>
+                        <option>门店</option>
+                        <option>门店1</option>
+                    </select>
+                </div>
+                <div class="filter-item width100 search-item">
+                    <input type="text" placeholder="搜索"/>
+                </div>
+            </div>
+            <div class="content-list mescroll" id="mescroll-sa">
+                <div class="content-list-content">
+                    <div class="content-item">
+                        <p><span>姓名：Marson</span><span class="color9">积分数量：</span><strong>30000</strong></p>
+                        <p>浙江省 杭州市1213213123123123123123123</p>
+                        <p>门店名称：门店名称门店名称门店名称门店名称门店名称门店名称门店名称门店名称门店名称门店名称</p>
+                        <p>集团信息：集团信息dasdasdasdasd</p>
+                        <p>品牌名称：品牌名称dsadasdasdasdasdasd</p>
+                    </div>
+                    <div class="content-item">
+                        <p><span>姓名：Marson</span><span class="color9">积分数量：</span><strong>30000</strong></p>
+                        <p>浙江省 杭州市</p>
+                        <p>门店名称：门店名称</p>
+                        <p>集团信息：集团信息</p>
+                        <p>品牌名称：品牌名称</p>
+                    </div>
+                    <div class="content-item">
+                        <p><span>姓名：Marson</span><span class="color9">积分数量：</span><strong>30000</strong></p>
+                        <p>浙江省 杭州市</p>
+                        <p>门店名称：门店名称</p>
+                        <p>集团信息：集团信息</p>
+                        <p>品牌名称：品牌名称</p>
+                    </div>
+                    <div class="content-item">
+                        <p><span>姓名：Marson</span><span class="color9">积分数量：</span><strong>30000</strong></p>
+                        <p>浙江省 杭州市</p>
+                        <p>门店名称：门店名称</p>
+                        <p>集团信息：集团信息</p>
+                        <p>品牌名称：品牌名称</p>
+                    </div>
+                    <div class="content-item">
+                        <p><span>姓名：Marson</span><span class="color9">积分数量：</span><strong>30000</strong></p>
+                        <p>浙江省 杭州市</p>
+                        <p>门店名称：门店名称</p>
+                        <p>集团信息：集团信息</p>
+                        <p>品牌名称：品牌名称</p>
+                    </div>
+                    <div class="content-item">
+                        <p><span>姓名：Marson</span><span class="color9">积分数量：</span><strong>30000</strong></p>
+                        <p>浙江省 杭州市</p>
+                        <p>门店名称：门店名称</p>
+                        <p>集团信息：集团信息</p>
+                        <p>品牌名称：品牌名称</p>
+                    </div>
+                    <div class="content-item">
+                        <p><span>姓名：Marson</span><span class="color9">积分数量：</span><strong>30000</strong></p>
+                        <p>浙江省 杭州市</p>
+                        <p>门店名称：门店名称</p>
+                        <p>集团信息：集团信息</p>
+                        <p>品牌名称：品牌名称</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/lib/jquery-1.8.1.min.js"></script>
+    <script src="https://unpkg.com/mescroll.js@1.4.1/mescroll.min.js" charset="utf-8"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+    <script>
+        $(function () {
+
+            $("select").select2();
+
+
+            $('.tab-item').on('click', function () {
+                $("select").select2();
+                $(this).addClass('active').siblings().removeClass('active');
+                $('.main-inner').eq($(this).data('index')).show().siblings().hide();
+            });
+
+
+            var mescrollMd = new MeScroll("mescroll-md", {
+                isBounce: false, // 此处禁止ios回弹
+                down: {
+                    callback: function (res) {
+                        console.log('下拉刷新=> ', res);
+                        setTimeout(function () {
+//                            $('#mescroll-md .content-list-content').html(`
+//                            <div class="content-item">
+//                        <p><span>姓名：Marson</span><span class="color9">积分数量：</span><strong>30000</strong></p>
+//                        <p>浙江省 杭州市</p>
+//                        <p>门店名称：门店名称</p>
+//                        <p>集团信息：集团信息</p>
+//                        <p>品牌名称：品牌名称</p>
+//                    </div>
+//                    <div class="content-item">
+//                        <p><span>姓名：Marson</span><span class="color9">积分数量：</span><strong>30000</strong></p>
+//                        <p>浙江省 杭州市</p>
+//                        <p>门店名称：门店名称</p>
+//                        <p>集团信息：集团信息</p>
+//                        <p>品牌名称：品牌名称</p>
+//                    </div>`);
+                            mescrollMd.endSuccess();
+                        }, 1000);
+                    } //下拉刷新的回调,别写成downCallback(),多了括号就自动执行方法了
+                },
+                up: {
+                    callback: function (res) {
+                        console.log('上拉加载=> ', res);
+                        setTimeout(function () {
+//                            $('#mescroll-md .content-list-content').append(`
+//                            <div class="content-item">
+//                        <p><span>姓名：Marson</span><span class="color9">积分数量：</span><strong>30000</strong></p>
+//                        <p>浙江省 杭州市</p>
+//                        <p>门店名称：门店名称</p>
+//                        <p>集团信息：集团信息</p>
+//                        <p>品牌名称：品牌名称1111</p>
+//                    </div>
+//                    <div class="content-item">
+//                        <p><span>姓名：Marson</span><span class="color9">积分数量：</span><strong>30000</strong></p>
+//                        <p>浙江省 杭州市111</p>
+//                        <p>门店名称：门店名称111</p>
+//                        <p>集团信息：集团信息222</p>
+//                        <p>品牌名称：品牌名称11111</p>
+//                    </div>`);
+                            //方法一(推荐): 后台接口有返回列表的总页数 totalPage
+                            //必传参数(当前页的数据个数, 总页数)
+                            //mescrollMd.endByPage(curPageData.length, totalPage);
+
+                            //方法二(推荐): 后台接口有返回列表的总数据量 totalSize
+                            //必传参数(当前页的数据个数, 总数据量)
+                            //mescrollMd.endBySize(curPageData.length, totalSize);
+
+                            //方法三(推荐): 您有其他方式知道是否有下一页 hasNext
+                            //必传参数(当前页的数据个数, 是否有下一页true/false)
+                            mescrollMd.endSuccess(0, false);
+
+                            // 没有请求到数据 超时 服务器500等等
+//                            mescrollMd.endErr();
+
+                        }, 1000);
+                    }, //上拉加载的回调
+                    //以下是一些常用的配置,当然不写也可以的.
+                    page: {
+                        num: 0, //当前页 默认0,回调之前会加1; 即callback(page)会从1开始
+                        size: 10 //每页数据条数,默认10
+                    },
+//                    htmlNodata: '<p class="upwarp-nodata">-- 无更多数据 --</p>',
+//                    noMoreSize: 0,
+                }
+            });
+
+            var mescrollSa = new MeScroll("mescroll-sa", {
+                isBounce: false, // 此处禁止ios回弹
+                down: {
+                    callback: function (res) {
+                        console.log('下拉刷新=> ', res);
+                        setTimeout(function () {
+                            $('#mescroll-sa .content-list-content').html(`
+                            <div class="content-item">
+                        <p><span>姓名：Marson</span><span class="color9">积分数量：</span><strong>30000</strong></p>
+                        <p>浙江省 杭州市</p>
+                        <p>门店名称：门店名称</p>
+                        <p>集团信息：集团信息</p>
+                        <p>品牌名称：品牌名称</p>
+                    </div>
+                    <div class="content-item">
+                        <p><span>姓名：Marson</span><span class="color9">积分数量：</span><strong>30000</strong></p>
+                        <p>浙江省 杭州市</p>
+                        <p>门店名称：门店名称</p>
+                        <p>集团信息：集团信息</p>
+                        <p>品牌名称：品牌名称</p>
+                    </div>`);
+                            mescrollSa.endSuccess();
+                        }, 1000);
+                    } //下拉刷新的回调,别写成downCallback(),多了括号就自动执行方法了
+                },
+                up: {
+                    callback: function (res) {
+                        console.log('上拉加载=> ', res);
+                        setTimeout(function () {
+
+                            $('#mescroll-sa .content-list-content').append(`
+                            <div class="content-item">
+                        <p><span>姓名：Marson</span><span class="color9">积分数量：</span><strong>30000</strong></p>
+                        <p>浙江省 杭州市</p>
+                        <p>门店名称：门店名称</p>
+                        <p>集团信息：集团信息</p>
+                        <p>品牌名称：品牌名称1111</p>
+                    </div>
+                    <div class="content-item">
+                        <p><span>姓名：Marson</span><span class="color9">积分数量：</span><strong>30000</strong></p>
+                        <p>浙江省 杭州市111</p>
+                        <p>门店名称：门店名称111</p>
+                        <p>集团信息：集团信息222</p>
+                        <p>品牌名称：品牌名称11111</p>
+                    </div>`);
+
+                            //方法一(推荐): 后台接口有返回列表的总页数 totalPage
+                            //必传参数(当前页的数据个数, 总页数)
+                            //mescrollSa.endByPage(curPageData.length, totalPage);
+
+                            //方法二(推荐): 后台接口有返回列表的总数据量 totalSize
+                            //必传参数(当前页的数据个数, 总数据量)
+                            //mescrollSa.endBySize(curPageData.length, totalSize);
+
+                            //方法三(推荐): 您有其他方式知道是否有下一页 hasNext
+                            //必传参数(当前页的数据个数, 是否有下一页true/false)
+                            //mescrollSa.endSuccess(curPageData.length, hasNext);
+
+                            // 没有请求到数据 超时 服务器500等等
+                            mescrollSa.endErr();
+
+                        }, 1000);
+                    }, //上拉加载的回调
+                    //以下是一些常用的配置,当然不写也可以的.
+                    page: {
+                        num: 0, //当前页 默认0,回调之前会加1; 即callback(page)会从1开始
+                        size: 10 //每页数据条数,默认10
+                    },
+                    htmlNodata: '<p class="upwarp-nodata">-- 无更多数据 --</p>',
+                    noMoreSize: 5,
+                }
+            });
+        })
+    </script>
+</body>
+</html>
+
