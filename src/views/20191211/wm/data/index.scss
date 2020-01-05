@@ -52,7 +52,7 @@ body{
     @extend %aic;
     @extend %jcc;
     @extend %bsb;
-    height: f(120);
+    height: f(140);
     font-size: f(42);
     border-bottom: 1px solid #ddd;
     &:first-child{
@@ -61,6 +61,21 @@ body{
     &.active{
         color: #017a33;
         border-bottom: 2px solid #017a33;
+    }
+    i{
+        margin-right: f(16);
+        &.md-icon{
+            width: f(94);
+            height: f(80);
+            background: url("../../../../assets/images/css/20191211-data-1.jpg") no-repeat;
+            background-size: contain;
+        }
+        &.sa-icon{
+            width: f(80);
+            height: f(80);
+            background: url("../../../../assets/images/css/20191211-data-2.jpg") no-repeat;
+            background-size: contain;
+        }
     }
 }
 .main-section{
