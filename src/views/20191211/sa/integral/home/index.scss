@@ -87,9 +87,9 @@ html{
     @extend %fdc;
     p{
         @extend %tar;
-        @extend %c6;
-        margin-top: f(20);
-        line-height: 1.2;
+        @extend %c3;
+        margin-top: f(40);
+        line-height: 1.3;
         font-size: f(36);
     }
     strong{
