@@ -55,9 +55,9 @@ html{
     @extend %pr;
     @extend %fdc;
     @extend %aic;
-    margin: f(150) auto 0;
+    margin: f(100) auto 0;
     width: f(980);
-    padding: f(100) 0 f(200);
+    padding-bottom: f(80);
     background: url("../../../../assets/images/css/20191211-r-b-c-1.png") center repeat-y;
     background-size: 100% auto;
     &:before{
@@ -134,6 +134,9 @@ html{
     border-radius: f(10);
     background-color: #f9f9f9;
     border: 1px #bfc6cd solid;
+    &:nth-child(2){
+        margin-left: f(10);
+    }
     select,
     input{
         @extend %w100;
@@ -151,9 +154,9 @@ html{
     }
     &.select{
         background: #f9f9f9 url('../../../../assets/images/css/20191211-vm-s-i.png') right center no-repeat;
-        background-size: f(164) auto;
+        background-size: f(140) auto;
         select{
-            padding-right: f(120);
+            padding-right: f(150);
         }
     }
 }
@@ -202,7 +205,7 @@ html{
     }
 }
 .agreement{
-    margin: f(50) 0;
+    margin: f(30) 0;
     width: f(800);
 }
 .button{
@@ -220,6 +223,7 @@ html{
 }
 
 .footer-section{
+    @extend %pr;
     @extend %w100;
     height: f(208);
     background: url("../../../../assets/images/css/20191211-vm-r-i-2.png") right center no-repeat;

@@ -30,6 +30,22 @@
                 </div>
             </div>
             <div class="form form-child hidden">
+                <div class="form-item">
+                    <div class="input-box select">
+                        <select>
+                            <option value="">省份</option>
+                            <option value="0">嘉实多销售</option>
+                            <option value="1">服务顾问</option>
+                        </select>
+                    </div>
+                    <div class="input-box select">
+                        <select>
+                            <option value="">城市</option>
+                            <option value="0">嘉实多销售</option>
+                            <option value="1">服务顾问</option>
+                        </select>
+                    </div>
+                </div>
                 <div class="form-item form-item-p">
                     <div class="input-box">
                         <input type="text" placeholder="手机号码"/>
@@ -98,7 +114,7 @@
     <script type="text/javascript">
         //页面加载完成后初始化select2控件
         $(function () {
-            $("select").select2();
+            // $("select").select2();
 
             // 切换注册
             var $elSelect = $('.select select'),
