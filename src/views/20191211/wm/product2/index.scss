@@ -1,0 +1,76 @@
+@import "../../../../assets/scss/com20191211";
+
+html,
+body {
+    @extend %pr;
+    @extend %w100;
+}
+
+.header-section{
+    box-shadow: 0 0 j(5) j(2) rgba(0,0,0,.2);
+    @extend %df;
+    @extend %fdc;
+    @extend %aic;
+    margin: f(30) auto;
+    width: f(1055);
+    background-color: #f2f2f2;
+    border-radius: f(20);
+    .image{
+        @extend %df;
+        @extend %aic;
+        @extend %jcc;
+        @extend %w100;
+        border-top-right-radius: f(20);
+        border-top-left-radius: f(20);
+        height: f(300);
+        background-color: #fff;
+    }
+    img{
+        height: f(250);
+        width: auto;
+        max-width: f(900);
+    }
+    span{
+        @extend %c3;
+        padding: f(20) 0;
+        font-size: f(42);
+    }
+}
+.brand-section{
+    @extend %df;
+    @extend %fww;
+    @extend %jcs;
+    @extend %ma;
+    width: f(1055);
+}
+.brand-item{
+    box-shadow: 0 0 j(5) j(2) rgba(0,0,0,.2);
+    @extend %cp;
+    @extend %df;
+    @extend %fdc;
+    @extend %aic;
+    border-radius: f(20);
+    margin: f(20) 0;
+    width: f(512);
+    background-color: #f2f2f2;
+    .image{
+        @extend %df;
+        @extend %aic;
+        @extend %jcc;
+        @extend %w100;
+        border-top-right-radius: f(20);
+        border-top-left-radius: f(20);
+        background-color: #fff;
+        height: f(240);
+    }
+    img{
+        height: f(200);
+        width: auto;
+        max-width: f(480);
+    }
+    span{
+        @extend %c3;
+        padding: f(20) 0;
+        font-size: f(42);
+    }
+}
