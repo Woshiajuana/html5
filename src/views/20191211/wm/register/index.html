@@ -124,6 +124,7 @@
                 $elForm.addClass('hidden');
                 if (!index && index !== 0) return null;
                 $elForm.eq(index).removeClass('hidden');
+                $("select").select2();
             });
 
             // 获取验证码 (倒计时修改number即可)
