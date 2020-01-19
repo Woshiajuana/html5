@@ -106,3 +106,17 @@ html{
         height: auto;
     }
 }
+
+.swiper-button-prev,
+.swiper-button-next{
+    width: f(91);
+    height: f(94);
+}
+.swiper-button-prev{
+    background: url("../../../../assets/images/css/20191211-p-l.png") no-repeat;
+    background-size: contain;
+}
+.swiper-button-next{
+    background: url("../../../../assets/images/css/20191211-p-r.png") no-repeat;
+    background-size: contain;
+}
