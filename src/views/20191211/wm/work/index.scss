@@ -208,6 +208,10 @@ body {
         color: #f50a2e;
         border: 1px solid #f50a2e;
     }
+    &.color-js{
+        color: #d1a74e;
+        border: 1px solid #d1a74e;
+    }
 }
 .train-content{
     @extend %c6;
