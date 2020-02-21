@@ -210,12 +210,12 @@ body {
     }
     &:nth-child(3) {
         border-top: none;
-        background: url("../../../../assets/images/css/20191211-vm-e-3.png") center no-repeat;
-        background-size: auto f(187);
+        background: url("../../../../assets/images/css/20191211-vm-jxz.jpg") center no-repeat;
+        background-size: auto f(167);
     }
     &:nth-child(4) {
-        background: url("../../../../assets/images/css/20191211-vm-e-4.png") center no-repeat;
-        background-size: auto f(184);
+        background: url("../../../../assets/images/css/20191211-vm-e-3.png") center no-repeat;
+        background-size: auto f(187);
     }
     &:nth-child(5) {
         background: url("../../../../assets/images/css/20191211-vm-e-5.png") center no-repeat;
@@ -224,6 +224,17 @@ body {
     &:nth-child(6) {
         background: url("../../../../assets/images/css/20191211-vm-e-6.png") center no-repeat;
         background-size: auto f(178);
+    }
+    &:nth-child(7) {
+        background: url("../../../../assets/images/css/20191211-vm-e-4.png") center no-repeat;
+        background-size: auto f(184);
+    }
+    &:nth-child(8) {
+        background: url("../../../../assets/images/css/20191211-vm-zbkt.jpg") center no-repeat;
+        background-size: auto f(167);
+    }
+    &.null{
+        cursor: default;
     }
 }
 
