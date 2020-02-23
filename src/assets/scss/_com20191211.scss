@@ -141,3 +141,19 @@
     background: url("~assets/images/css/20191211-close-icon.png") no-repeat;
     background-size: contain;
 }
+
+
+.swiper-close{
+    @extend %pa;
+    @extend %cp;
+    @extend %t50;
+    right: j(24);
+    z-index: 1;
+    margin-top: j(-460);
+    background: url("~assets/images/css/20200223-close-icon.png") center no-repeat;
+    background-size: 70%;
+    width: j(54);
+    height: j(54);
+    border-radius: 50%;
+    background-color: rgba(0,0,0,.3);
+}
