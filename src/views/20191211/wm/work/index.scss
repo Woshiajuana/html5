@@ -8,12 +8,24 @@ body {
 }
 
 .header-section{
+    @extend %pr;
     @extend %w100;
     height: auto;
     img{
         @extend %w100;
         height: auto;
     }
+}
+.return-link{
+    @extend %pa;
+    @extend %cp;
+    @extend %t50;
+    left: j(40);
+    margin-top: j(-25);
+    width: j(170);
+    height: j(50);
+    background: url("../../../../assets/images/css/20200302-return-icon.png") no-repeat;
+    background-size: contain;
 }
 
 .button-section{
