@@ -1,4 +1,5 @@
 @import "../../../../assets/scss/com20191211";
+@import "../../../../assets/scss/swiper.min.scss";
 
 html,
 body {
@@ -93,7 +94,7 @@ html{
 .notice-section{
     background-color: transparent;
     box-shadow: none;
-    margin-top: 0;
+    margin-top: j(10);
 }
 .notice-content{
     @extend %cfff;
@@ -112,13 +113,40 @@ html{
 
 .banner-section{
     margin: f(20) auto;
-    width: f(1055);
-    img{
-        @extend %w100;
-        @extend %db;
-        height: auto;
+    width: f(1050);
+    height: j(300);
+}
+.swiper-wrap,
+.swiper-wrap-inner,
+.swiper-container {
+    width: 100%;
+    height: 100%;
+    .swiper-pagination-bullet-active{
+        background-color: #fff;
     }
 }
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    a,img{
+        width: 100%;
+        height: 100%;
+    }
+}
+
 
 .menu-section{
     @extend %df;
