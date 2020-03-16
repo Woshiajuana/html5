@@ -340,3 +340,30 @@ html{
     border-radius: f(35);
     border: 1px #bbb solid;
 }
+.popup-content1{
+    margin-top: 0;
+    img{
+        @extend %db;
+        @extend %ma;
+        width: f(755);
+        height: auto;
+    }
+    dl{
+        dd{
+            font-size: f(35);
+        }
+    }
+    strong{
+        @extend %fwb;
+    }
+}
+.popup-type-mt{
+    margin-top: f(20);
+}
+.popup-dd{
+    line-height: 1.8;
+    span{
+        color: #c8434d;
+    }
+    border-bottom: 1px solid #ddd;
+}
