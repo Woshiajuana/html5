@@ -1,0 +1,176 @@
+@import "../../../../../assets/scss/com20191211";
+
+html,
+body {
+    @extend %pr;
+    @extend %w100;
+    min-height: 100%;
+}
+html{
+    background: url("../../../../../assets/images/css/20191211-vm-b.jpg") repeat-y center;
+}
+
+.list{
+    padding-bottom: f(230);
+}
+
+.cell{
+    @extend %df;
+    @extend %pr;
+    @extend %aic;
+    margin: j(30) auto;
+    width: f(1050);
+    height: f(370);
+    border-radius: f(10);
+    background-color: #fff;
+    box-shadow: 0 0 f(10) f(10) rgba(0,0,0,.1);
+}
+
+.select{
+    @extend %cp;
+    @extend %bsb;
+    width: f(60);
+    height: f(60);
+    margin: 0 f(33);
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    &.active{
+        border: none;
+        background: url("../../../../../assets/images/css/20200316-icon1.jpg") no-repeat;
+        background-size: contain;
+    }
+}
+.img{
+    width: f(285);
+    height: f(285);
+    border: 1px solid #ddd;
+    img{
+        @extend %w100;
+        @extend %h100;
+        @extend %db;
+    }
+}
+.content{
+    @extend %df1;
+    @extend %df;
+    @extend %oh;
+    @extend %fdc;
+    height: f(285);
+    margin: 0 f(30);
+    .name{
+        @extend %c3;
+        @include twno(2);
+        font-size: f(40);
+    }
+    .integral{
+        @extend %twno;
+        color: #f70b2f;
+        font-size: f(48);
+    }
+    .flex1{
+        @extend %df1;
+    }
+}
+.number{
+    @extend %df;
+    @extend %aic;
+    border: 1px solid #ddd;
+    border-radius: f(10);
+    width: f(280);
+    height: f(68);
+    span{
+        @extend %h100;
+        @extend %df;
+        @extend %aic;
+        @extend %jcc;
+        @extend %cp;
+        @extend %c9;
+        width: f(68);
+        &:nth-child(2){
+            @extend %df1;
+            @extend %c3;
+            cursor: default;
+            border-right: 1px solid #ddd;
+            border-left: 1px solid #ddd;
+        }
+    }
+}
+.delete{
+    @extend %pa;
+    @extend %cp;
+    right: f(30);
+    bottom: f(30);
+    width: f(100);
+    height: f(100);
+    background: url("../../../../../assets/images/css/20200316-icon2.jpg") no-repeat;
+    background-size: contain;
+}
+
+.operate{
+    @extend %pf;
+    @extend %df;
+    @extend %aic;
+    @extend %b0;
+    @extend %l0;
+    @extend %w100;
+    @extend %r0;
+    background-color: #dee0e5;
+    height: f(206);
+    color: #343434;
+    font-size: f(36);
+}
+.operate-select{
+    @extend %df;
+    @extend %aic;
+    @extend %jcc;
+    @extend %cp;
+    @extend %h100;
+    width: f(190);
+    border-right: 1px solid #b8b8b8;
+    .select{
+        margin: 0;
+        border: 1px solid #bbb;
+        margin-right: f(10);
+        &.active{
+            border: none;
+            background: url("../../../../../assets/images/css/20200316-icon1.jpg") no-repeat;
+            background-size: contain;
+        }
+    }
+}
+.operate-content{
+    @extend %df;
+    @extend %df1;
+    @extend %jcc;
+    @extend %fdc;
+    @extend %h100;
+    padding-left: f(30);
+    border-right: 1px solid #b8b8b8;
+    border-left: 1px solid #e9e9e9;
+    .color1{
+        color: #f70b2f;
+    }
+    .color2{
+        color: #049f4d;
+    }
+}
+.operate-bar{
+    @extend %h100;
+    background-color: #e9e9e9;
+    width: 1px;
+}
+.operate-button{
+    @extend %cfff;
+    @extend %df;
+    @extend %aic;
+    @extend %jcc;
+    @extend %bsb;
+    @extend %cp;
+    font-size: f(36);
+    width: f(265);
+    height: f(100);
+    border-radius: f(50);
+    background-color: #049f4d;
+    margin: 0 f(25);
+    border: 1px solid #aeaeae;
+}

@@ -358,3 +358,12 @@
     -o-box-shadow: $x $y $m $n $rgba;
     box-shadow: $x $y $m $n $rgba;
 }
+
+@mixin twno($n){
+    word-break: break-all;
+    overflow : hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: $n;
+    -webkit-box-orient: vertical;
+}
