@@ -331,7 +331,8 @@ html{
     @extend %jcc;
     @extend %bsb;
     @extend %cfff;
-    width: f(135);
+    min-width: f(135);
+    max-width: f(230);
     height: f(70);
     font-size: f(36);
     //background: url("../../../../../assets/images/css/20191211-sa-i-i-8.png") left no-repeat;
@@ -366,4 +367,43 @@ html{
         color: #c8434d;
     }
     border-bottom: 1px solid #ddd;
+}
+
+.cart-layer{
+    @extend %pf;
+    @extend %df;
+    @extend %cp;
+    @extend %bsb;
+    @extend %aic;
+    @extend %jcc;
+    z-index: 6;
+    right: f(30);
+    bottom: f(30);
+    width: f(160);
+    height: f(160);
+    border-radius: 50%;
+    border: 1px solid #ddd;
+    background-color: rgba(255, 255, 255, 0.8);
+    i{
+        width: f(100);
+        height: f(80);
+        background: url("../../../../../assets/images/css/20200323-icon.png") no-repeat;
+        background-size: contain;
+    }
+    span{
+        @extend %pa;
+        @extend %df;
+        @extend %aic;
+        @extend %jcc;
+        @extend %cfff;
+        @extend %bsb;
+        right: f(28);
+        top: f(50);
+        border: 1px solid #fff;
+        background-color: red;
+        height: f(38);
+        padding: 0 f(8);
+        border-radius: f(20);
+        font-size: f(30);
+    }
 }

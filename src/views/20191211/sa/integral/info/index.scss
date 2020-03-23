@@ -55,7 +55,7 @@ body{
 }
 .goods-info{
     @extend %df;
-    @extend %aic;
+    @extend %fdc;
     @extend %jcs;
     width: f(900);
     margin: f(50) auto;
@@ -74,6 +74,12 @@ body{
         color: #d1aa58;
     }
 }
+.goods-button-group{
+    @extend %df;
+    @extend %jcs;
+    width: f(900);
+    margin: f(30) auto f(80);
+}
 .goods-button{
     @extend %cp;
     @extend %df;
@@ -82,10 +88,12 @@ body{
     @extend %boxs;
     @extend %fwb;
     @extend %cfff;
-    margin: f(30) auto f(80);
     font-size: f(46);
-    width: f(900);
+    width: f(440);
     height: f(150);
     background-color: #03a14e;
     border-radius: f(12);
+    &:first-child{
+        background-color: #d1aa58;
+    }
 }
