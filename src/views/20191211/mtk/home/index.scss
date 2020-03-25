@@ -140,6 +140,7 @@ body {
         }
     }
     .ul-value{
+        @extend %fwb;
         font-size: f(42);
         color: #06974a;
     }
@@ -190,35 +191,88 @@ body {
 .entry-section{
     @extend %df;
     @extend %aic;
-    @extend %jcc;
+    //@extend %jcc;
+    @extend %fww;
     width: f(1055);
     margin: f(100) auto;
 }
 .entry-item{
+    //@extend %cp;
+    //@extend %df;
+    //@extend %fdc;
+    //@extend %df1;
+    //@extend %aic;
+    //@extend %jcc;
+    //height: f(200);
+    //&:nth-child(1) {
+    //    background: url("../../../../assets/images/css/20191211-entry-1.png") center no-repeat;
+    //    background-size: contain;
+    //}
+    //&:nth-child(2) {
+    //    background: url("../../../../assets/images/css/20191211-entry-2.png") center no-repeat;
+    //    background-size: contain;
+    //}
+    //&:nth-child(3) {
+    //    background: url("../../../../assets/images/css/20191211-entry-3.png") center no-repeat;
+    //    background-size: contain;
+    //}
+    //&:nth-child(4) {
+    //    background: url("../../../../assets/images/css/20191211-entry-4.png") center no-repeat;
+    //    background-size: contain;
+    //}
     @extend %cp;
     @extend %df;
     @extend %fdc;
-    @extend %df1;
     @extend %aic;
     @extend %jcc;
-    height: f(200);
+    @extend %bsb;
+    width: 25%;
+    height: f(250);
+    border-right: 1px #eee solid;
+    &:nth-child(4n){
+        border-right: none;
+    }
     &:nth-child(1) {
-        background: url("../../../../assets/images/css/20191211-entry-1.png") center no-repeat;
-        background-size: contain;
+        border-bottom: 1px #eee solid;
+        background: url("../../../../assets/images/css/20191211-vm-e-1.png") center no-repeat;
+        background-size: auto f(198);
     }
     &:nth-child(2) {
-        background: url("../../../../assets/images/css/20191211-entry-2.png") center no-repeat;
-        background-size: contain;
+        border-bottom: 1px #eee solid;
+        background: url("../../../../assets/images/css/20191211-vm-e-2.png") center no-repeat;
+        background-size: auto f(197);
     }
     &:nth-child(3) {
-        background: url("../../../../assets/images/css/20191211-entry-3.png") center no-repeat;
-        background-size: contain;
+        border-bottom: 1px #eee solid;
+        background: url("../../../../assets/images/css/20191211-vm-jxz.jpg") center no-repeat;
+        background-size: auto f(167);
     }
     &:nth-child(4) {
-        background: url("../../../../assets/images/css/20191211-entry-4.png") center no-repeat;
-        background-size: contain;
+        border-bottom: 1px #eee solid;
+        background: url("../../../../assets/images/css/20191211-vm-e-3.png") center no-repeat;
+        background-size: auto f(187);
+    }
+    &:nth-child(5) {
+        background: url("../../../../assets/images/css/20191211-vm-e-5.png") center no-repeat;
+        background-size: auto f(170);
+    }
+    &:nth-child(6) {
+        background: url("../../../../assets/images/css/20191211-vm-e-6.png") center no-repeat;
+        background-size: auto f(178);
+    }
+    &:nth-child(7) {
+        background: url("../../../../assets/images/css/20191211-vm-e-4.png") center no-repeat;
+        background-size: auto f(184);
+    }
+    &:nth-child(8) {
+        background: url("../../../../assets/images/css/20191211-vm-zbkt.jpg") center no-repeat;
+        background-size: auto f(167);
+    }
+    &.null{
+        cursor: default;
     }
 }
+
 
 .advert-section{
     width: f(1055);
