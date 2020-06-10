@@ -130,6 +130,20 @@
         border: 1px solid #999;
     }
 }
+.popup-button{
+    @extend %df;
+    @extend %cp;
+    @extend %aic;
+    @extend %jcc;
+    @extend %cfff;
+    @extend %fwb;
+    font-size: f(32);
+    width: f(320);
+    margin-top: f(30);
+    height: f(80);
+    border-radius: f(10);
+    background-color: #059b4b;
+}
 .popup-close{
     @extend %pa;
     @extend %cp;
