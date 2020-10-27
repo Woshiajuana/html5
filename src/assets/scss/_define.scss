@@ -103,6 +103,12 @@
     -ms-flex-pack: space-between;
     justify-content: space-between;
 }
+%jce{
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+}
+
 
 %fdc{
     -webkit-box-orient:vertical;
