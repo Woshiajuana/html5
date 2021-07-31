@@ -48,7 +48,8 @@
     "webpack": "^3.10.0",
     "webpack-dev-server": "^2.11.1",
     "wow-cmd": "0.0.7",
-    "wow-cool": "0.0.3"
+    "wow-cool": "0.0.3",
+    "loader-utils": "^2.0.0"
   },
   "browserslist": [
     "defaults",
@@ -57,5 +58,6 @@
     "> 1%",
     "iOS 7",
     "last 3 iOS versions"
-  ]
+  ],
+  "dependencies": {}
 }
