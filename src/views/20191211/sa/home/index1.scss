@@ -1,0 +1,398 @@
+@import "../../../../assets/scss/com20191211";
+@import "../../../../assets/scss/swiper.min.scss";
+
+html,
+body {
+    @extend %pr;
+    @extend %w100;
+    min-height: 100%;
+}
+
+html{
+    background: url("../../../../assets/images/css/20191211-vm-b.jpg") repeat-y center;
+}
+
+.header-section{
+    @extend %pr;
+    @extend %df;
+    @extend %aic;
+    @extend %oh;
+    height: f(320);
+    padding: 0 f(60);
+    background-color: #dedede;
+    &:after{
+        @extend %pa;
+        @extend %t0;
+        @extend %l0;
+        content: '';
+        width: f(183);
+        height: f(73);
+        background: url("../../../../assets/images/css/20191211-sa-he-1.png") center no-repeat;
+        background-size: contain;
+    }
+}
+.header-avatar{
+    @extend %bsb;
+    margin-top: f(20);
+    width: f(160);
+    height: f(160);
+    border: 1px #999 solid;
+    border-radius: 50%;
+    margin-right: f(30);
+}
+.header-content{
+    @extend %df1;
+    @extend %c3;
+    h2{
+        font-size: f(42);
+    }
+    p{
+        font-size: f(36);
+    }
+}
+.header-action{
+    @extend %df;
+    @extend %aic;
+    @extend %jcc;
+    @extend %fdc;
+}
+.header-logo{
+    margin-top: f(20);
+    height: f(100);
+    width: auto;
+}
+.header-link{
+    @extend %cp;
+    @extend %df;
+    @extend %aic;
+    @extend %jcc;
+    @extend %cfff;
+    width: f(225);
+    height: f(65);
+    background: url("../../../../assets/images/css/20191211-mtc-link.png") center no-repeat;
+    background-size: contain;
+}
+.header-help-link{
+    @extend %c3;
+    @extend %cp;
+    @extend %tac;
+    @extend %df;
+    @extend %aic;
+    @extend %fwb;
+    font-size: f(32);
+    border-bottom: 1px solid #333;
+    i{
+        @extend %dib;
+        margin-left: f(8);
+        width: f(40);
+        height: f(40);
+        background: url("../../../../assets/images/css/20191211-help-333-icon.png") center no-repeat;
+        background-size: contain;
+    }
+}
+
+.notice-section{
+    background-color: transparent;
+    box-shadow: none;
+    margin-top: j(10);
+}
+.notice-content{
+    @extend %cfff;
+    a{
+        @extend %cfff;
+    }
+    ul{
+        li{
+            @extend %cfff;
+        }
+    }
+}
+.notice-icon{
+    margin-left: 0;
+}
+
+.banner-section{
+    margin: f(20) auto;
+    width: f(1050);
+    height: j(300);
+}
+.swiper-wrap,
+.swiper-wrap-inner,
+.swiper-container {
+    width: 100%;
+    height: 100%;
+    .swiper-pagination-bullet-active{
+        background-color: #fff;
+    }
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    a,img{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
+.menu-section{
+    @extend %df;
+    @extend %fww;
+    margin: f(30) auto;
+    width: f(1055);
+}
+.menu-item{
+    @extend %cp;
+    margin: f(5) 0;
+    &.menu-flex{
+        @extend %w100;
+    }
+    &:nth-child(1){
+        height: f(181);
+        background: url("../../../../assets/images/css/20191211-sa-m-1.png") center no-repeat;
+        background-size: contain;
+    }
+    &:nth-child(2){
+        height: f(136);
+        width: f(524);
+        background: url("../../../../assets/images/css/20191211-sa-m-2.png") center no-repeat;
+        background-size: 100% auto;
+    }
+    &:nth-child(3){
+        margin-left: f(10);
+        height: f(136);
+        width: f(520);
+        background: url("../../../../assets/images/css/20191211-sa-m-3.png") center no-repeat;
+        background-size: 100% auto;
+    }
+    &:nth-child(4){
+        height: f(134);
+        width: f(520);
+        background: url("../../../../assets/images/css/20191211-sa-m-4.png") center no-repeat;
+        background-size: 100% auto;
+    }
+    &:nth-child(5){
+        margin-left: f(15);
+        height: f(134);
+        width: f(520);
+        background: url("../../../../assets/images/css/20191211-sa-m-5.png") center no-repeat;
+        background-size: 100% auto;
+    }
+}
+
+.section{
+    @extend %boxs;
+    margin: f(30) auto;
+    width: f(1050);
+    border-radius: f(5);
+    background-color: #e0e2e6;
+    &.integral-section{
+        padding: f(20) 0;
+    }
+}
+.integral-cell{
+    @extend %df;
+    @extend %aic;
+    @extend %jcs;
+    padding: 0 f(30);
+    margin: f(12) auto;
+}
+.integral-title{
+    @extend %c3;
+    @extend %fwb;
+    font-size: f(56);
+}
+.integral-number{
+    @extend %df1;
+    @extend %fwb;
+    font-size: f(56);
+    color: red;
+    margin-left: f(20);
+}
+.integral-btn{
+    @extend %cp;
+    width: f(219);
+    height: f(76);
+    background: url("../../../../assets/images/css/20191211-sa-b-l.png") center no-repeat;
+    background-size: contain;
+}
+.integral-rule{
+    @extend %df;
+    @extend %cp;
+    @extend %aic;
+    @extend %jcc;
+    @extend %c6;
+    height: f(40);
+    padding: 0 f(20);
+    border: 1px #999 solid;
+    font-size: f(30);
+    border-radius: f(20);
+}
+.integral-order{
+    @extend %cp;
+    @extend %c6;
+    font-size: f(30);
+    margin-right: f(10);
+}
+.integral-content{
+    @extend %df;
+    @extend %fww;
+    @extend %jcs;
+    padding: 0 f(20);
+}
+.integral-item{
+    @extend %df;
+    @extend %pr;
+    @extend %aic;
+    @extend %jcc;
+    width: f(500);
+    height: f(260);
+    margin-top: f(20);
+    background-color: #fff;
+    border-radius: f(10);
+    &.new-type{
+        span{
+            @extend %pr;
+            &:after{
+                @extend %pa;
+                right: f(-35);
+                top: f(-20);
+                content: '';
+                width: f(71);
+                height: f(55);
+                background: url("../../../../assets/images/css/20191211-sa-i-n.png") center no-repeat;
+                background-size: contain;
+            }
+        }
+    }
+    img{
+        @extend %pr;
+        height: f(220);
+        width: auto;
+    }
+    span{
+        @extend %pr;
+    }
+    i,.cart{
+        @extend %pa;
+        @extend %cp;
+        right: f(20);
+        bottom: f(20);
+        width: f(70);
+        height: f(69);
+        background: url("../../../../assets/images/css/20191211-sa-i-c.png") center no-repeat;
+        background-size: contain;
+    }
+}
+
+.train-section{
+    padding-bottom: f(30);
+    margin-bottom: f(100);
+}
+.train-title{
+    @extend %df;
+    @extend %aic;
+    @extend %c3;
+    padding: 0 f(30);
+    font-size: f(42);
+    height: f(100);
+    border-bottom: 1px #ccc solid;
+}
+.train-honor{
+    @extend %df;
+    @extend %aic;
+}
+.train-honor-item{
+    @extend %df;
+    @extend %df1;
+    @extend %aic;
+    @extend %jcc;
+    &:nth-child(1){
+        i{
+            width: f(155);
+            height: f(198);
+            background: url("../../../../assets/images/css/20191211-sa-h-2.png") center no-repeat;
+            background-size: contain;
+        }
+    }
+    &:nth-child(2){
+        i{
+            width: f(199);
+            height: f(175);
+            background: url("../../../../assets/images/css/20191211-sa-h-1.png") center no-repeat;
+            background-size: contain;
+        }
+    }
+    i{
+        margin-right: f(20);
+    }
+    p{
+        @extend %c3;
+        font-size: f(42);
+    }
+    strong{
+        color: red;
+    }
+}
+.train-button-group{
+    @extend %df;
+    @extend %aic;
+    @extend %jcs;
+    padding: 0 f(24);
+    margin-top: f(30);
+}
+.train-button-item{
+    @extend %df;
+    @extend %aic;
+    @extend %cp;
+    @extend %bsb;
+    @extend %jcc;
+    @extend %fdc;
+    width: f(490);
+    height: f(145);
+    border-radius: f(10);
+    border: 1px #02a44f solid;
+    &:nth-child(1){
+        i{
+            width: f(84);
+            height: f(55);
+            background: url("../../../../assets/images/css/20191211-sa-i-b.png") center no-repeat;
+            background-size: contain;
+        }
+    }
+    &:nth-child(2){
+        i{
+            width: f(52);
+            height: f(43);
+            background: url("../../../../assets/images/css/20191211-sa-i-v.png") center no-repeat;
+            background-size: contain;
+        }
+    }
+    p{
+        @extend %df;
+        @extend %aic;
+        @extend %fwb;
+        font-size: f(48);
+        color: #02a44f;
+    }
+    i{
+        margin-right: f(20);
+    }
+    span{
+        @extend %c6;
+        font-size: f(30);
+    }
+}
