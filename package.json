@@ -46,7 +46,7 @@
     "swiper": "^4.3.5",
     "url-loader": "^1.0.1",
     "webpack": "^3.10.0",
-    "webpack-dev-server": "^2.11.1",
+    "webpack-dev-server": "^4.11.1",
     "wow-cmd": "0.0.7",
     "wow-cool": "0.0.3",
     "loader-utils": "^2.0.0"
