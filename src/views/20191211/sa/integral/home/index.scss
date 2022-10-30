@@ -1,4 +1,5 @@
 @import "../../../../../assets/scss/com20191211";
+@import "../../../../../assets/scss/swiper.min.scss";
 
 html,
 body {
@@ -8,7 +9,8 @@ body {
 }
 
 html{
-    background: url("../../../../../assets/images/css/20191211-vm-b.jpg") repeat-y center;
+    //background: url("../../../../../assets/images/css/20191211-vm-b.jpg") repeat-y center;
+    background-color: #168b54;
 }
 
 .header-section{
@@ -253,10 +255,12 @@ html{
 .goods-item{
     @extend %boxs;
     @extend %oh;
+    @extend %bsb;
     width: f(517);
     margin-bottom: f(30);
     border-radius: f(10);
-    background-color: #f5f5f5;
+    background-color: #fff;
+    border: 2px solid #bebebe;
     i{
         @extend %pa;
         @extend %b0;
@@ -278,6 +282,7 @@ html{
             background-size: contain
         }
     }
+
 }
 .goods-image{
     @extend %w100;
@@ -285,15 +290,36 @@ html{
     @extend %df;
     @extend %aic;
     @extend %jcc;
-    background-color: #fff;
-    height: f(520);
+    height: f(517);
     img{
-        height: f(430);
-        max-width: f(500);
+        @extend %w100;
+        @extend %h100;
+        @extend %db;
+        object-fit: cover;
+        object-position: center;
     }
 }
 .goods-info{
-    padding: f(30);
+    @extend %bsb;
+    @extend %pr;
+    margin-top: f(40);
+    padding: f(30) f(10);
+    height: f(220);
+    background-image: linear-gradient(to right, #d8d9d8, #f8f8f8, #d8d9d8);
+    &:before{
+        @extend %pa;
+        @extend %l0;
+        @extend %r0;
+        @extend %bsb;
+        content: '';
+        bottom: 100%;
+        width: 100%;
+        //width: 0;
+        height: 0;
+        border-left: f(20) solid transparent;
+        border-right: f(20) solid transparent;
+        border-bottom: f(20) solid #b2b5b1;
+    }
 }
 .goods-name{
     @extend %twno;
@@ -308,8 +334,13 @@ html{
     .goods-number{
         @extend %df;
         @extend %df1;
-        @extend %aic;
+        @extend %fdc;
         @extend %oh;
+    }
+    b{
+        @extend %fwb;
+        font-style: italic;
+        font-size: f(48);
     }
     span{
         @extend %twno;
@@ -319,27 +350,15 @@ html{
             color: #dda06d;
             text-decoration: line-through;
         }
-        &:first-child{
-            margin-right: f(5);
-        }
     }
 }
 .goods-btn{
     @extend %cp;
     @extend %df;
-    @extend %aic;
-    @extend %jcc;
-    @extend %bsb;
-    @extend %cfff;
-    min-width: f(135);
-    max-width: f(230);
     height: f(70);
-    font-size: f(36);
-    //background: url("../../../../../assets/images/css/20191211-sa-i-i-8.png") left no-repeat;
-    //background-size: contain;
-    background-color: #02a44f;
-    border-radius: f(35);
-    border: 1px #bbb solid;
+    width: f(220);
+    background: url("../../../../../assets/images/css/20221030-btn.png") center no-repeat;
+    background-size: contain;
 }
 .popup-content1{
     margin-top: 0;
@@ -405,5 +424,51 @@ html{
         padding: 0 f(8);
         border-radius: f(20);
         font-size: f(30);
+    }
+}
+
+
+
+.swiper-wrap{
+    @extend %ma;
+    @extend %oh;
+    @extend %bsb;
+    width: f(1050);
+    height: f(288);
+    border-radius: f(20);
+    border: 1px solid #fff;
+    margin-top: f(20);
+    img{
+        object-fit: cover;
+        object-position: center;
+    }
+}
+.swiper-wrap-inner,
+.swiper-container {
+    width: 100%;
+    height: 100%;
+    .swiper-pagination-bullet-active{
+        background-color: #fff;
+    }
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    a,img{
+        width: 100%;
+        height: 100%;
     }
 }

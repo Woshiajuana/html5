@@ -31,6 +31,25 @@
         </div>
     </div>
 
+    <div class="swiper-wrap">
+        <div class="swiper-wrap-inner">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="https://www.baidu.com"> <img src="../../../../../assets/images/html/20191211-sa-1.jpg"></a>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../../../../../assets/images/html/20191211-sa-2.jpg">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../../../../../assets/images/html/20191211-sa-3.jpg">
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </div>
+
     <div class="search-section">
         <div class="search-input">
             <input type="text" placeholder="搜索礼品"/>
@@ -84,12 +103,11 @@
                 <p class="goods-name">帕斯卡帕斯卡西帕斯卡西安市安市西帕斯卡西安市安市</p>
                 <div class="goods-opt">
                     <div class="goods-number">
+                        <span><b>999999</b> 积分</span>
                         <span class="line-through">1566积分</span>
-                        <span>156积分</span>
                     </div>
-                    <div class="goods-btn">兑换</div>
+                    <div class="goods-btn"></div>
                 </div>
-                <div class="goods-btn">查看详情</div>
             </div>
         </div>
 
@@ -102,81 +120,15 @@
                 <p class="goods-name">帕斯卡帕斯卡西帕斯卡西安市安市西帕斯卡西安市安市</p>
                 <div class="goods-opt">
                     <div class="goods-number">
-                        <span>156积分</span>
+                        <span><b>156</b> 积分</span>
                         <span class="line-through">1566积分</span>
                     </div>
-                    <div class="goods-btn">兑换</div>
+                    <div class="goods-btn"></div>
                 </div>
             </div>
         </div>
 
-        <div class="goods-item">
-            <div class="goods-image">
-                <img src="../../../../../assets/images/html/20191211-sa-i-i-7.jpg" alt="商品"/>
-                <i></i>
-            </div>
-            <div class="goods-info">
-                <p class="goods-name">帕斯卡帕斯卡西帕斯卡西安市安市西帕斯卡西安市安市</p>
-                <div class="goods-opt">
-                    <div class="goods-number">
-                        <span>300积分+2枚勋章</span>
-                        <span class="line-through"></span>
-                    </div>
-                    <div class="goods-btn">兑换</div>
-                </div>
-            </div>
-        </div>
 
-        <div class="goods-item">
-            <div class="goods-image">
-                <img src="../../../../../assets/images/html/20191211-sa-i-i-7.jpg" alt="商品"/>
-                <i></i>
-            </div>
-            <div class="goods-info">
-                <p class="goods-name">帕斯卡帕斯卡西帕斯卡西安市安市西帕斯卡西安市安市</p>
-                <div class="goods-opt">
-                    <div class="goods-number">
-                        <span>156654积分</span>
-                        <span class="line-through"></span>
-                    </div>
-                    <div class="goods-btn">兑换</div>
-                </div>
-            </div>
-        </div>
-
-        <div class="goods-item">
-            <div class="goods-image">
-                <img src="../../../../../assets/images/html/20191211-sa-i-i-7.jpg" alt="商品"/>
-                <i></i>
-            </div>
-            <div class="goods-info">
-                <p class="goods-name">帕斯卡帕斯卡西帕斯卡西安市安市西帕斯卡西安市安市</p>
-                <div class="goods-opt">
-                    <div class="goods-number">
-                        <span>15661111积分</span>
-                        <span class="line-through">156111积分</span>
-                    </div>
-                    <div class="goods-btn">兑换</div>
-                </div>
-            </div>
-        </div>
-
-        <div class="goods-item">
-            <div class="goods-image">
-                <img src="../../../../../assets/images/html/20191211-sa-i-i-7.jpg" alt="商品"/>
-                <i></i>
-            </div>
-            <div class="goods-info">
-                <p class="goods-name">帕斯卡帕斯卡西帕斯卡西安市安市西帕斯卡西安市安市</p>
-                <div class="goods-opt">
-                    <div class="goods-number">
-                        <span>300积分+2枚勋章</span>
-                        <span class="line-through"></span>
-                    </div>
-                    <div class="goods-btn">兑换</div>
-                </div>
-            </div>
-        </div>
     </div>
     <div class="popup-wrap" style="display: none">
         <div class="popup-inner">
@@ -225,6 +177,7 @@
         <span>99</span>
     </div>
     <script src="assets/lib/jquery-1.8.1.min.js"></script>
+    <script src="assets/lib/swiper.min.js"></script>
     <script>
         $(function () {
             $('.filter-section-item').on('click', '.filter-section-inner', function () {
@@ -242,6 +195,13 @@
             });
             $('.popup-wrap').on('click', '.popup-close', function () {
                 $('.popup-wrap').hide();
+            });
+
+            new Swiper('.swiper-container', {
+                loop: true,
+                pagination: {
+                    el: '.swiper-pagination',
+                },
             });
         });
     </script>

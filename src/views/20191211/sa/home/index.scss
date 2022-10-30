@@ -1496,3 +1496,37 @@ html {
     background: url(../../../../assets/images/css/20191211-close-icon.png) no-repeat;
     background-size: contain
 }
+
+.integral-section{
+    .swiper-wrap-inner{
+        @extend %ma;
+        @extend %oh;
+        @extend %bsb;
+        margin-bottom: f(20);
+        border-radius: f(20);
+        margin-top: f(20);
+        width: f(1010);
+        height: f(275);
+        border: 1px solid #fff;
+        img{
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+}
+
+.integral-item{
+    @extend %oh;
+    margin-top: f(8);
+    &.is-cover{
+        width: f(500);
+        height: f(500);
+        img{
+            @extend %db;
+            @extend %w100;
+            @extend %h100;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+}
